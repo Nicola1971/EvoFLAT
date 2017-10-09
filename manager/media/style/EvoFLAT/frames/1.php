@@ -402,6 +402,7 @@ location.reload();
                                 <div class="mask"></div>
                             </form>
                         </li>
+                       <?php if($modx->hasPermission('new_document')) { ?>
                        <li class="dropdown newresource">
                              <a href="javascript:;" class="dropdown-toggle" onclick="return false;" title="<?= $_lang['add_resource'] ?>"><i class="fa fa-plus"></i></a>
                              <ul class="dropdown-menu">
@@ -417,6 +418,7 @@ location.reload();
                                     </li>
                             </ul>
                         </li>
+                        <?php } ?>
                         <li>
                             <a href="../" target="_blank" title="<?= $_lang['preview'] ?>">
                                 <i class="fa fa-eye"></i>
