@@ -319,13 +319,15 @@ ul.mmTagList { float: left; margin-top: .25rem !important }
 .mce-container, .mce-container-body { box-sizing: border-box !important }
 .dark .mce-container, .dark .mce-container-body { background-color: #383f48 !important; }
 .mce-container button { border: none; border-radius: 0; background-color: transparent; }
-.dark .mce-container button, .dark .mce-container-body button { color:#FFF !important; border-color: #383f48; border-radius: 0; background-color: #383f48 !important; }
+.dark .mce-container button, .dark .mce-container-body button { color:#48a6ef !important; border-color: #383f48; border-radius: 0; background-color: #383f48 !important; }
 .mce-window-head .mce-close { padding: 0; }
 #editorRow_TinyMCE { background-color: #fff; }
-.dark .mce-widget button i{color:#FFF;}
-.dark .mce-widget button {
-	border-color: #383f48 !important; 
+.dark .mce-widget button i{color:#0e80cb;}
+.dark .mce-btn {
+border-color: #272c33;
 }
+.dark .mce-btn.mce-disabled button{opacity:0.6;}
+.dark .mce-btn-group:not(:first-child){border-left:1px solid #272c33}
 .dark .mce-listbox {color:#FFF;}
 .dark #editorRow_TinyMCE { background-color: #383f48 !important; }
 #editorRow_TinyMCE tr { border: 1px dotted rgba(0, 0, 0, .05); }
