@@ -37,6 +37,8 @@ textarea, textarea.form-control { width: 100%; line-height: 1.5; overflow: auto;
 select:not([size]):not([multiple]), select[size="1"] { padding-right: 2em !important; background-image: url("data:image/svg+xml;base64,PHN2ZyB2aWV3Qm94PScwIDAgMTc5MiAxNzkyJyB4bWxucz0naHR0cDovL3d3dy53My5vcmcvMjAwMC9zdmcnPjxwYXRoIGQ9J00xMzk1IDczNnEwIDEzLTEwIDIzbC00NjYgNDY2cS0xMCAxMC0yMyAxMHQtMjMtMTBsLTQ2Ni00NjZxLTEwLTEwLTEwLTIzdDEwLTIzbDUwLTUwcTEwLTEwIDIzLTEwdDIzIDEwbDM5MyAzOTMgMzkzLTM5M3ExMC0xMCAyMy0xMHQyMyAxMGw1MCA1MHExMCAxMCAxMCAyM3onIGZpbGw9JyUyMzQ0NCcvPjwvc3ZnPg==") !important; background-repeat: no-repeat; background-position: right center; background-size: 2em 1.3em }
 optgroup { font-style: normal; font-weight: 500; background-color: #ddd; }
 optgroup option { font-weight: normal; background-color: #fff; }
+.dark optgroup { font-style: normal; font-weight: 500; background-color: #272c33; }
+.dark optgroup option { font-weight: normal; background-color: #323840; }
 input[type=color] { width: 2.308em; height: 2.308em; -webkit-appearance: menulist; -moz-appearance: menupopup }
 input[type=range] { -webkit-appearance: slider-horizontal; -moz-appearance: initial; }
 .input-group-addon { padding: 0.46153846em .75em; font-size: 0.8125rem; border: 1px solid rgba(0, 0, 0, .15); border-radius: .1em; }
