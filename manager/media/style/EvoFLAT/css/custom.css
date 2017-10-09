@@ -322,15 +322,15 @@ ul.mmTagList { float: left; margin-top: .25rem !important }
 .dark .mce-container button, .dark .mce-container-body button { color:#48a6ef !important; border-color: #383f48; border-radius: 0; background-color: #383f48 !important; }
 .mce-window-head .mce-close { padding: 0; }
 #editorRow_TinyMCE { background-color: #fff; }
-.dark .mce-widget button i{color:#0e80cb;}
-.dark .mce-btn {
-border-color: #272c33;
-}
-.dark .mce-menu-item .mce-text {color:#0e80cb;}
+.dark .mce-widget button i, .dark .mce-wordcount {color:#0e80cb;}
+.dark .mce-wordcount {text-shadow:none; right:7px;}
+.dark .mce-btn {border-color: #272c33;}
+.dark .mce-menu-item .mce-text, .dark .mce-menu-item i{color:#0e80cb;}
+.dark div.mce-caret {color:#FFF!important;}
 .dark .mce-btn.mce-disabled button{opacity:0.6;}
 .dark .mce-btn-group:not(:first-child){border-left:1px solid #272c33}
 .dark .mce-listbox {color:#FFF;}
-.dark #editorRow_TinyMCE { background-color: #383f48 !important; }
+.dark .mce-flow-layout-item{ background-color: #383f48 !important; }
 #editorRow_TinyMCE tr { border: 1px dotted rgba(0, 0, 0, .05); }
 #editorRow_TinyMCE th { white-space: nowrap }
 #editorRow_TinyMCE th, #editorRow_TinyMCE td { padding: 0.5em; border: none !important }
