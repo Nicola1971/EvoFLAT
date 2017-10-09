@@ -326,6 +326,7 @@ ul.mmTagList { float: left; margin-top: .25rem !important }
 .dark .mce-btn {
 border-color: #272c33;
 }
+.dark .mce-menu-item .mce-text {color:#0e80cb;}
 .dark .mce-btn.mce-disabled button{opacity:0.6;}
 .dark .mce-btn-group:not(:first-child){border-left:1px solid #272c33}
 .dark .mce-listbox {color:#FFF;}
