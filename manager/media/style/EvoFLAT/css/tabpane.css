@@ -169,8 +169,12 @@ div#treeHolder .tab-row .tab.selected:after, div#treeHolder .tab-row .tab.hover:
 
 .dark .section-editor textarea { background-color: #282c34; color: #abb2bf }
 .dark .tab-page, .dark .sectionBody .tab-page, .dark .tab-row .tab.selected, .dark .tab-row .tab.selected:before { background-color: #272c33; }
-.dark div.dynamic-tab-pane-control .tab-row .tab{line-height: 2.5rem; height: 2.3rem; background-color: #272c2f; border-color: #1a1d1f; color:#fafafa; }
+.dark div.dynamic-tab-pane-control .tab-row .tab{line-height: 2.5rem; height: 2.3rem; background-color: #272c2f; border-color: #1d2123; color:#dedede; }
 .dark div.dynamic-tab-pane-control .tab-row .tab.selected { z-index: 2; border-color: #1a1d1f; border-top-color: #0e80cb;background-color: #0e80cb;}
 .dark div.dynamic-tab-pane-control .tab-row .tab.hover { z-index: 2; background-color: #383f48; border-color: #22272d;color: #0e80cb; font-weight: 300;}
 .dark div.dynamic-tab-pane-control .tab-row .tab.hover:after {border-top-color: #383f48;}
 .dark .tab-row::after, .dark .tab-row-container::after { background-color: #1a1d1f }
+
+.dark .sectionHeader  { background-color: #383f48; border:none;}
+.dark .sectionBody.tmplvars  { background-color: #272c33; border:none; }
+.dark ul.mmTagList li {color:#0e80cb!important;}

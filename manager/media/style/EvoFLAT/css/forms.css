@@ -48,5 +48,5 @@ select::-ms-expand { display: none; }
 select:not([size]):not([multiple]) { text-indent: -2px }
 }
 
-.dark input[type=text], .dark textarea { background-color: #272c33; border-color: #1a1c21; color: #e6e6e6;}
+.dark input[type=text], .dark textarea { background-color: #272c33; border-color: #48505c; color: #e6e6e6;}
 .dark select { background-color: #323840; border-color: #1a1c21; color: #e6e6e6;}

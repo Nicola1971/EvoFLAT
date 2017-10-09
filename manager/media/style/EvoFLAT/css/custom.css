@@ -312,7 +312,7 @@ body.dark {background-color: #383f48 !important; color:#8b92a0;}
 .catalog_item select[name=link] { width: auto !important; margin-left: 0.5rem }
 /* ManagerManager */
 .sectionHeader.minimizable { position: relative; z-index: 1; background-color: #fafafa; padding: 0.5rem; border: 1px solid rgba(0, 0, 0, 0.15); }
-.dark .sectionHeader.minimizable { background-color: #f2f2f2 }
+.dark .sectionHeader.minimizable { background-color: #383f48 }
 .imageField { min-width: 100% !important; width: 100% !important }
 ul.mmTagList { float: left; margin-top: .25rem !important }
 /* MCE */

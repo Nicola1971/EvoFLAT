@@ -43,9 +43,12 @@
 #treeRoot #binFull { display: none }
 /* treeRoot dark */
 .dark #treeMenu { background-color: rgba(0, 0, 0, 0.2); border-bottom-color: rgba(0, 0, 0, 0.2); border-right-color: #2a2d33 }
-.dark #treeMenu .treeButton { color: #a9a9a9; }
-.dark #treeMenu .treeButton:hover:not(.disabled) { background-color: #2d3033; color: #fff }
-.dark #tree .treeframebody { background-color: #202329; border-color: #2a2d33 }
+.dark #treeMenu .treeButton { color: #687b8e!important; }
+.dark #treeMenu .treeButton:hover:not(.disabled) { background-color: #2d3033; color: #fff!important; }
+.dark #tree .treeframebody, .dark .ElementsInTree #tree .treeframebody #treeHolder { background-color: #272c33; border-color: #2a2d33 }
+.dark #treePane .panel-heading {background-color: #383f48!important;}
+
+
 .dark #treeHolder .rootNode a { color: #C5C5C5; }
 .dark #treeHolder .rootNode a:hover { color: #eee }
 .dark #treeRoot { color: #b3b3b3; }
