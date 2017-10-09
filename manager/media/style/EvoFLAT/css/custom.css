@@ -317,9 +317,17 @@ body.dark {background-color: #383f48 !important; color:#8b92a0;}
 ul.mmTagList { float: left; margin-top: .25rem !important }
 /* MCE */
 .mce-container, .mce-container-body { box-sizing: border-box !important }
+.dark .mce-container, .dark .mce-container-body { background-color: #383f48 !important; }
 .mce-container button { border: none; border-radius: 0; background-color: transparent; }
+.dark .mce-container button, .dark .mce-container-body button { color:#FFF !important; border-color: #383f48; border-radius: 0; background-color: #383f48 !important; }
 .mce-window-head .mce-close { padding: 0; }
 #editorRow_TinyMCE { background-color: #fff; }
+.dark .mce-widget button i{color:#FFF;}
+.dark .mce-widget button {
+	border-color: #383f48 !important; 
+}
+.dark .mce-listbox {color:#FFF;}
+.dark #editorRow_TinyMCE { background-color: #383f48 !important; }
 #editorRow_TinyMCE tr { border: 1px dotted rgba(0, 0, 0, .05); }
 #editorRow_TinyMCE th { white-space: nowrap }
 #editorRow_TinyMCE th, #editorRow_TinyMCE td { padding: 0.5em; border: none !important }

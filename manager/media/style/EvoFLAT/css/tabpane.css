@@ -5,8 +5,8 @@
 .tab-row .tab, .tab-row .tab a, .tab-pane > .tab-page > .tab { color: rgba(0, 0, 0, 0.6); font-size: 0.75rem }
 .tab-row .tab.selected { z-index: 2; border-color: #ddd; background-color: #fff; color: #444; font-weight: 700 }
 
-div.dynamic-tab-pane-control .tab-row .tab, .tab-pane > .tab-page > .tab { position: relative; display: inline-block; margin: 4px 0 0 0; padding: 0 0.875rem; line-height: 2.7rem; height: 2.5rem; text-transform: uppercase; border: 1px solid rgba(0, 0, 0, 0); border-bottom: 1px solid #f1f1f1; cursor: pointer; -webkit-user-select: none; user-select: none; }
-div.dynamic-tab-pane-control .tab-row .tab{line-height: 2.5rem; height: 2.3rem; background-color: #fff; border-color: #ddd; transition: all .2s ease-in;margin-right:1px;}
+div.dynamic-tab-pane-control .tab-row .tab, .tab-pane > .tab-page > .tab { position: relative; display: inline-block; margin: 2px 0 0 0; padding: 0 0.875rem; line-height: 2.5rem; height: 2.3rem; text-transform: uppercase; border: 1px solid rgba(0, 0, 0, 0); border-bottom: 1px solid #f1f1f1; cursor: pointer; -webkit-user-select: none; user-select: none; }
+div.dynamic-tab-pane-control .tab-row .tab{line-height: 2.2rem; height: 2.3rem; background-color: #fff; border-color: #ddd; transition: all .2s ease-in;margin-right:1px;}
 div.dynamic-tab-pane-control .tab-row .tab:after {
 	position: absolute;
    z-index: 10499; 
@@ -169,7 +169,7 @@ div#treeHolder .tab-row .tab.selected:after, div#treeHolder .tab-row .tab.hover:
 
 .dark .section-editor textarea { background-color: #282c34; color: #abb2bf }
 .dark .tab-page, .dark .sectionBody .tab-page, .dark .tab-row .tab.selected, .dark .tab-row .tab.selected:before { background-color: #272c33; }
-.dark div.dynamic-tab-pane-control .tab-row .tab{line-height: 2.5rem; height: 2.3rem; background-color: #272c2f; border-color: #1d2123; color:#dedede; }
+.dark div.dynamic-tab-pane-control .tab-row .tab{background-color: #272c2f; border-color: #1d2123; color:#dedede; }
 .dark div.dynamic-tab-pane-control .tab-row .tab.selected { z-index: 2; border-color: #1a1d1f; border-top-color: #0e80cb;background-color: #0e80cb;}
 .dark div.dynamic-tab-pane-control .tab-row .tab.hover { z-index: 2; background-color: #383f48; border-color: #22272d;color: #0e80cb; font-weight: 300;}
 .dark div.dynamic-tab-pane-control .tab-row .tab.hover:after {border-top-color: #383f48;}
