@@ -401,7 +401,9 @@ color: #FFF!important;border-color: #337ab7;background: #337ab7;margin-left:2px;
 #actions a#Button3.btn.btn-secondary{color: #FFF!important;border-color: #e77755;background-color: #e77755;margin-left:3px!important;}
 #actions a#Button3.btn.btn-secondary:hover{color: #fff;border-color: #e04e23;background-color: #e04e23;}
 /* preview button */ 
-#actions a#Button4.btn.btn-secondary{margin-left:2px;}
+
+#actions a#Button4.btn.btn-secondary {margin-left:2px; color: #292b2c; background-color: #fff; border-color: #d4d4d4 }
+#actions a#Button4.btn.btn-secondary:hover { color: #292b2c; background-color: #e6e6e6; border-color: #adadad }
 /* cancel button */ 
 #actions a#Button5.btn.btn-secondary{color: #FFF!important;border-color: #f0ad4e;background: #f0ad4e!important;margin-left:2px;}
 #actions a#Button5.btn.btn-secondary:hover{color: #FFF;border-color: #e18a13;background: #e18a13!important;}
