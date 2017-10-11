@@ -755,10 +755,6 @@ $('#toggleFullScreen').click(function(){
   icon = $(this).find("i");
   icon.toggleClass("fa-expand fa-compress")
 })
-$('#treeMenu_theme_dark').click(function(){
-  icon = $(this).find("i");
-  icon.toggleClass("fa-moon-o fa-sun-o")
-})
 </script>
     <?php
     // invoke OnManagerFrameLoader
