@@ -99,4 +99,22 @@
 
 #mainMenu #searchform input:focus { border-radius: 3px; width: 15rem; max-width: 15rem; background: rgba(255, 255, 255, 0.05); border: 1px solid rgba(255, 255, 255, 0.5); opacity: 1 }
 #mainMenu #searchform input:focus + .mask { opacity: 1; }
-
+@media (min-width: 1020px) {
+/*#mainMenu #nav > li > a > .fa { font-size: 1.2rem }*/
+}
+@media (max-width: 1020px) {
+#mainMenu .nav > li > a, #mainMenu .nav > li > ul > li > a, #mainMenu .nav > li > ul > li > span, #mainMenu .nav .label_searchid { padding: 0 0.75rem; }
+}
+@media (max-width: 840px) {
+#mainMenu .nav > li { position: static; }
+#mainMenu #nav > li > a { font-size: 0; }
+#mainMenu .nav > li > a, #mainMenu .nav .label_searchid { padding: 0 0.5rem; }
+#mainMenu #nav > li > a > .fa { display: inline-block; margin-right: 0; }
+#mainMenu .nav > li > ul { left: 0; width: 100% }
+#statusbar { display: none }
+}
+@media (max-width: 480px) {
+#mainMenu .nav > li > a .username, #searchresult .ajaxSearchResults a > i { display: none }
+#mainMenu .nav > li > a .icon { margin-left: 0 }
+#searchresult.open, #searchresult .ajaxSearchResults { width: 100% }
+}
