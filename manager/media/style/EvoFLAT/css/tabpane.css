@@ -169,9 +169,9 @@ div#treeHolder .tab-row .tab.selected:after, div#treeHolder .tab-row .tab.hover:
 
 .dark .section-editor textarea { background-color: #282c34; color: #abb2bf }
 .dark .tab-page, .dark .sectionBody .tab-page, .dark .tab-row .tab.selected, .dark .tab-row .tab.selected:before { background-color: #272c33; }
-.dark div.dynamic-tab-pane-control .tab-row .tab{background-color: #272c2f; border-color: #1d2123; color:#dedede; }
-.dark div.dynamic-tab-pane-control .tab-row .tab.selected { z-index: 2; border-color: #1a1d1f; border-color: #0e80cb;background-color: #0e80cb;}
-.dark div.dynamic-tab-pane-control .tab-row .tab.hover { z-index: 2; background-color: #687b8e; border-color: #687b8e;color: #1d2123; font-weight: 300;}
+.dark div.dynamic-tab-pane-control .tab-row .tab{background-color: #272c2f; border-color: #1a1d22; color:#dedede; }
+.dark div.dynamic-tab-pane-control .tab-row .tab.selected { z-index: 2; background-color: #0e80cb;}
+.dark div.dynamic-tab-pane-control .tab-row .tab.hover { z-index: 2; background-color: #687b8e; color: #1d2123; font-weight: 300;}
 .dark div.dynamic-tab-pane-control .tab-row .tab.hover:after {border-top-color: #687b8e;}
 .dark .tab-row::after, .dark .tab-row-container::after { background-color: #1a1d1f }
 
