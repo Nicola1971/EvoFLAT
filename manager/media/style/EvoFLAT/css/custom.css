@@ -285,8 +285,10 @@ ul.sortableList li.ghost { z-index: 2; box-shadow: 0 0.25rem 1.5rem rgba(0, 0, 0
 #helpPane li:not(:first-child) > strong { margin-top: 1.4em; }
 #helpPane li > strong { display: block; font-size: 14px; }
 #helpPane pre { border: 1px solid rgba(0, 0, 0, 0.1); padding: 1em; }
+.loginbox .container-body{background-color: #fafafa;}
 /* [ DARK THEME ] */
-
+.dark .loginbox .container-body{background-color: #0e80cb;}
+.dark .loginbox .container-body a{color: #fff;}
 .dark, .dark .resourceTable .panel-heading { background: #ecf0f1 !important; }
 .dark .resourceTable .panel-heading:hover { background: #ecf0f1 !important; }
 .dark .multitv .list li.element a.copy, .multitv .list li.element a.remove { background: #f9f9f9 !important; }
@@ -305,7 +307,6 @@ ul.sortableList li.ghost { z-index: 2; box-shadow: 0 0.25rem 1.5rem rgba(0, 0, 0
 .dark .resourceTable .panel-title > a { color: #fff; background-color: #383f48; border-color: #383f48; }
 .dark .resourceTable .panel-heading { background-color: #383f48; border-top: 0px dotted #383f48; border-bottom:0px dotted #383f48; }
 /*body*/
-/*body{background-color: '.$LoginBgColor.';}*/
 body.dark {background-color: #383f48 !important; color:#8b92a0;}
 /*
  [ OTHERS COMPONENTS ] - this components need fix css
@@ -319,7 +320,7 @@ body.dark {background-color: #383f48 !important; color:#8b92a0;}
 ul.mmTagList { float: left; margin-top: .25rem !important }
 /* MCE */
 .mce-container, .mce-container-body { box-sizing: border-box !important }
-.dark .mce-container, .dark body#tinymce.mce-content-body { color:#fff; background-color: #383f48 !important; }
+.dark .mce-container, .dark .mce-content-body { color:#fff; background-color: #383f48 !important; }
 .mce-container button { border: none; border-radius: 0; background-color: transparent; }
 .dark .mce-container button, .dark .mce-container-body button { color:#fff !important; border-color: #383f48; border-radius: 0; background-color: #383f48 !important; }
 .mce-window-head .mce-close { padding: 0; }
@@ -389,7 +390,7 @@ form#docfinder div.tab-page { height: auto !important }
   animation-fill-mode: forwards;
 }
 /* end loginbox animation */
- 
+
 .widgets .card { padding-bottom: 1.5rem; margin-bottom: 2rem; border: 1px solid #dfdfdf; box-shadow: none; }
 .widgets .card-header { background-color: #f6f6f6; }
 
@@ -414,3 +415,4 @@ color: #FFF!important;border-color: #337ab7;background: #337ab7;margin-left:2px;
 #actions .btn-group .btn, #actions .btn-group .form-control { height: 2.8em; line-height: 1.8; }
 #actions .btn-group .plus { margin: -2.8em 0 0 0; }
 #actions .btn-group .btn-success { box-shadow: none;}
+

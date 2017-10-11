@@ -149,7 +149,7 @@ div#treeHolder .tab-row .tab.selected:after, div#treeHolder .tab-row .tab.hover:
 .evo-tab-row .tab-row .tab small { margin-left: .25em }
 .evo-tab-row .tab-row .tab:not(#evo-tab-home) i.help { display: none }
 .evo-tab-row .tab-row .tab:not(#evo-tab-home) i { margin-right: .2em }
-.evo-tab-row .tab-row .tab span { background: none !important }
+.evo-tab-row .tab-row .tab span {background: none !important }
 .evo-tab-row .tab-row .tab .tab-title { float: left; width: 5rem; line-height: 2rem; text-overflow: ellipsis; overflow: hidden; }
 .evo-tab-row .tab-row .tab .tab-close { float: right; margin: 0 -.75rem 0 .5rem; padding: .25em; line-height: 1.3em; font-size: 1.3em; font-weight: 700; color: #9e9e9e }
 .evo-tab-row .tab-row .tab .tab-close:hover { color: #d9534f }
@@ -176,5 +176,5 @@ div#treeHolder .tab-row .tab.selected:after, div#treeHolder .tab-row .tab.hover:
 .dark .tab-row::after, .dark .tab-row-container::after { background-color: #1a1d1f }
 
 .dark .sectionHeader  { background-color: #383f48; border:none;}
-.dark .sectionBody.tmplvars  { background-color: #272c33; border:none; }
+.dark .sectionBody.tmplvars  { background-color: #2a3038; border:none; }
 .dark ul.mmTagList li {color:#0e80cb!important;}
