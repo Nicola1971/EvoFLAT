@@ -419,11 +419,6 @@ location.reload();
                             </ul>
                         </li>
                         <?php } ?>
-                        <li id="fullscreen">
-                        <a href="javascript:;" onclick="toggleFullScreen()" id="toggleFullScreen" title="fullscreen">
-                                <i class="fa fa-expand"></i>
-                            </a>
-                        </li>
                         <li>
                             <a href="../" target="_blank" title="<?= $_lang['preview'] ?>">
                                 <i class="fa fa-eye"></i>
@@ -543,6 +538,11 @@ location.reload();
                                 echo sprintf('<li><span class="dropdown-item" title="%s &ndash; %s" %s>' . $version . ' %s</span></li>', $site_name, $modx->getVersionData('full_appname'), $style, $modx->config['settings_version']);
                                 ?>
                             </ul>
+                        </li>
+                        <li id="fullscreen">
+                        <a href="javascript:;" onclick="toggleFullScreen()" id="toggleFullScreen" title="fullscreen">
+                                <i class="fa fa-expand"></i>
+                            </a>
                         </li>
                     </ul>
                 </div>
