@@ -103,7 +103,7 @@ if ($user['which_browser'] == 'default') {
     <script src="media/script/spectrum/spectrum.evo.min.js" type="text/javascript"></script>
     <script language="javascript">
     $(document).ready(function() {
-    var bgColour = "#1d2023";
+    var bgColour = "#0e80cb";
     if(localStorage.getItem("EvoMenuColour")){
       bgColour = localStorage.getItem("EvoMenuColour");
     }
@@ -419,6 +419,11 @@ location.reload();
                             </ul>
                         </li>
                         <?php } ?>
+                        <li id="fullscreen">
+                        <a href="javascript:;" onclick="toggleFullScreen()" id="toggleFullScreen" title="fullscreen">
+                                <i class="fa fa-expand"></i>
+                            </a>
+                        </li>
                         <li>
                             <a href="../" target="_blank" title="<?= $_lang['preview'] ?>">
                                 <i class="fa fa-eye"></i>
@@ -725,7 +730,36 @@ location.reload();
         }
 
     </script>
-
+<script>
+function toggleFullScreen() {
+  if ((document.fullScreenElement && document.fullScreenElement !== null) ||    
+   (!document.mozFullScreen && !document.webkitIsFullScreen)) {
+    if (document.documentElement.requestFullScreen) {  
+      document.documentElement.requestFullScreen();  
+    } else if (document.documentElement.mozRequestFullScreen) {  
+      document.documentElement.mozRequestFullScreen();  
+    } else if (document.documentElement.webkitRequestFullScreen) {  
+      document.documentElement.webkitRequestFullScreen(Element.ALLOW_KEYBOARD_INPUT);  
+    }  
+  } else {  
+    if (document.cancelFullScreen) {  
+      document.cancelFullScreen();  
+    } else if (document.mozCancelFullScreen) {  
+      document.mozCancelFullScreen();  
+    } else if (document.webkitCancelFullScreen) {  
+      document.webkitCancelFullScreen();  
+    }  
+  }  
+}
+$('#toggleFullScreen').click(function(){
+  icon = $(this).find("i");
+  icon.toggleClass("fa-expand fa-compress")
+})
+$('#treeMenu_theme_dark').click(function(){
+  icon = $(this).find("i");
+  icon.toggleClass("fa-moon-o fa-sun-o")
+})
+</script>
     <?php
     // invoke OnManagerFrameLoader
     $modx->invokeEvent('OnManagerFrameLoader', array('action' => $action));
