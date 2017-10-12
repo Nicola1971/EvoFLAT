@@ -286,10 +286,10 @@ ul.sortableList li.ghost { z-index: 2; box-shadow: 0 0.25rem 1.5rem rgba(0, 0, 0
 #helpPane pre { border: 1px solid rgba(0, 0, 0, 0.1); padding: 1em; }
 .loginbox .container-body{background-color: #fafafa;}
 /* [ DARK THEME ] */
+.dark .page {background-color: #272c33;}
 .dark .tab-page div.sectionBody {background-color: #383f48; border-color: #272c33;}
 .dark .tab-page div.sectionHeader {background-color: #272c33;}
-.dark .loginbox .container-body{background-color: #0e80cb;}
-.dark .loginbox .container-body a{color: #fff;}
+.dark .loginbox .container-body a{color: #137aca;}
 .dark, .dark .resourceTable .panel-heading { background: #ecf0f1 !important; }
 .dark .resourceTable .panel-heading:hover { background: #ecf0f1 !important; }
 .dark .multitv .list li.element a.copy, .multitv .list li.element a.remove { background: #f9f9f9 !important; }

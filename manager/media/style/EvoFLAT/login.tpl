@@ -10,7 +10,7 @@
 	<style>
 		html, body { min-height: 100%; height: 100%; }
 		.page { height: 100%; padding-top: 7%; }
-		.loginbox { width: 90%; max-width: 25rem; margin: 0 auto; }
+		.loginbox { width: 90%; max-width: 25rem; margin: 0 auto;}
 		.copyrights { position: absolute; left: 0; right: 0; bottom: 0; padding: .5rem 1rem; font-size: .675rem; color: #aaa; text-align: right }
 		.copyrights a { color: #777 }
 		#submitButton { float: right; }
@@ -24,9 +24,6 @@
 		@keyframes rotate {
 			to { transform: rotate(360deg) }
 			}
-	    #FMP-email_label { color: #FFF!important;}
-       .text-muted, #FMP-email_label { color: #fff !important; 
-        text-shadow:1px 1px 1px rgba(0,0,0,0.8);}
         #FMP-email_button, #submitButton {
 	   cursor: pointer;
 	   color: #FFF;
@@ -48,6 +45,7 @@
 	   border: 1px solid #2683dd;
 	   background: #2683dd;
         }
+       
     </style>
 </head>
 <body class="[+manager_theme_style+]">
