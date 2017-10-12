@@ -26,7 +26,7 @@ html[lang="ko-KR"] body { font-family: "Apple SD Gothic Neo", "Malgun Gothic", "
 html[lang="th"] body { font-family: "Sukhumvit Set", "Helvetica Neue", Helvetica, Arial, sans-serif; }
 /* For Arabic Font */
 html[lang="fa"] body { font-family: Tahoma, Arial, sans-serif; }
-body { background-color: #fafafa; color: #444; }
+
 body.drag *, body.drag::after { cursor: grabbing !important; cursor: -moz-grabbing !important; cursor: -webkit-grabbing !important; cursor: -moz-grab !important; -moz-user-select: none !important; -webkit-user-select: none !important; user-select: none !important }
 body.drag::after { bottom: 0; content: ""; left: 0; position: fixed; right: 0; top: 0; z-index: 999 }
 body, ul, li { padding: 0; margin: 0; }
@@ -92,6 +92,7 @@ h1 { font-size: 1.5em; line-height: 1.5rem; padding: 0.8rem; margin: 0;}
 h1 .fa { margin-right: 0.25em; display:inline-block; text-align:center; width:36px; height:36px; padding:8px 6px 6px 6px; border-radius:50%; }
 h1 .help { border:none; margin: 0 0 0 0.25em; color: rgba(0, 0, 0, 0.15); font-size: 0.8em; cursor: pointer }
 h1 .help:hover { color: rgba(0, 0, 0, 0.3); }
+.dark h1 .help:hover { color: #d9edf7; }
 h1 small { margin-left: 0.5em; line-height: 1em }
 .split { height: 0; font-size: 0; clear: both; padding: 0; border-top: 1px dotted rgba(0, 0, 0, .1) }
 #previewIframe { width: 100%; height: 400px; }

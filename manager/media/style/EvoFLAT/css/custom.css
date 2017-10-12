@@ -194,9 +194,9 @@ ul.breadcrumbs span::after { margin-left: 2em; font-family: FontAwesome; content
 .searchbar input[type=text] { max-width: 10rem }
 /* [ WIDGETS ] */
 .widgets .card { margin-bottom: .75rem; border: none; border-radius: 0.15rem; background-color: #fff; box-shadow: 0 0 0.1rem 0 rgba(0, 0, 0, 0.1), 0 0.1rem 0.3rem rgba(0, 0, 0, 0.05) }
-.widgets .card-header { padding: .75rem 1rem; font-size: .675rem; color: #616a73; text-transform: uppercase; font-weight: 900; border: none; background-color: #fff; }
+.widgets .card-header { padding: .75rem 1rem; font-size: .675rem; color: #616a73; text-transform: uppercase; font-weight: 900; border: none; background-color: #fafafa; }
 .dark .widgets .card-header { color: #fafafa; background-color: #272c33;}
-.dark .widgets .card { color: #616a73; background-color: #272c33; border-color:#272c33 }
+.dark .widgets .card { color: #687b8e; background-color: #272c33; border-color:#272c33 }
 .widgets .card-header .fa { font-size: .9rem }
 .widgets .card-block { padding: 0; }
 .widgets .card-block .card-block p { padding: 0 1rem }
@@ -210,10 +210,7 @@ ul.breadcrumbs span::after { margin-left: 2em; font-family: FontAwesome; content
 /* widgets custom */
 .widgets #welcome .wm_buttons { text-align: center }
 .widgets #welcome .wm_button { display: inline-block; margin: 0 .15rem .5rem; }
-.widgets #welcome .wm_button a { display: inline-block; text-decoration: none; color: #646b7b; padding: .25rem; /*min-width: 6rem; background-color: #f9f9f9;*/ border-radius: 0.25rem; box-shadow: none; transition-duration: .5s }
-.dark .widgets #welcome .wm_button a { color: #687b8e;}
-.widgets #welcome .wm_button a:hover { color: #373b46;}
-.dark .widgets #welcome .wm_button a:hover { color: #a9b5c0;}
+.widgets #welcome .wm_button a { display: inline-block; text-decoration: none; padding: .25rem; /*min-width: 6rem; background-color: #f9f9f9;*/ border-radius: 0.25rem; box-shadow: none; transition-duration: .5s }
 .widgets #welcome .wm_button a .fa { display: inline-block; }
 .widgets #welcome .wm_button a .fa + span { display: block; font-size: .7rem; }
 .widgets #modxrecent_widget .table.data tbody tr:not(:hover) { background-color: #fff }
@@ -309,8 +306,7 @@ ul.sortableList li.ghost { z-index: 2; box-shadow: 0 0.25rem 1.5rem rgba(0, 0, 0
 .dark .resourceTable ul.elements > li:hover { background: #202329; border-left: 3px solid #137aca; color: #fafafa;}
 .dark .resourceTable .panel-title > a { color: #fff; background-color: #383f48; border-color: #383f48; }
 .dark .resourceTable .panel-heading { background-color: #383f48; border-top: 0px dotted #383f48; border-bottom:0px dotted #383f48; }
-/*body*/
-body.dark {background-color: #383f48 !important; color:#8b92a0;}
+
 /*
  [ OTHERS COMPONENTS ] - this components need fix css
 */

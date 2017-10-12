@@ -35,7 +35,7 @@
 #treeRoot .toggle { float: left; margin: 1px 0.2em 1px -1.5em; width: 1.3em; height: 1.3em; line-height: 1.4em; text-align: center; vertical-align: top; cursor: pointer; border-radius: 50%; -webkit-transition-duration: 0.15s; transition-duration: 0.15s }
 #treeRoot .toggle:hover { background-color: rgba(255, 255, 255, 0.5); }
 #treeRoot .toggle .fa { margin: 0; width: auto; }
-#treeRoot .fa, #treeHolder .rootNode .fa { margin-right: 1px; width: 1em; font-size: 1.1em; text-align: center; color: #565656; -webkit-transition-duration: 0.15s; transition-duration: 0.15s }
+#treeRoot .fa, #treeHolder .rootNode .fa { margin-right: 1px; width: 1em; font-size: 1.1em; text-align: center; -webkit-transition-duration: 0.15s; transition-duration: 0.15s }
 #treeRoot a[data-private="1"] .icon::after { position: relative; float: left; margin: .5em -1em 0 0; content: "\f023"; font-family: FontAwesome; font-size: 0.75em; color: #d9534f; }
 #treeRoot .fa-file, #treeRoot .fa-file-o, #treeRoot .fa-file-code, #treeRoot .fa-file-code-o { }
 #treeRoot .fa-folder, #treeRoot .fa-folder-open, #treeRoot .fa-folder-o, #treeRoot .fa-folder-open-o, #treeRoot .fa-exclamation-triangle { margin-top: 0.1em; text-align: left }
@@ -43,19 +43,19 @@
 #treeRoot #binFull { display: none }
 /* treeRoot dark */
 .dark #treeMenu { background-color: rgba(0, 0, 0, 0.2); border-bottom-color: rgba(0, 0, 0, 0.2); border-right-color: #2a2d33 }
-.dark #treeMenu .treeButton { color: #687b8e!important; }
+.dark #treeMenu .treeButton {}
 .dark #treeMenu .treeButton:hover:not(.disabled) { background-color: #2d3033; color: #fff!important; }
 .dark #tree .treeframebody, .dark .ElementsInTree #tree .treeframebody #treeHolder { background-color: #272c33; border-color: #2a2d33 }
 .dark #treePane .panel-heading {background-color: #383f48!important;}
-.dark #treeHolder .rootNode a { color: #C5C5C5; }
+.dark #treeHolder .rootNode a {}
 .dark #treeHolder .rootNode a:hover { color: #eee }
-.dark #treeRoot { color: #b3b3b3; }
-.dark #treeRoot a { color: #b3b3b3; }
+.dark #treeRoot {}
+.dark #treeRoot a {}
 .dark #treeRoot a:hover:not(.empty), .dark #treeRoot a.current { background-color: #383f48; }
 .dark #treeRoot a.selected, #treeRoot .dragenter > a { background-color: rgba(0, 142, 255, 0.19); }
 .dark #treeRoot .dragafter > a::after, .dark #treeRoot .dragbefore > a::before { background-color: rgba(255, 255, 255, 0.25); }
 .dark #treeRoot a .title {}
-.dark #treeRoot a.hidemenu .title { color: #C5C5C5; }
+.dark #treeRoot a.hidemenu .title {}
 .dark #treeRoot a.deleted .title { color: #A52A2A; }
 .dark #treeRoot a.unpublished .title { color: #d0726b }
 .dark #treeRoot .icon:hover > .fa { color: #fff }
@@ -64,12 +64,11 @@
 .dark #treeRoot a.unpublished .title:hover { color: #f38e86 }
 .dark #treeRoot a.deleted .title:hover { color: #e23d3d }
 .dark #treeRoot .toggle:hover { background-color: rgba(255, 255, 255, 0.19); }
-.dark #treeRoot .fa, .dark #treeHolder .rootNode .fa { color: #bcbec0; }
+.dark #treeRoot .fa, .dark #treeHolder .rootNode .fa {}
 
 
 #treeMenu { background: #e6e6e6; border-bottom: 0; }
 .treeframebody { background: #f6f6f6; border-right: 0; }
-#treeHolder .rootNode .icon { visibility: hidden; }
 #treeHolder .rootNode { font-weight: bold; padding-top: 15px; }
 #treeMenu .treeButton .fa{ line-height: 1.2em; }
 

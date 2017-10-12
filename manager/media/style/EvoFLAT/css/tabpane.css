@@ -171,8 +171,8 @@ div#treeHolder .tab-row .tab.selected:after, div#treeHolder .tab-row .tab.hover:
 .dark .tab-page, .dark .sectionBody .tab-page, .dark .tab-row .tab.selected, .dark .tab-row .tab.selected:before { background-color: #272c33; }
 .dark div.dynamic-tab-pane-control .tab-row .tab{background-color: #272c2f; border-color: #383f48; border-bottom-color: #1f2329;color:#dedede; }
 .dark div.dynamic-tab-pane-control .tab-row .tab.selected { z-index: 2;}
-.dark div.dynamic-tab-pane-control .tab-row .tab.hover { z-index: 2; background-color: #687b8e; color: #1d2123; font-weight: 300;}
-.dark div.dynamic-tab-pane-control .tab-row .tab.hover:after {border-top-color: #687b8e;}
+/*.dark div.dynamic-tab-pane-control .tab-row .tab.hover { z-index: 2; background-color: #687b8e; color: #1d2123; font-weight: 300;}
+.dark div.dynamic-tab-pane-control .tab-row .tab.hover:after {border-top-color: #687b8e;}*/
 .dark .tab-row::after, .dark .tab-row-container::after { background-color: #1a1d1f }
 .dark .sectionHeader  { background-color: #383f48; border:none;}
 .dark .sectionBody.tmplvars  { background-color: #2a3038; border:none; }
