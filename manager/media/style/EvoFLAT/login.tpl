@@ -55,15 +55,15 @@
 			[+OnManagerLoginFormPrerender+]
 			<div class="form-group text-center">
 				<a class="logo" href="../" title="[(site_name)]">
-					<img src="media/style/[(manager_theme)]/images/misc/login-logo.png" alt="[(site_name)]" id="logo" />
+					<img src="media/style/[(manager_theme)]/images/menu-logo.png" alt="[(site_name)]" id="logo" />
 				</a>
 			</div>
 			<div class="form-group">
-				<label for="username" class="text-muted">[+username+]</label>
+				<label for="username">[+username+]</label>
 				<input type="text" class="form-control" name="username" id="username" tabindex="1" value="[+uid+]" />
 			</div>
 			<div class="form-group">
-				<label for="password" class="text-muted">[+password+]</label>
+				<label for="password">[+password+]</label>
 				<input type="password" class="form-control" name="password" id="password" tabindex="2" value="" />
 			</div>
 			<div class="clearfix">
@@ -72,7 +72,7 @@
 				[+captcha_input+]
 			</div>
 			<div class="form-group">
-				<label for="rememberme" class="text-muted">
+				<label for="rememberme">
 					<input type="checkbox" id="rememberme" name="rememberme" value="1" class="checkbox" [+remember_me+] /> [+remember_username+]</label>
 				<button type="submit" name="submitButton" class="btn btn-success float-xs-right" id="submitButton">[+login_button+]</button>
 			</div>

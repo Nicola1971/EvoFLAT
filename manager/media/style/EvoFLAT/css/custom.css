@@ -284,7 +284,7 @@ ul.sortableList li.ghost { z-index: 2; box-shadow: 0 0.25rem 1.5rem rgba(0, 0, 0
 #helpPane li:not(:first-child) > strong { margin-top: 1.4em; }
 #helpPane li > strong { display: block; font-size: 14px; }
 #helpPane pre { border: 1px solid rgba(0, 0, 0, 0.1); padding: 1em; }
-.loginbox .container-body{background-color: #fafafa;}
+
 /* [ DARK THEME ] */
 .dark .page {background-color: #272c33;}
 .dark .tab-page div.sectionBody {background-color: #383f48; border-color: #272c33;}
