@@ -349,7 +349,6 @@ form#docfinder div.tab-page { height: auto !important }
 /* multiTV */
 .multitv .list li.element a.copy, .multitv .list li.element a.remove { width: 25px !important; text-align: center; background: #fff !important; top: -10px !important; }
 .multitv .list li.element { border-radius: .25rem; border: 1px solid rgba(0, 0, 0, .125); background: #fefefe !important; margin-bottom: 10px !important; }
-
 /* loginbox animation */
 @keyframes anim-loginbox {
   from {
@@ -392,10 +391,7 @@ form#docfinder div.tab-page { height: auto !important }
 
 .widgets .card { padding-bottom: 1.5rem; margin-bottom: 2rem; border: 1px solid #dfdfdf; box-shadow: none; }
 .widgets .card-header { background-color: #fff; }
-
 .container-body { padding: 2em 1.5rem; }
-
-
 /*button size*/
 #actions .btn-group .btn, #actions .btn-group .form-control { height: 2.8em; line-height: 1.8; }
 #actions .btn-group .plus { margin: -2.8em 0 0 0; }
