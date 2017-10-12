@@ -1,2 +1,2 @@
-# EvoFLAT beta 1
+# EvoFLAT beta 2
 manager theme for evolutioin cms 1.4
