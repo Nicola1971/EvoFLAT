@@ -20,7 +20,7 @@
 #treeRoot a.selected, #treeRoot .dragenter > a { background-color: rgba(0, 0, 0, 0.1); }
 #treeRoot .dragafter > a .indent::after, #treeRoot .dragbefore > a .indent::before { content: "\f0da"; display: block; position: absolute; right: 0.1em; bottom: -0.5em; height: 1em; font: normal normal normal 1em/1em FontAwesome; }
 #treeRoot .dragbefore > a .indent::before { bottom: auto; top: -0.5em; }
-#treeRoot a .title { padding: 0 0.2em; color: #0275d8; cursor: pointer; -webkit-transition-duration: 0.15s; transition-duration: 0.15s }
+#treeRoot a .title { padding: 0 0.2em; cursor: pointer; -webkit-transition-duration: 0.15s; transition-duration: 0.15s }
 #treeRoot a.deleted .title { color: #A52A2A; text-decoration: line-through; }
 #treeRoot a.unpublished .title { color: #B68282; font-style: italic; }
 #treeRoot a.hidemenu .title { color: #404040; }
@@ -47,21 +47,19 @@
 .dark #treeMenu .treeButton:hover:not(.disabled) { background-color: #2d3033; color: #fff!important; }
 .dark #tree .treeframebody, .dark .ElementsInTree #tree .treeframebody #treeHolder { background-color: #272c33; border-color: #2a2d33 }
 .dark #treePane .panel-heading {background-color: #383f48!important;}
-
-
 .dark #treeHolder .rootNode a { color: #C5C5C5; }
 .dark #treeHolder .rootNode a:hover { color: #eee }
 .dark #treeRoot { color: #b3b3b3; }
 .dark #treeRoot a { color: #b3b3b3; }
-.dark #treeRoot a:hover:not(.empty), .dark #treeRoot a.current { background-color: rgba(255, 255, 255, 0.15); }
+.dark #treeRoot a:hover:not(.empty), .dark #treeRoot a.current { background-color: #383f48; }
 .dark #treeRoot a.selected, #treeRoot .dragenter > a { background-color: rgba(0, 142, 255, 0.19); }
 .dark #treeRoot .dragafter > a::after, .dark #treeRoot .dragbefore > a::before { background-color: rgba(255, 255, 255, 0.25); }
-.dark #treeRoot a .title { color: #7cb2dc; }
+.dark #treeRoot a .title {}
 .dark #treeRoot a.hidemenu .title { color: #C5C5C5; }
 .dark #treeRoot a.deleted .title { color: #A52A2A; }
 .dark #treeRoot a.unpublished .title { color: #d0726b }
 .dark #treeRoot .icon:hover > .fa { color: #fff }
-.dark #treeRoot a .title:hover { color: #a2d4fb; }
+.dark #treeRoot a .title:hover {}
 .dark #treeRoot a.hidemenu .title:hover { color: #eee }
 .dark #treeRoot a.unpublished .title:hover { color: #f38e86 }
 .dark #treeRoot a.deleted .title:hover { color: #e23d3d }

@@ -1,10 +1,13 @@
 @import "../common/bootstrap/css/bootstrap.min.css?v=4.0.0-alpha.5";
 @import "../common/font-awesome/css/font-awesome.min.css?v=4.7.0";
+
 @import "css/fonts.css?v=1.3.5";
 @import "css/forms.css?v=1.3.5";
+@import "css/color.css";
 @import "css/custom.css?v=1.3.5";
 @import "css/tabpane.css";
 @import "css/contextmenu.css";
+
 /* -------------------------[ Misc stuff ]--- */
 .comment { font-size: 11px; color: #999; padding: 4px 0; }
 .screen { border: 1px solid #ddd; text-align: center; }
@@ -32,11 +35,15 @@ a.hometblink:hover { text-decoration: underline; color: Gray; }*/
 .sortabletable { width: 100%; border-collapse: collapse; }
 .sortabletable thead tr { color: #333; font-weight: 500; white-space: nowrap; background-color: #d2d2d2; text-align: left; }
 .sortabletable tr { background: #fff; }
+.dark .sortabletable tr { background: #383f48; }
 .sortabletable tr.even { background: #f7f7f7; }
 .sortabletable tbody tr:hover { background: #e9f0f3; }
+.dark .sortabletable tbody tr:hover { background: #383f48; }
 .sortabletable td, .sortabletable th { padding: 5px !important; border: 1px solid #ccc; }
 .sortabletable th { text-align: left; cursor: pointer; color: #333; }
+.dark .sortabletable th { text-align: left; cursor: pointer; background-color: #202329; color: #fafafa; }
 .sortabletable th a { text-decoration: none; color: #333; }
+.dark .sortabletable th a { text-decoration: none; color: #FFF; }
 .sortabletable th:active { background: #ccc; padding: 3px 4px 1px 6px; }
 /* -------------------------[ Pagination table ]--- */
 #max-display-records { margin: 10px 0; }
@@ -159,7 +166,7 @@ a.man_el_name:hover { text-decoration: none; }
 .resourceTable .panel-title > a { padding: 5px 1.25rem; text-decoration: none }
 .resourceTable ul.elements { margin: 0 -1.25rem; padding: 0 0 10px 0; }
 .resourceTable ul.elements > li { padding: 0 !important; border-bottom: 1px dotted #dedede; border-left: 3px solid #fff; transition: all 0.1s ease; margin: 0 !important; }
-.resourceTable ul.elements > li:hover { background: #f9f9f9; border-left: 3px solid #1377c5; }
+/*.resourceTable ul.elements > li:hover { background: #f9f9f9; border-left: 3px solid #1377c5; }*//*moved to color.css*/
 .resourceTable ul.elements > li::before { display: none }
 #resourcesPane .panel-group ul { }
 ul.resourceTable .category_name { float: none; display: block; clear: both; margin-top: 20px; }

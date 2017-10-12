@@ -506,12 +506,13 @@ location.reload();
                         <?php } ?>
                         <li class="dropdown account">
                             <a href="javascript:;" class="dropdown-toggle" onclick="return false;">
-                                <span class="username"><?= $user['username'] ?></span>
+                                
                                 <?php if ($user['photo']) { ?>
                                     <span class="icon photo" style="background-image: url(<?= MODX_SITE_URL . $user['photo'] ?>);"></span>
                                 <?php } else { ?>
                                     <span class="icon"><i class="fa fa-user-circle"></i></span>
                                 <?php } ?>
+                                <span class="username"><?= $user['username'] ?></span>
                                 <i id="msgCounter"></i>
                             </a>
                             <ul class="dropdown-menu">

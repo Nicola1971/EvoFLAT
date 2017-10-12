@@ -40,8 +40,7 @@ img { max-width: 100%; height: auto }
 .h4, h4 { font-size: 1rem }
 .h5, h5 { font-size: 0.8125rem }
 .h6, h6 { font-size: 0.7rem }
-a { color: #0275d8; text-decoration: none }
-a:focus, a:hover { color: #014c8c; text-decoration: underline }
+
 a[href=""], a:not([href]) { cursor: default }
 a:not([href]):not([tabindex]) { color: inherit; text-decoration: none }
 a:not([href]):not([tabindex]):focus, a:not([href]):not([tabindex]):hover { color: inherit; text-decoration: none }
@@ -89,9 +88,8 @@ a.text-gray-dark:focus, a.text-gray-dark:hover { color: #101112 !important }
 .fa > .fa-lock { position: relative; float: left; width: auto !important; margin-top: -1em; font-size: 0.7em !important; color: #FFC107 !important; -webkit-text-stroke: 1px rgba(0, 0, 0, 0.39); text-stroke: 1px rgba(0, 0, 0, 0.39); }
 .rotate180 { -webkit-transform: rotate(180deg); -moz-transform: rotate(180deg); -ms-transform: rotate(180deg); -o-transform: rotate(180deg); transform: rotate(180deg); }
 .disabledPlugin, .disabledPlugin a { color: #B68282; font-style: italic; }
-h1 { font-size: 1.5em; line-height: 1.5rem; padding: 0.8rem; margin: 0; color: #0e80cb}
-h1 .fa { margin-right: 0.25em; display:inline-block; text-align:center; width:36px; height:36px; padding:8px 6px 6px 6px; border-radius:50%; color: #0e80cb; border: 2px solid #0e80cb; }
-.dark h1, .dark h1 .fa {color: #fafafa}
+h1 { font-size: 1.5em; line-height: 1.5rem; padding: 0.8rem; margin: 0;}
+h1 .fa { margin-right: 0.25em; display:inline-block; text-align:center; width:36px; height:36px; padding:8px 6px 6px 6px; border-radius:50%; }
 h1 .help { border:none; margin: 0 0 0 0.25em; color: rgba(0, 0, 0, 0.15); font-size: 0.8em; cursor: pointer }
 h1 .help:hover { color: rgba(0, 0, 0, 0.3); }
 h1 small { margin-left: 0.5em; line-height: 1em }
