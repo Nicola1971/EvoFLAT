@@ -14,7 +14,7 @@
 		.copyrights { position: absolute; left: 0; right: 0; bottom: 0; padding: .5rem 1rem; font-size: .675rem; color: #aaa; text-align: right }
 		.copyrights a { color: #777 }
 		#submitButton { float: right; }
-		#FMP-email_label { color: #818a91 }
+		#FMP-email_label { color: #fff }
 		#FMP-email { margin-bottom: 1rem }
 		#FMP-email_button { float: right; }
 		/* mainloader */
