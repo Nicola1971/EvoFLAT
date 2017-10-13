@@ -51,7 +51,7 @@ select[name=docgroup] + input[type=submit] { float: none; margin: 0; }
 #actions .btn-group .dropdown-toggle::after { margin: 0; border-width: 0.4em; transition-duration: 0.25s }
 #actions .btn-group .show .dropdown-toggle::after { transform: rotate(180deg) }
 #_actions .btn-group .input-group-btn .btn { margin-left: .1875rem }
-#_actions .btn-group .form-control, #_actions .btn-group .btn { border-radius: .1em }
+#_actions .btn-group .form-control, #_actions .btn-group .btn { border-radius: .1em;}
 @media (max-width: 840px) {
 #actions { right: 0 }
 #actions .btn-group .btn span, #actions .btn-group select#stay, #_actions .btn-group .btn span { display: none }
@@ -306,7 +306,8 @@ ul.sortableList li.ghost { z-index: 2; box-shadow: 0 0.25rem 1.5rem rgba(0, 0, 0
 .dark .resourceTable ul.elements > li:hover { background: #202329; border-left: 3px solid #137aca; color: #fafafa;}
 .dark .resourceTable .panel-title > a { color: #fff; background-color: #383f48; border-color: #383f48; }
 .dark .resourceTable .panel-heading { background-color: #383f48; border-top: 0px dotted #383f48; border-bottom:0px dotted #383f48; }
-
+.dark #passwordBlock fieldset, .dark #passwordBlock fieldset legend{ color: #fff; background-color: #383f48; border-color: #272c33; box-shadow:none;}
+.dark #passwordBlock fieldset input[type="password"]{ color: #fff; background-color: #272c33; border-color: #9da5b4; box-shadow:none;}
 /*
  [ OTHERS COMPONENTS ] - this components need fix css
 */
