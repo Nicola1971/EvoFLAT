@@ -36,15 +36,17 @@ h1 .fa:not(.help) {color: #0e80cb; border: 2px solid #0e80cb; }
 .resourceTable ul.elements > li:hover { background: #f9f9f9; border-left: 3px solid #0e80cb; }
 #treeHolder .rootNode .icon .fa{color: #9da5b4;}
 /*tabpane css*/
+
 div.dynamic-tab-pane-control .tab-row .tab.hover {color: #0e80cb;}
 div.dynamic-tab-pane-control .tab-row .tab.selected,div.dynamic-tab-pane-control .tab-row .tab.selected:hover {border-color: #ddd; border-top-color: #0e80cb; background-color: #0e80cb; color: #fff;}
 div.dynamic-tab-pane-control .tab-row .tab.selected:after {border-top-color: #0e80cb!important;}
 div.dynamic-tab-pane-control .tab-row .tab.selected.hover:after {border-top-color: #0e80cb;}
 div#treeHolder .tab-row .tab.selected {color:#0e80cb;}
+.dark #treeHolder .tab-row .tab {color: #c4d2df !important;}
 .dark div.dynamic-tab-pane-control .tab-row .tab.hover { z-index: 2; background-color: #687b8e; color: #1d2123; font-weight: 300;}
 .dark div.dynamic-tab-pane-control .tab-row .tab.hover:after {border-top-color: #687b8e;}
 .dark .evo-tab-row .tab-row .tab.selected { background-color: #414550; color: #eee; border-bottom: 3px solid #1976d2; }
-.dark #treeHolder .tab-row .tab.selected {color:#0e80cb!important;}
+.dark #treeHolder .tab-row .tab.selected, .dark #treeHolder .tab-row .tab.hover {color:#0e80cb!important;}
 .dark div.dynamic-tab-pane-control .tab-row .tab.selected,.dark div.dynamic-tab-pane-control .tab-row .tab.selected:hover  {border-color: #383f48; background-color: #0e80cb; color: #fff;}
 .dark ul.mmTagList li {color:#0e80cb!important;}
 /*colored button*/
