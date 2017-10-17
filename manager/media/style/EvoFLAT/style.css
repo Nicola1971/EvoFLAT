@@ -1,13 +1,10 @@
 @import "../common/bootstrap/css/bootstrap.min.css?v=4.0.0-alpha.5";
 @import "../common/font-awesome/css/font-awesome.min.css?v=4.7.0";
-
 @import "css/fonts.css?v=1.3.5";
 @import "css/forms.css?v=1.3.5";
-@import "css/color.css";
 @import "css/custom.css?v=1.3.5";
 @import "css/tabpane.css";
 @import "css/contextmenu.css";
-
 /* -------------------------[ Misc stuff ]--- */
 .comment { font-size: 11px; color: #999; padding: 4px 0; }
 .screen { border: 1px solid #ddd; text-align: center; }
@@ -166,7 +163,7 @@ a.man_el_name:hover { text-decoration: none; }
 .resourceTable .panel-title > a { padding: 5px 1.25rem; text-decoration: none }
 .resourceTable ul.elements { margin: 0 -1.25rem; padding: 0 0 10px 0; }
 .resourceTable ul.elements > li { padding: 0 !important; border-bottom: 1px dotted #dedede; border-left: 3px solid #fff; transition: all 0.1s ease; margin: 0 !important; }
-/*.resourceTable ul.elements > li:hover { background: #f9f9f9; border-left: 3px solid #1377c5; }*//*moved to color.css*/
+.resourceTable ul.elements > li:hover { background: #f9f9f9; border-left: 3px solid #1377c5; }
 .resourceTable ul.elements > li::before { display: none }
 #resourcesPane .panel-group ul { }
 ul.resourceTable .category_name { float: none; display: block; clear: both; margin-top: 20px; }
@@ -200,7 +197,6 @@ ul.elements_buttonbar .fa { font-size: 0.875rem; padding: 1px 1px 0; }
 #tabChildren .grid tr > td:nth-child(6) a { padding: 0 .2em; font-size: 0.9rem; color: #444; }
 /* element-edit-message */
 .msg-container { padding-bottom: 10px; border-bottom: 1px solid #ededed; margin-bottom: 1rem; color: #777; }
-.dark .msg-container { padding-bottom: 10px; border-bottom: 1px solid #383f48; margin-bottom: 1rem; color: #fafafa; }
 .btn-small { padding: 2px 4px !important; font-size: 11px !important; }
 .relative { position: relative; }
 .modx-alert { display: block; margin: 60px 10px 10px 10px; padding: 1em; }

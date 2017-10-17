@@ -51,7 +51,7 @@ select[name=docgroup] + input[type=submit] { float: none; margin: 0; }
 #actions .btn-group .dropdown-toggle::after { margin: 0; border-width: 0.4em; transition-duration: 0.25s }
 #actions .btn-group .show .dropdown-toggle::after { transform: rotate(180deg) }
 #_actions .btn-group .input-group-btn .btn { margin-left: .1875rem }
-#_actions .btn-group .form-control, #_actions .btn-group .btn { border-radius: .1em;}
+#_actions .btn-group .form-control, #_actions .btn-group .btn { border-radius: .1em }
 @media (max-width: 840px) {
 #actions { right: 0 }
 #actions .btn-group .btn span, #actions .btn-group select#stay, #_actions .btn-group .btn span { display: none }
@@ -194,9 +194,9 @@ ul.breadcrumbs span::after { margin-left: 2em; font-family: FontAwesome; content
 .searchbar input[type=text] { max-width: 10rem }
 /* [ WIDGETS ] */
 .widgets .card { margin-bottom: .75rem; border: none; border-radius: 0.15rem; background-color: #fff; box-shadow: 0 0 0.1rem 0 rgba(0, 0, 0, 0.1), 0 0.1rem 0.3rem rgba(0, 0, 0, 0.05) }
-.widgets .card-header { padding: .75rem 1rem; font-size: .675rem; color: #616a73; text-transform: uppercase; font-weight: 900; border: none; background-color: #fafafa; }
+.widgets .card-header { padding: .75rem 1rem; font-size: .675rem; color: #616a73; text-transform: uppercase; font-weight: 900; border: none; background-color: #fff; }
 .dark .widgets .card-header { color: #fafafa; background-color: #272c33;}
-.dark .widgets .card { color: #687b8e; background-color: #272c33; border-color:#272c33 }
+.dark .widgets .card { color: #616a73; background-color: #272c33; border-color:#272c33 }
 .widgets .card-header .fa { font-size: .9rem }
 .widgets .card-block { padding: 0; }
 .widgets .card-block .card-block p { padding: 0 1rem }
@@ -210,7 +210,10 @@ ul.breadcrumbs span::after { margin-left: 2em; font-family: FontAwesome; content
 /* widgets custom */
 .widgets #welcome .wm_buttons { text-align: center }
 .widgets #welcome .wm_button { display: inline-block; margin: 0 .15rem .5rem; }
-.widgets #welcome .wm_button a { display: inline-block; text-decoration: none; padding: .25rem; /*min-width: 6rem; background-color: #f9f9f9;*/ border-radius: 0.25rem; box-shadow: none; transition-duration: .5s }
+.widgets #welcome .wm_button a { display: inline-block; text-decoration: none; color: #646b7b; padding: .25rem; /*min-width: 6rem; background-color: #f9f9f9;*/ border-radius: 0.25rem; box-shadow: none; transition-duration: .5s }
+.dark .widgets #welcome .wm_button a { color: #687b8e;}
+.widgets #welcome .wm_button a:hover { color: #373b46;}
+.dark .widgets #welcome .wm_button a:hover { color: #a9b5c0;}
 .widgets #welcome .wm_button a .fa { display: inline-block; }
 .widgets #welcome .wm_button a .fa + span { display: block; font-size: .7rem; }
 .widgets #modxrecent_widget .table.data tbody tr:not(:hover) { background-color: #fff }
@@ -284,12 +287,12 @@ ul.sortableList li.ghost { z-index: 2; box-shadow: 0 0.25rem 1.5rem rgba(0, 0, 0
 #helpPane li:not(:first-child) > strong { margin-top: 1.4em; }
 #helpPane li > strong { display: block; font-size: 14px; }
 #helpPane pre { border: 1px solid rgba(0, 0, 0, 0.1); padding: 1em; }
-
+.loginbox .container-body{background-color: #fafafa;}
 /* [ DARK THEME ] */
-.dark .page {background-color: #272c33;}
 .dark .tab-page div.sectionBody {background-color: #383f48; border-color: #272c33;}
 .dark .tab-page div.sectionHeader {background-color: #272c33;}
-.dark .loginbox .container-body a{color: #137aca;}
+.dark .loginbox .container-body{background-color: #0e80cb;}
+.dark .loginbox .container-body a{color: #fff;}
 .dark, .dark .resourceTable .panel-heading { background: #ecf0f1 !important; }
 .dark .resourceTable .panel-heading:hover { background: #ecf0f1 !important; }
 .dark .multitv .list li.element a.copy, .multitv .list li.element a.remove { background: #f9f9f9 !important; }
@@ -308,6 +311,8 @@ ul.sortableList li.ghost { z-index: 2; box-shadow: 0 0.25rem 1.5rem rgba(0, 0, 0
 .dark .resourceTable .panel-heading { background-color: #383f48; border-top: 0px dotted #383f48; border-bottom:0px dotted #383f48; }
 .dark #passwordBlock fieldset, .dark #passwordBlock fieldset legend{ color: #fff; background-color: #383f48; border-color: #272c33; box-shadow:none;}
 .dark #passwordBlock fieldset input[type="password"]{ color: #fff; background-color: #272c33; border-color: #9da5b4; box-shadow:none;}
+/*body*/
+body.dark {background-color: #383f48 !important; color:#8b92a0;}
 /*
  [ OTHERS COMPONENTS ] - this components need fix css
 */
@@ -350,6 +355,7 @@ form#docfinder div.tab-page { height: auto !important }
 /* multiTV */
 .multitv .list li.element a.copy, .multitv .list li.element a.remove { width: 25px !important; text-align: center; background: #fff !important; top: -10px !important; }
 .multitv .list li.element { border-radius: .25rem; border: 1px solid rgba(0, 0, 0, .125); background: #fefefe !important; margin-bottom: 10px !important; }
+
 /* loginbox animation */
 @keyframes anim-loginbox {
   from {
@@ -392,9 +398,26 @@ form#docfinder div.tab-page { height: auto !important }
 
 .widgets .card { padding-bottom: 1.5rem; margin-bottom: 2rem; border: 1px solid #dfdfdf; box-shadow: none; }
 .widgets .card-header { background-color: #fff; }
+
 .container-body { padding: 2em 1.5rem; }
+/*colored button*/
+/* duplicate button */ 
+#actions a#Button6.btn.btn-secondary{
+color: #FFF!important;border-color: #337ab7;background: #337ab7;margin-left:2px;}
+#actions a#Button6.btn.btn-secondary:hover{color: #fff;border-color: #285e8d;background:#285e8d;}
+/* delete button */ 
+#actions a#Button3.btn.btn-secondary{color: #FFF!important;border-color: #e77755;background-color: #e77755;margin-left:3px!important;}
+#actions a#Button3.btn.btn-secondary:hover{color: #fff;border-color: #e04e23;background-color: #e04e23;}
+/* preview button */ 
+
+#actions a#Button4.btn.btn-secondary {margin-left:2px; color: #292b2c; background-color: #fff; border-color: #d4d4d4 }
+#actions a#Button4.btn.btn-secondary:hover { color: #292b2c; background-color: #e6e6e6; border-color: #adadad }
+/* cancel button */ 
+#actions a#Button5.btn.btn-secondary{color: #FFF!important;border-color: #f0ad4e;background: #f0ad4e!important;margin-left:2px;}
+#actions a#Button5.btn.btn-secondary:hover{color: #FFF;border-color: #e18a13;background: #e18a13!important;}
+
 /*button size*/
 #actions .btn-group .btn, #actions .btn-group .form-control { height: 2.8em; line-height: 1.8; }
 #actions .btn-group .plus { margin: -2.8em 0 0 0; }
 #actions .btn-group .btn-success { box-shadow: none;}
-
+.dark a.btn:hover {color:#FFF; text-decoration:none;} 
