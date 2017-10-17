@@ -49,6 +49,7 @@ div#treeHolder .tab-row .tab.selected {color:#0e80cb;}
 .dark #treeHolder .tab-row .tab.selected, .dark #treeHolder .tab-row .tab.hover {color:#0e80cb!important;}
 .dark div.dynamic-tab-pane-control .tab-row .tab.selected,.dark div.dynamic-tab-pane-control .tab-row .tab.selected:hover  {border-color: #383f48; background-color: #0e80cb; color: #fff;}
 .dark ul.mmTagList li {color:#0e80cb!important;}
+a.btn.btn-secondary:hover {color:#FFF;} 
 /*colored button*/
 #actions a#Button1.btn.btn-success{color: #fff;background-color: #5cb85c; border-color: #56ac56 }
 #actions a#Button1.btn.btn-success:hover{ color: #fff; background-color: #449d44; border-color: #419641 }
