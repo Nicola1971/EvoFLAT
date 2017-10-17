@@ -67,6 +67,13 @@ jQuery(document).ready(function($) {
             $(this).css('backgroundColor', '#FFF');
             $(this).css('color', '#444');
         });
+        $('.dark #mainMenu .nav > li > ul > li > a').mouseover(function() {
+            $(this).css('backgroundColor', bgmcolor);
+            $(this).css('color', '#fff');
+        }).mouseout(function() {
+            $(this).css('backgroundColor', '#383f48');
+            $(this).css('color', '#fff');
+        });
         $('#mainMenu .nav > li > ul > li.item > a').mouseover(function() {
             $(this).css('backgroundColor', bgmcolor);
             $(this).css('color', '#fff');
