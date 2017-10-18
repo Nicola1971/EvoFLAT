@@ -15,9 +15,9 @@
 /*#mainMenu.show .nav > li.dropdown:hover > a, */
 #mainMenu.show .nav > li.dropdown.hover > a { background-color: #fff; color: #444; }
 .dark #mainMenu.show .nav > li.dropdown.hover > a { background-color: #383f48; color: #fff; }
-#mainMenu .nav > li > a .icon { display: inline-block; overflow: hidden; width: auto; height: 3rem; line-height: 2rem; font-size: 2em; text-align: center; margin: 0rem 0 0.5rem 0.5rem; vertical-align: middle; border-radius: 50%; background: no-repeat 50% 50%; background-size: cover; }
+#mainMenu .nav > li > a .icon { display: inline-block; overflow: hidden; width: auto; height: 2.8rem; line-height: 2.8rem; font-size: 2.8em; text-align: center; margin: 0rem 0 0.5rem 0.5rem; vertical-align: top; border-radius: 50%; background: no-repeat 50% 50%; background-size: cover; }
 #mainMenu .nav > li > a .icon.photo { width: 36px; overflow: hidden; border-radius: 100%; margin: 5px; height: 36px;  vertical-align: middle }
-#mainMenu .nav > li > a .icon .fa { margin:4px 4px 0 0; font-size: 1.2rem; line-height: 2.1rem vertical-align: middle }
+#mainMenu .nav > li > a .icon .fa { margin:-6px 4px 0 0; font-size: 1.4rem; line-height: 2.8rem vertical-align: top }
 #mainMenu .nav > li > a > span {vertical-align: top }
 #mainMenu .nav > li .fa { line-height: 2.4rem; font-size: 1.2rem; vertical-align: middle }
 #mainMenu #nav > li > a > .fa { margin-right: 0.5rem; }
@@ -102,7 +102,7 @@
 #mainMenu #bars:after { content: ' '; position: absolute; left:64px; top:0; background-image: url(../images/menu-logo.png); background-size: 182px 46px; width: 182px; height: 46px; background-position: left center; }
 
 #mainMenu #searchform .mask{ display:none; }
-#mainMenu .nav > li > a .icon.photo { width: 25px; overflow: hidden; border-radius: 100%; margin: 5px; height: 25px; }
+#mainMenu .nav > li > a .icon.photo { width: 30px; overflow: hidden; border-radius: 100%; margin: 5px; height: 30px; }
 
 #mainMenu #searchform input:focus { border-radius: 3px; width: 15rem; max-width: 15rem; background: rgba(255, 255, 255, 0.05); border: 1px solid rgba(255, 255, 255, 0.5); opacity: 1 }
 #mainMenu #searchform input:focus + .mask { opacity: 1; }
