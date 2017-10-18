@@ -106,6 +106,7 @@
 
 #mainMenu #searchform input:focus { border-radius: 3px; width: 15rem; max-width: 15rem; background: rgba(255, 255, 255, 0.05); border: 1px solid rgba(255, 255, 255, 0.5); opacity: 1 }
 #mainMenu #searchform input:focus + .mask { opacity: 1; }
+.dark #mainMenu span.dropdown-item:hover {background-color:#23282e}
 @media (min-width: 1020px) {
 /*#mainMenu #nav > li > a > .fa { font-size: 1.2rem }*/
 }
