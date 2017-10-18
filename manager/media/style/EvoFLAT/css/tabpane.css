@@ -39,6 +39,7 @@ div.dynamic-tab-pane-control .tab-row .tab.hover:after {
 	transition: all .2s ease-in;
 }
 div.dynamic-tab-pane-control .tab-row .tab.selected { z-index: 2; border-color: #ddd; border-top-color: #0e80cb; background-color: #0e80cb; color: #fff; font-weight: 300 }
+div.dynamic-tab-pane-control .tab-row .tab.selected span {color:#FFF;}
 div.dynamic-tab-pane-control .tab-row .tab.selected:after {
 	position: absolute;
     z-index: 10499; 
@@ -161,10 +162,10 @@ div#treeHolder .tab-row .tab.selected:after, div#treeHolder .tab-row .tab.hover:
 .dark .evo-tab-row { background-color: #1a1c21; border-bottom: none; }
 .dark .evo-tab-row:after { background-color: #1a1c21; }
 .dark .evo-tab-row .tab-row .tab { color: #aaa; border-color: #2a2d33 }
-.dark .evo-tab-row .tab-row .tab:hover { background-color: #2d3033 }
+.dark .evo-tab-row .tab-row .tab:hover { background-color: #2d3033}
 .dark .evo-tab-row .tab-row .tab.changed { color: #7cb2dc; }
 .dark .evo-tab-row .tab-row .tab.selected { background-color: #414550; color: #eee; border-bottom: 3px solid #1976d2; }
-.dark #treeHolder .tab-row .tab.selected {color:#0e80cb!important;}
+
 .dark .evo-tab-page, .dark .evo-tab-page iframe { background-color: #ecf0f1 }
 
 .dark .section-editor textarea { background-color: #282c34; color: #abb2bf }
@@ -181,3 +182,5 @@ div#treeHolder .tab-row .tab.selected:after, div#treeHolder .tab-row .tab.hover:
 .dark table.table--editUser td { border:0; }
 .dark table.table--editUser td { border:0; border-bottom:1px solid #323841;}
 .dark ul.mmTagList li {color:#0e80cb!important;}
+.dark #treeHolder .tab-row .tab.hover:not(.selected) span{color:#fafafa!important;}
+.dark #treeHolder .tab-row .tab.selected span{color:#0e80cb!important;}
