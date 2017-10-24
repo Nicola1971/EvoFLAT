@@ -9,12 +9,14 @@
 	<link rel="stylesheet" type="text/css" href="media/style/[(manager_theme)]/style.css" />
 	<style>
 		html, body { min-height: 100%; height: 100%; }
+        body{background-color: #0e80cb;}
+        body.dark div.page{background-color: #0e80cb;} 
 		.page { height: 100%; padding-top: 7%; }
 		.loginbox { width: 90%; max-width: 25rem; margin: 0 auto;}
 		.copyrights { position: absolute; left: 0; right: 0; bottom: 0; padding: .5rem 1rem; font-size: .675rem; color: #aaa; text-align: right }
 		.copyrights a { color: #777 }
 		#submitButton { float: right; }
-		#FMP-email_label { color: #fff }
+		#FMP-email_label { color: #818a91 }
 		#FMP-email { margin-bottom: 1rem }
 		#FMP-email_button { float: right; }
 		/* mainloader */
@@ -55,15 +57,15 @@
 			[+OnManagerLoginFormPrerender+]
 			<div class="form-group text-center">
 				<a class="logo" href="../" title="[(site_name)]">
-					<img src="media/style/[(manager_theme)]/images/menu-logo.png" alt="[(site_name)]" id="logo" />
+					<img src="media/style/[(manager_theme)]/images/misc/login-logo.png" alt="[(site_name)]" id="logo" />
 				</a>
 			</div>
 			<div class="form-group">
-				<label for="username">[+username+]</label>
+				<label for="username" class="text-muted">[+username+]</label>
 				<input type="text" class="form-control" name="username" id="username" tabindex="1" value="[+uid+]" />
 			</div>
 			<div class="form-group">
-				<label for="password">[+password+]</label>
+				<label for="password" class="text-muted">[+password+]</label>
 				<input type="password" class="form-control" name="password" id="password" tabindex="2" value="" />
 			</div>
 			<div class="clearfix">
@@ -72,7 +74,7 @@
 				[+captcha_input+]
 			</div>
 			<div class="form-group">
-				<label for="rememberme">
+				<label for="rememberme" class="text-muted">
 					<input type="checkbox" id="rememberme" name="rememberme" value="1" class="checkbox" [+remember_me+] /> [+remember_username+]</label>
 				<button type="submit" name="submitButton" class="btn btn-success float-xs-right" id="submitButton">[+login_button+]</button>
 			</div>

@@ -91,10 +91,11 @@ a.text-gray-dark:focus, a.text-gray-dark:hover { color: #101112 !important }
 .rotate180 { -webkit-transform: rotate(180deg); -moz-transform: rotate(180deg); -ms-transform: rotate(180deg); -o-transform: rotate(180deg); transform: rotate(180deg); }
 .disabledPlugin, .disabledPlugin a { color: #B68282; font-style: italic; }
 h1 { font-size: 1.5em; line-height: 1.5rem; padding: 0.8rem; margin: 0; color: #0e80cb}
-h1 .fa { margin-right: 0.25em; display:inline-block; text-align:center; width:36px; height:36px; padding:8px 6px 6px 6px; border-radius:50%; color: #0e80cb; border: 2px solid #0e80cb; }
+h1 .fa { margin-right: 0.25em; display:inline-block; text-align:center; width:36px; height:36px; padding:7px 6px 6px 6px; border-radius:50%; color: #0e80cb; border: 2px solid #0e80cb; }
 .dark h1, .dark h1 .fa {color: #fafafa}
 h1 .help { border:none; margin: 0 0 0 0.25em; color: rgba(0, 0, 0, 0.15); font-size: 0.8em; cursor: pointer }
-h1 .help:hover { color: rgba(0, 0, 0, 0.3); }
+.dark h1 .help {color: #dedede }
+h1 .help:hover { color: #31b0d5; }
 h1 small { margin-left: 0.5em; line-height: 1em }
 .split { height: 0; font-size: 0; clear: both; padding: 0; border-top: 1px dotted rgba(0, 0, 0, .1) }
 #previewIframe { width: 100%; height: 400px; }

@@ -56,7 +56,7 @@
 .dark #treeRoot a:hover:not(.empty), .dark #treeRoot a.current { background-color: #383f48; }
 .dark #treeRoot a.selected, #treeRoot .dragenter > a { background-color: rgba(0, 142, 255, 0.19); }
 .dark #treeRoot .dragafter > a::after, .dark #treeRoot .dragbefore > a::before { background-color: rgba(255, 255, 255, 0.25); }
-.dark #treeRoot a .title { color: #7cb2dc; }
+.dark #treeRoot a .title { color: #0e87d6; }
 .dark #treeRoot a.hidemenu .title { color: #C5C5C5; }
 .dark #treeRoot a.deleted .title { color: #A52A2A; }
 .dark #treeRoot a.unpublished .title { color: #d0726b }
@@ -71,7 +71,6 @@
 
 #treeMenu { background: #e6e6e6; border-bottom: 0; }
 .treeframebody { background: #f6f6f6; border-right: 0; }
-#treeHolder .rootNode .icon { visibility: hidden; }
-#treeHolder .rootNode { font-weight: bold; padding-top: 15px; }
+#treeHolder .rootNode { font-weight: bold; padding-top: 10px; }
 #treeMenu .treeButton .fa{ line-height: 1.2em; }
 

@@ -23,7 +23,7 @@ select:not([size]):not([multiple]), select.form-control:not([size]):not([multipl
 .btn-primary:hover { color: #fff; background-color: #025aa5; border-color: #01549b }
 .btn-secondary { color: #292b2c; background-color: #fff; border-color: #d4d4d4 }
 .btn-secondary:hover { color: #292b2c; background-color: #e6e6e6; border-color: #adadad }
-.dark .btn-secondary { color: #fff; background-color: #383f48; border-color: #272c33}
+.dark .btn-secondary { color: #fff; background-color: #383f48; border-color: #5a6574}
 .dark .btn-secondary:hover { color: #0275d8; background-color: #272c33; border-color: #383f48 }
 .btn-success { color: #fff; background-color: #5cb85c; border-color: #56ac56 }
 .btn-success:hover { color: #fff; background-color: #449d44; border-color: #419641 }
@@ -54,3 +54,4 @@ select:not([size]):not([multiple]) { text-indent: -2px }
 
 .dark input[type=text], .dark textarea { background-color: #272c33; border-color: #48505c; color: #e6e6e6;}
 .dark select { background-color: #323840; border-color: #1a1c21; color: #e6e6e6;}
+.dark select:focus { background-color: #323840; border-color: #1a1c21; color: #fafafa;}

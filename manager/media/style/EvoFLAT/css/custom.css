@@ -36,7 +36,7 @@ select[name=docgroup] + input[type=submit] { float: none; margin: 0; }
 #actions { background: rgba(199, 199, 199, 0.25); padding: 0.5rem; position: fixed; top: 0; right: 1rem; text-align: right; z-index: 1001; border-radius: 0 0 0.3rem 0.3rem; }
 #actions .btn-group { margin: 0 }
 #actions .btn-group > .btn-group { display: block }
-#actions .btn-group .btn, #actions .btn-group .form-control { font-size: .6772rem; height: 2.4em; line-height: 1.4 }
+#actions .btn-group .btn, #actions .btn-group .form-control { font-size: .7772rem; height: 2.4em; line-height: 1.4 }
 #actions .btn-group .btn .fa, #_actions .btn-group .btn .fa { display: none; width: 1em; font-size: 1em; text-align: center }
 #actions .btn-group .btn-group #Button1 { min-width: 100%; text-align: left; float: right; }
 #actions .btn-group .btn-success { box-shadow: inset 0 -2px 0 rgba(0, 0, 0, .07); }
@@ -50,8 +50,10 @@ select[name=docgroup] + input[type=submit] { float: none; margin: 0; }
 #actions .btn-group .dropdown-menu > span:hover { background-color: #e6e6e6; }
 #actions .btn-group .dropdown-toggle::after { margin: 0; border-width: 0.4em; transition-duration: 0.25s }
 #actions .btn-group .show .dropdown-toggle::after { transform: rotate(180deg) }
-#_actions .btn-group .input-group-btn .btn { margin-left: .1875rem }
+#_actions .btn-group .input-group-btn .btn { font-size: 0.8rem; margin-left: .1875rem }
+#_actions .filterElements-form { font-size: 0.8rem;}
 #_actions .btn-group .form-control, #_actions .btn-group .btn { border-radius: .1em }
+
 @media (max-width: 840px) {
 #actions { right: 0 }
 #actions .btn-group .btn span, #actions .btn-group select#stay, #_actions .btn-group .btn span { display: none }
@@ -62,6 +64,7 @@ select[name=docgroup] + input[type=submit] { float: none; margin: 0; }
 #_actions .btn-group .form-control, #_actions .btn-group .btn { border-radius: 0 }
 #_actions .btn-group .form-control:first-child { border-top-left-radius: .1em; border-bottom-left-radius: .1em; }
 #_actions .btn-group .btn:last-child { border-top-right-radius: .1em; border-bottom-right-radius: .1em; }
+
 }
 /* old style */
 #actions .actionButtons { float: left; min-height: 32px }
@@ -291,8 +294,7 @@ ul.sortableList li.ghost { z-index: 2; box-shadow: 0 0.25rem 1.5rem rgba(0, 0, 0
 /* [ DARK THEME ] */
 .dark .tab-page div.sectionBody {background-color: #383f48; border-color: #272c33;}
 .dark .tab-page div.sectionHeader {background-color: #272c33;}
-.dark .loginbox .container-body{background-color: #0e80cb;}
-.dark .loginbox .container-body a{color: #fff;}
+
 .dark, .dark .resourceTable .panel-heading { background: #ecf0f1 !important; }
 .dark .resourceTable .panel-heading:hover { background: #ecf0f1 !important; }
 .dark .multitv .list li.element a.copy, .multitv .list li.element a.remove { background: #f9f9f9 !important; }
@@ -421,3 +423,55 @@ color: #FFF!important;border-color: #337ab7;background: #337ab7;margin-left:2px;
 #actions .btn-group .plus { margin: -2.8em 0 0 0; }
 #actions .btn-group .btn-success { box-shadow: none;}
 .dark a.btn:hover {color:#FFF; text-decoration:none;} 
+
+/*spin animation*/
+.card-header .fa-cog:hover {
+	color: #337ab7;
+}
+.card-header .fa-cog:hover,
+table.displayparams .btn:hover i.fa.fa-refresh {
+  -webkit-animation: spin-2 3s infinite linear;
+  -moz-animation: spin-2 3s infinite linear;
+  -o-animation: spin-2 3s infinite linear;
+  animation: spin-2 3s infinite linear;
+}
+@-moz-keyframes spin-2 {
+  0% {
+    -moz-transform: rotate(0deg);
+  }
+  100% {
+    -moz-transform: rotate(359deg);
+  }
+}
+@-webkit-keyframes spin-2 {
+  0% {
+    -webkit-transform: rotate(0deg);
+  }
+  100% {
+    -webkit-transform: rotate(359deg);
+  }
+}
+@-o-keyframes spin-2 {
+  0% {
+    -o-transform: rotate(0deg);
+  }
+  100% {
+    -o-transform: rotate(359deg);
+  }
+}
+@-ms-keyframes spin-2 {
+  0% {
+    -ms-transform: rotate(0deg);
+  }
+  100% {
+    -ms-transform: rotate(359deg);
+  }
+}
+@keyframes spin-2 {
+  0% {
+    transform: rotate(0deg);
+  }
+  100% {
+    transform: rotate(359deg);
+  }
+}
