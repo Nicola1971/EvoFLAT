@@ -357,7 +357,9 @@ form#docfinder div.tab-page { height: auto !important }
 /* multiTV */
 .multitv .list li.element a.copy, .multitv .list li.element a.remove { width: 25px !important; text-align: center; background: #fff !important; top: -10px !important; }
 .multitv .list li.element { border-radius: .25rem; border: 1px solid rgba(0, 0, 0, .125); background: #fefefe !important; margin-bottom: 10px !important; }
-
+/*package manager*/
+.dark div.package { background-color: #383f48; border-color:#272c33 }
+.dark div.package .name h3{ color:#fafafa }
 /* loginbox animation */
 @keyframes anim-loginbox {
   from {
