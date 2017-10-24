@@ -57,7 +57,7 @@ div.dynamic-tab-pane-control .tab-row .tab.selected:after {
 	border-width: 8px;
 	border-top-color: #0e80cb;
 }
-div#treeHolder .tab-row .tab.selected {color:#0e80cb;}
+div#treeHolder .tab-row .tab.selected span{color:#0e80cb;}
 div#treeHolder .tab-row .tab.selected:after, div#treeHolder .tab-row .tab.hover:after {display:none;}
 .tab-row .tab .fa { margin-right: 0.1em; font-size: 0.875rem }
 /* tabs-container */
