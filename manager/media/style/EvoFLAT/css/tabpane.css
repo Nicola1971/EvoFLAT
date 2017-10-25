@@ -5,7 +5,7 @@
 .tab-row .tab, .tab-row .tab a, .tab-pane > .tab-page > .tab { color: rgba(0, 0, 0, 0.6); font-size: 0.75rem }
 .tab-row .tab.selected { z-index: 2; border-color: #ddd; background-color: #fff; color: #444; font-weight: 700 }
 
-div.dynamic-tab-pane-control .tab-row .tab, .tab-pane > .tab-page > .tab { position: relative; display: inline-block; margin: 4px 0 0 0; padding: 0 0.875rem; line-height: 2.5rem; height: 2.3rem; text-transform: uppercase; border: 1px solid rgba(0, 0, 0, 0); border-bottom: 1px solid #f1f1f1; cursor: pointer; -webkit-user-select: none; user-select: none; }
+div.dynamic-tab-pane-control .tab-row .tab, .tab-pane > .tab-page > .tab { position: relative; display: inline-block; margin: 0.2rem 0 0 0; padding: 0 0.875rem; line-height: 2.5rem; height: 2.3rem; text-transform: uppercase; border: 1px solid rgba(0, 0, 0, 0); border-bottom: 1px solid #f1f1f1; cursor: pointer; -webkit-user-select: none; user-select: none; }
 div.dynamic-tab-pane-control .tab-row .tab{line-height: 2.2rem; height: 2.3rem; background-color: #fff; border-color: #ddd; transition: all .2s ease-in;margin-right:1px;}
 div.dynamic-tab-pane-control .tab-row .tab.selected span {color:#fff;}
 .dark div.dynamic-tab-pane-control .tab-row .tab.selected span {color:#fff;}
