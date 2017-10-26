@@ -407,6 +407,10 @@ form#docfinder div.tab-page { height: auto !important }
 /*package manager*/
 .dark div.package { background-color: #383f48; border-color:#272c33 }
 .dark div.package .name h3{ color:#fafafa }
+
+/*calendar*/
+.dark .dp_cal, .dark .dp_empty { background-color: #383f48;}
+.dark td.dp_roll:hover { background-color:#ecf0f1 }
 /* loginbox animation */
 @keyframes anim-loginbox {
   from {
