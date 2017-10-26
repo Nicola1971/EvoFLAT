@@ -56,3 +56,8 @@ select option {font-size:1.2em;}
 .dark input[type=text], .dark textarea { background-color: #272c33; border-color: #48505c; color: #e6e6e6;}
 .dark select { background-color: #323840; border-color: #1a1c21; color: #e6e6e6;}
 .dark select:focus { background-color: #323840; border-color: #1a1c21; color: #fafafa;}
+.dark input[type=checkbox], .dark input[type=radio] { background-color: #545a64; border-color: #1a1c21; color: #e6e6e6;}
+.dark input[type=checkbox]:hover, .dark input[type=radio]:hover { border-color: #5cb85c }
+.dark input[type=checkbox]:active, .dark input[type=radio]:active { background-color: #5cb85c; }
+.dark input[type=checkbox]:focus, .dark input[type=radio]:focus { border-color: #5cb85c !important; box-shadow: 0 0 0 1px rgba(77, 142, 249, 0.5) }
+.dark input[type=checkbox]:checked, .dark input[type=radio]:checked { background-color: #5cb85c; background-position: 50% 50% }

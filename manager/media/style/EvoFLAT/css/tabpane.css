@@ -190,3 +190,6 @@ div#treeHolder .tab-row .tab.selected:after, div#treeHolder .tab-row .tab.hover:
 
 .dark input.form-control.form-control-sm, .dark .sortableList li  { background-color: #383f48; color: #eee;border-color: #1a1d22;}
 .dark .sortableList li:hover {border-color: #FFF;} 
+.dark .tab-page {
+	color: #d0d1d3;
+}
