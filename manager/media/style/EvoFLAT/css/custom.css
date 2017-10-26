@@ -345,6 +345,7 @@ ul.mmTagList { float: left; margin-top: .25rem !important }
 #editorRow_TinyMCE tr { border: 1px dotted rgba(0, 0, 0, .05); }
 #editorRow_TinyMCE th { white-space: nowrap }
 #editorRow_TinyMCE th, #editorRow_TinyMCE td { padding: 0.5em; border: none !important }
+.dark .mce-path-item {color:#FFF;}
 
 /*mce image/links - browser window popup+*/
 .dark .mce-panel { background-color: #383f48 !important; }
@@ -367,8 +368,39 @@ form#docfinder div.tab-page { height: auto !important }
 #SimpleGallery .pagination { display: block }
 #SimpleGallery .sg_image { width: auto }
 /* multiTV */
+.tab-pane .multitv input.inline {height:30px}
 .multitv .list li.element a.copy, .multitv .list li.element a.remove { width: 25px !important; text-align: center; background: #fff !important; top: -10px !important; }
 .multitv .list li.element { border-radius: .25rem; border: 1px solid rgba(0, 0, 0, .125); background: #fefefe !important; margin-bottom: 10px !important; }
+
+.dark .multitv .list li.element a.copy, .dark .multitv .list li.element a.remove { width: 25px !important; text-align: center; background: #383f48 !important; top: -10px !important; }
+.dark .multitv .list li.element { border-radius: .25rem; border: 1px solid rgba(0, 0, 0, .125); background: #383f48 !important; margin-bottom: 10px !important; }
+
+.dark table.dataTable { background-color: #1a1c21 !important; }
+.dark table.dataTable, .dark table.dataTable th, .dark table.dataTable tr, .dark table.dataTable td{ border-color: #48505c!important; }
+.dark table.dataTable th { background-color: #3c434e!important; }
+.dark table.dataTable tr.odd { background-color: #272c33!important; }
+.dark table.dataTable tr.even { background-color: #3c434e!important; } 
+.dark table.dataTable tr.odd td{ background-color: #272c33!important; }
+.dark table.dataTable tr.even td{ background-color: #3c434e!important; }
+.dark .dataTables_paginate a {color: #fafafa;}
+.dark #cboxOverlay { background-color: #3c434e!important; }
+
+/*mtv forms*/
+.dark .tab-pane .multitv .list li.element .mtv_checkbox { background-color: #383f48 !important; }
+.dark .multitv .actionButtons li a,
+.dark .tab-pane .multitv .list li.element input[type="button"],
+.dark .tab-pane .multitv .list li.element input[type="text"], 
+.dark .tab-pane .multitv .list li.element input[type="password"], 
+.dark .tab-pane .multitv .list li.element input[type="number"], 
+.dark .tab-pane .multitv .list li.element textarea,
+.dark .tab-pane .multitv .list li.element .mtv_listbox,
+.dark .tab-pane .multitv .list li.element .mtv_dropdown,
+.dark .tab-pane .multitv .list li.element .mtv_listbox-multiple {border-color: #48505c !important;	background: #272c33!important; color: #FFF}
+
+.dark .multitv .actionButtons li a.disabled, .dark .multitv .actionButtons li:hover a.disabled {color: #3c434e!important}
+
+.dark #tinymce.mce-content-body{background: red !important;}
+
 /*package manager*/
 .dark div.package { background-color: #383f48; border-color:#272c33 }
 .dark div.package .name h3{ color:#fafafa }
