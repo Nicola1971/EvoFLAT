@@ -306,10 +306,13 @@ ul.sortableList li.ghost { z-index: 2; box-shadow: 0 0.25rem 1.5rem rgba(0, 0, 0
 .dark .content-blocks input[type="text"], .dark .content-blocks input[type="password"], .dark .content-blocks input[type="number"], .dark .content-blocks textarea { background-color: #fbfbfb !important; border-color: #dbdbdb !important; }
 .dark .content-blocks .controls { background: transparent !important; }
 
+.dark .resourceTable ul.elements { background: #202329}
 .dark .resourceTable ul.elements, .dark .resourceTable ul.elements > li { border-color: #383f48;}
 .dark .resourceTable ul.elements > li span { color: #fafafa;}
-.dark .resourceTable ul.elements > li:hover { background: #202329; border-left: 3px solid #137aca; color: #fafafa;}
+.dark .resourceTable ul.elements > li { background: #202329; border-left: 3px solid #202329; color: #fafafa;}
+.dark .resourceTable ul.elements > li:hover { background: #2b3039; border-left: 3px solid #137aca; color: #fafafa;}
 .dark .resourceTable .panel-title > a { color: #fff; background-color: #383f48; border-color: #383f48; }
+.dark .resourceTable .panel-title > a:hover {background-color: rgba(56, 63, 72, 0.96);}
 .dark .resourceTable .panel-heading { background-color: #383f48; border-top: 0px dotted #383f48; border-bottom:0px dotted #383f48; }
 .dark #passwordBlock fieldset, .dark #passwordBlock fieldset legend{ color: #fff; background-color: #383f48; border-color: #272c33; box-shadow:none;}
 .dark #passwordBlock fieldset input[type="password"]{ color: #fff; background-color: #272c33; border-color: #9da5b4; box-shadow:none;}
