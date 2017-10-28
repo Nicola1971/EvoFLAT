@@ -1,5 +1,5 @@
 # EvoFLAT RC1
-Custom manager theme for evolutioin cms 1.4
+Custom manager theme for evolution cms 1.4
 based on MODxFLAT manager theme https://github.com/Nicola1971/MODxFLAT
 
 ### Features (differences from default evo theme)
