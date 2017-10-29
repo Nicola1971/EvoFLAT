@@ -25,7 +25,7 @@ div.dynamic-tab-pane-control .tab-row .tab:after {
 	border-top-color: transparent;
 	transition: all .2s ease-in;
 }
-div.dynamic-tab-pane-control .tab-row .tab.hover { z-index: 2; background-color: #f1f1f1; border-color: #ddd;color: #0e80cb; font-weight: 300;}
+div.dynamic-tab-pane-control .tab-row .tab.hover { border-radius:3px 3px 0 0; z-index: 2; background-color: #f1f1f1; border-color: #ddd;color: #0e80cb; font-weight: 300;}
 div.dynamic-tab-pane-control .tab-row .tab.hover:after {
 	position: absolute;
    z-index: 10499; 
@@ -41,7 +41,7 @@ div.dynamic-tab-pane-control .tab-row .tab.hover:after {
 	border-top-color: #f1f1f1;
 	transition: all .2s ease-in;
 }
-div.dynamic-tab-pane-control .tab-row .tab.selected { z-index: 2; border-color: #ddd; border-top-color: #0e80cb; background-color: #0e80cb; color: #fff; font-weight: 300 }
+div.dynamic-tab-pane-control .tab-row .tab.selected { z-index: 2; border-color: #ddd; border-top-color: #0e80cb; background-color: #0e80cb; color: #fff; font-weight: 300; border-radius:3px 3px 0 0;}
 
 div.dynamic-tab-pane-control .tab-row .tab.selected:after {
 	position: absolute;
@@ -57,6 +57,8 @@ div.dynamic-tab-pane-control .tab-row .tab.selected:after {
 	border-width: 8px;
 	border-top-color: #0e80cb;
 }
+div#treeHolder .tab-row .tab.selected, div#treeHolder .tab-row .tab.hover {border-radius:0;}
+
 div#treeHolder .tab-row .tab.selected span{color:#0e80cb;}
 div#treeHolder .tab-row .tab.selected:after, div#treeHolder .tab-row .tab.hover:after {display:none;}
 .tab-row .tab .fa { margin-right: 0.1em; font-size: 0.875rem }
