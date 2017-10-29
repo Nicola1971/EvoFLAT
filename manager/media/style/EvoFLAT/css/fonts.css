@@ -91,7 +91,7 @@ a.text-gray-dark:focus, a.text-gray-dark:hover { color: #101112 !important }
 .rotate180 { -webkit-transform: rotate(180deg); -moz-transform: rotate(180deg); -ms-transform: rotate(180deg); -o-transform: rotate(180deg); transform: rotate(180deg); }
 .disabledPlugin, .disabledPlugin a { color: #B68282; font-style: italic; }
 h1 {font-size: 1.5em; line-height: 1.5rem; padding: 0.8rem; margin: 0; color: #0e80cb}
-h1 .fa { background:#fff;margin-right: 0.25em; display:inline-block; text-align:center; width:36px; height:36px; padding:7px 6px 6px 6px; border-radius:50%; color: #0e80cb; border: 2px solid #0e80cb; }
+h1 .fa { background:#fff;margin-left:0.7rem; margin-right: 0.25em; display:inline-block; text-align:center; width:36px; height:36px; padding:7px 6px 6px 6px; border-radius:50%; color: #0e80cb; border: 2px solid #0e80cb; }
 h1 .fa.fa-pencil-square-o {padding:8px 6px 6px 7px;}
 /*h1 styling */
 /*

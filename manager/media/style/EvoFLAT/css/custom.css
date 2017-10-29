@@ -184,6 +184,7 @@ table.actionButtons .searchtext { padding: 5px; height: 24px; width: 150px; }
 /* [ BREADCRUMBS ] */
 span.breadcrumbs__sep {	display:none;}
 .breadcrumbs{ list-style-type: none; display: inline-block;}
+ul.breadcrumbs {margin-left: 1.5rem;}
 .breadcrumbs li{ float: left;}
 .breadcrumbs li a, .breadcrumbs__li_current{
  color: #5a6470;
