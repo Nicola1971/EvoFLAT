@@ -1,4 +1,4 @@
-# EvoFLAT RC1
+# EvoFLAT RC2
 Custom manager theme for evolution cms 1.4
 based on MODxFLAT manager theme https://github.com/Nicola1971/MODxFLAT
 
