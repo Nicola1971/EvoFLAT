@@ -378,7 +378,9 @@ ul.mmTagList { float: left; margin-top: .25rem !important }
     position: absolute;
     bottom: 0; top: 0px; left: 0; right: 0;
     border-top:4px solid #137aca;
+    height:3px;/*avoid overlay*/
 }
+
 .tab-page .mce-panel:first-of-type {
 padding-top:2px;
 border:1px solid #9da5b4 !important;
@@ -390,6 +392,7 @@ border-top:1px solid #9da5b4!important;
 .dark .tab-page .mce-panel:first-of-type {
 border-color: #202329 !important;
 }
+
 body:not(.dark) .sectionBody .mce-container, body:not(.dark) .sectionBody .mce-container-body {background-color: #fff;box-sizing: border-box !important }
 .dark .mce-container, .dark .mce-content-body { color:#fff; background-color: #383f48 !important; }
 body:not(.dark) .sectionBody .mce-container button, body:not(.dark) .sectionBody .mce-container-body button { border-color: #fff; border-radius: 0; background-color: white !important; }
@@ -412,7 +415,7 @@ body:not(.dark) .sectionBody .mce-container button, body:not(.dark) .sectionBody
 .dark .mce-path-item {color:#FFF;}
 .mce-abs-layout button, .dark .mce-abs-layout button {color:#444!important;}
 .dark .mce-abs-layout input  {color:#fff; background-color: #383f48!important;}
-/*mce image/links - browser window popup+*/
+mce image/links - browser window popup+*//*
 .dark .mce-panel { background-color: #383f48 !important; }
 .dark .mce-tab{background-color: #272c33; color:#FFF!important; border-color: #272c33; text-shadow:none;}
 .dark .mce-tab:hover {background-color: #272c33; color:#137aca!important; border-color: #272c33; text-shadow:none;}
