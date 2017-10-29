@@ -374,9 +374,26 @@ body.dark {background-color: #383f48 !important; color:#8b92a0;}
 .imageField { min-width: 100% !important; width: 100% !important }
 ul.mmTagList { float: left; margin-top: .25rem !important }
 /* MCE */
-body:not(.dark) .sectionBody .mce-container, body:not(.dark) .sectionBody .mce-container-body { border-color: #dedede; background-color: #fafafa;box-sizing: border-box !important }
+.tab-page .mce-panel:first-of-type::before {
+    content: "";
+    position: absolute;
+    bottom: 0; top: 0px; left: 0; right: 0;
+    border-top:4px solid #137aca;
+}
+.tab-page .mce-panel:first-of-type {
+border:1px solid #9da5b4 !important;
+}
+.tab-page .mce-panel .mce-panel {
+border:0px solid #9da5b4 !important;
+border-top:1px solid #9da5b4!important;
+}
+.dark .tab-page .mce-panel:first-of-type {
+border-color: #202329 !important;
+}
+body:not(.dark) .sectionBody .mce-container, body:not(.dark) .sectionBody .mce-container-body {background-color: #fff;box-sizing: border-box !important }
+
 .dark .mce-container, .dark .mce-content-body { color:#fff; background-color: #383f48 !important; }
-body:not(.dark) .sectionBody .mce-container button, body:not(.dark) .sectionBody .mce-container-body button { border-color: #fff; border-radius: 0; background-color: #fafafa !important; }
+body:not(.dark) .sectionBody .mce-container button, body:not(.dark) .sectionBody .mce-container-body button { border-color: #fff; border-radius: 0; background-color: white !important; }
 .dark .sectionBody .mce-container button, .dark .sectionBody .mce-container-body button { color:#fff !important; border-color: #383f48; border-radius: 0; background-color: #383f48 !important; }
 .mce-window-head .mce-close { padding: 0; }
 #editorRow_TinyMCE { background-color: #fff; }
