@@ -1,12 +1,12 @@
 /* [ Tabs ] */
 .tab-row { position: relative; z-index: 1; white-space: nowrap; padding: 0 1.5rem }
-.tab-row::after, .tab-row-container::after { content: ""; position: absolute; z-index: 1; left: 0; right: 0; bottom: 0; height: 1px; background-color: #ddd }
-.tab-row .tab, .tab-pane > .tab-page > .tab { position: relative; display: inline-block; margin: 0; padding: 0 0.875rem; line-height: 2.7rem; height: 2.5rem; text-transform: uppercase; border: 1px solid rgba(0, 0, 0, 0); border-bottom: none; cursor: pointer; -webkit-user-select: none; user-select: none; }
+.tab-row::after, .tab-row-container::after { content: ""; position: absolute; z-index: 1; left: 0; right: 0; bottom: 0; height: 1px; background-color: #eee }
+.tab-row .tab, .tab-pane > .tab-page > .tab { position: relative; display: inline-block; margin: 0; padding: 0 0.875rem; line-height: 2.8rem; height: 2.8rem; text-transform: uppercase; border: none; border-radius:0;cursor: pointer; -webkit-user-select: none; user-select: none; }
 .tab-row .tab, .tab-row .tab a, .tab-pane > .tab-page > .tab { color: rgba(0, 0, 0, 0.6); font-size: 0.75rem }
 .tab-row .tab.selected { z-index: 2; border-color: #ddd; background-color: #fff; color: #444; font-weight: 700 }
 
-div.dynamic-tab-pane-control .tab-row .tab, .tab-pane > .tab-page > .tab { position: relative; display: inline-block; margin: 0.2rem 0 0 0; padding: 0 0.875rem; line-height: 2.5rem; height: 2.3rem; text-transform: uppercase; border: 1px solid rgba(0, 0, 0, 0); border-bottom: 1px solid #f1f1f1; cursor: pointer; -webkit-user-select: none; user-select: none; }
-div.dynamic-tab-pane-control .tab-row .tab{line-height: 2.2rem; height: 2.3rem; background-color: #fff; border-color: #ddd; transition: all .2s ease-in;margin-right:1px;}
+div.dynamic-tab-pane-control .tab-row .tab, .tab-pane > .tab-page > .tab { position: relative; display: inline-block; margin: 0.266rem 0 0 0; padding: 0 0.875rem; line-height: 2.3rem; height: 2.3rem; text-transform: uppercase; border: 0px solid rgba(0, 0, 0, 0); cursor: pointer; -webkit-user-select: none; user-select: none; }
+div.dynamic-tab-pane-control .tab-row .tab{line-height: 2.2rem; height: 2.2rem; background-color: transparent; border-color: #ddd; transition: all .2s ease-in;margin-right:1px;}
 div.dynamic-tab-pane-control .tab-row .tab.selected span {color:#fff;}
 .dark div.dynamic-tab-pane-control .tab-row .tab.selected span {color:#fff;}
 .dark div .dynamic-tab-pane-control .tab-row .tab span {color:#f4f4f4;}
@@ -167,13 +167,12 @@ div#treeHolder .tab-row .tab.selected:after, div#treeHolder .tab-row .tab.hover:
 .dark .evo-tab-row .tab-row .tab { color: #aaa; border-color: #2a2d33 }
 .dark .evo-tab-row .tab-row .tab:hover { background-color: #2d3033}
 .dark .evo-tab-row .tab-row .tab.changed { color: #7cb2dc; }
-.dark .evo-tab-row .tab-row .tab.selected { background-color: #414550; color: #eee; border-bottom: 3px solid #1976d2; }
-
+.dark .evo-tab-row .tab-row .tab.selected { background-color: #383f48; color: #fff; border-bottom: 3px solid #1976d2; }
 .dark .evo-tab-page, .dark .evo-tab-page iframe { background-color: #ecf0f1 }
 
 .dark .section-editor textarea { background-color: #282c34; color: #abb2bf }
 .dark .tab-page, .dark .sectionBody .tab-page, .dark .tab-row .tab.selected, .dark .tab-row .tab.selected:before { background-color: #272c33; }
-.dark div.dynamic-tab-pane-control .tab-row .tab{background-color: #272c2f; border-color: #1a1d22; color:#dedede; }
+.dark div.dynamic-tab-pane-control .tab-row .tab{color:#dedede; }
 .dark div.dynamic-tab-pane-control .tab-row .tab.selected { z-index: 2; background-color: #0e80cb;}
 .dark div.dynamic-tab-pane-control .tab-row .tab.hover { z-index: 2; background-color: #687b8e; color: #1d2123; font-weight: 300;}
 .dark div.dynamic-tab-pane-control .tab-row .tab.hover:after {border-top-color: #687b8e;}
@@ -192,4 +191,16 @@ div#treeHolder .tab-row .tab.selected:after, div#treeHolder .tab-row .tab.hover:
 .dark .sortableList li:hover {border-color: #FFF;} 
 .dark .tab-page {
 	color: #d0d1d3;
+}
+
+
+.dark .tab-page .fa-question-circle{
+	color: #7cb2dc!important;
+}
+.tab-page .fa-question-circle{
+	color: #7cb2dc!important;
+	opacity:0.6;
+}
+.dark .tab-page i#plock.fa.fa-folder-o, .dark .tab-page i#plock.fa.fa-folder-open-o {
+	color: #ffd700 !important;
 }

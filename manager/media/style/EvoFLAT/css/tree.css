@@ -14,8 +14,8 @@
 #treeHolder .rootNode a { display: block; padding: 0.25em 0.5em; color: #333; cursor: pointer; -webkit-transition-duration: 0.15s; transition-duration: 0.15s }
 #treeHolder .rootNode a .fa { margin-right: 0.5em }
 #treeRoot { float: left; width: 100%; color: #333; }
-#treeRoot a { display: block; clear: both; text-decoration: none; padding: 0.1em 0 0.1em 2.2em; font-size: 1em; color: #333; cursor: default; -webkit-transition-duration: 0.15s; transition-duration: 0.15s }
-#treeRoot a:hover:not(.empty), #treeRoot a.current { background-color: rgba(33, 150, 243, 0.1) }
+#treeRoot a { display: block; clear: both; border-left:3px solid transparent; text-decoration: none; padding: 0.15em 0 0.15em 2.0em; font-size: 1.02em; color: #333; cursor: default; -webkit-transition-duration: 0.15s; transition-duration: 0.15s }
+#treeRoot a:hover:not(.empty), #treeRoot a.current { background-color: rgba(33, 150, 243, 0.1);border-left:3px solid #0275d8;}
 #treeRoot a small { margin: 0 0.8em 0 0.2em }
 #treeRoot a.selected, #treeRoot .dragenter > a { background-color: rgba(0, 0, 0, 0.1); }
 #treeRoot .dragafter > a .indent::after, #treeRoot .dragbefore > a .indent::before { content: "\f0da"; display: block; position: absolute; right: 0.1em; bottom: -0.5em; height: 1em; font: normal normal normal 1em/1em FontAwesome; }
@@ -56,21 +56,27 @@
 .dark #treeRoot a:hover:not(.empty), .dark #treeRoot a.current { background-color: #383f48; }
 .dark #treeRoot a.selected, #treeRoot .dragenter > a { background-color: rgba(0, 142, 255, 0.19); }
 .dark #treeRoot .dragafter > a::after, .dark #treeRoot .dragbefore > a::before { background-color: rgba(255, 255, 255, 0.25); }
-.dark #treeRoot a .title { color: #0e87d6; }
+.dark #treeRoot a .title { color: #1792fd; }
 .dark #treeRoot a.hidemenu .title { color: #C5C5C5; }
 .dark #treeRoot a.deleted .title { color: #A52A2A; }
 .dark #treeRoot a.unpublished .title { color: #d0726b }
 .dark #treeRoot .icon:hover > .fa { color: #fff }
-.dark #treeRoot a .title:hover { color: #a2d4fb; }
+.dark #treeRoot a .title:hover { color: #4aaafd; }
 .dark #treeRoot a.hidemenu .title:hover { color: #eee }
 .dark #treeRoot a.unpublished .title:hover { color: #f38e86 }
 .dark #treeRoot a.deleted .title:hover { color: #e23d3d }
 .dark #treeRoot .toggle:hover { background-color: rgba(255, 255, 255, 0.19); }
 .dark #treeRoot .fa, .dark #treeHolder .rootNode .fa { color: #bcbec0; }
 
-
+ .ElementsInTree #tree .eltree {padding-left: 1.5rem;}
+.ElementsInTree #tree .eltree, .ElementsInTree #tree .eltree { border-left:3px solid transparent; }
+.ElementsInTree #tree .eltree:hover, .ElementsInTree #tree .eltree.current {border-left:3px solid #0275d8; }
+.dark.ElementsInTree #tree .eltree:hover, .dark.ElementsInTree #tree .eltree.current {background-color: #383f48!important}
+.dark.ElementsInTree #tree .eltree:hover:before, .dark.ElementsInTree #tree .eltree.current:before{ color: #0275d8!important}
+#treeRoot .current > span.icon > i.fa { color: #0275d8}
+.dark #treeRoot .current > span.icon > i.fa { color: #1792fd!important}
 #treeMenu { background: #e6e6e6; border-bottom: 0; }
 .treeframebody { background: #f6f6f6; border-right: 0; }
-#treeHolder .rootNode { font-weight: bold; padding-top: 10px; }
+#treeHolder .rootNode { font-weight: bold; padding-top: 0px; }
 #treeMenu .treeButton .fa{ line-height: 1.2em; }
 
