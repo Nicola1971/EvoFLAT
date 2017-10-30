@@ -415,7 +415,7 @@ body:not(.dark) .sectionBody .mce-container button, body:not(.dark) .sectionBody
 .dark .mce-path-item {color:#FFF;}
 .mce-abs-layout button, .dark .mce-abs-layout button {color:#444!important;}
 .dark .mce-abs-layout input  {color:#fff; background-color: #383f48!important;}
-mce image/links - browser window popup+*//*
+mce image/links - browser window popup+*/
 .dark .mce-panel { background-color: #383f48 !important; }
 .dark .mce-tab{background-color: #272c33; color:#FFF!important; border-color: #272c33; text-shadow:none;}
 .dark .mce-tab:hover {background-color: #272c33; color:#137aca!important; border-color: #272c33; text-shadow:none;}
