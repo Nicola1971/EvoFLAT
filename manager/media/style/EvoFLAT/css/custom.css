@@ -371,6 +371,10 @@ ul.mmTagList { float: left; margin-top: .25rem !important }
 /*Category Manager*/
 .dark .btn-outline-danger {border-color: #d6534f;background-color: #383f48}
 .dark .btn-outline-danger:hover {color: #fff;background-color: #d6534f}
+/*Doc Manager*/
+.dark .tab-body, .dark .tab-body .tab-section{ background-color: #383f48; border-color: #272c33;}
+.dark .tab-body .tab-section .tab-header { background-color: #272c33; border-color: #272c33;}
+.dark .tab-body .btn{ background-color: #383f48; border-color: #545e6c; color:#FFF;}
 /* MCE */
 .tab-page .mce-panel:first-of-type::before {
     content: "";
