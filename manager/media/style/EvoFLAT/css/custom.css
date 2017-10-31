@@ -363,6 +363,12 @@ body.dark {background-color: #383f48 !important; color:#8495a5;}
 */
 /* extras */
 .catalog_item select[name=link] { width: auto !important; margin-left: 0.5rem }
+.dark .box, .dark .item_content, .dark .info_extras, .dark .item_content .info { background-color: #272c33; border-color: #272c33;}
+.dark .install_extras { background-color: #383f48; border-color: #272c33;}
+.dark .item_list .catalog_item.liststyle:nth-child(odd) .item_content { background-color: #383f48; border-color: #272c33;}
+.dark .item_list .catalog_item.liststyle .install_extras { background-color: #383f48 !important; border-color: #272c33;}
+.dark .item_content h3, .dark .catalog_item.liststyle .item_content h3:before {color:#fafafa;}
+.dark .cart_list input { background-color: #383f48; border-color: #272c33; color:#fafafa;}
 /* ManagerManager */
 .sectionHeader.minimizable { position: relative; z-index: 1; background-color: #fafafa; padding: 0.5rem; border: 1px solid rgba(0, 0, 0, 0.15); }
 .dark .sectionHeader.minimizable { background-color: #383f48 }
