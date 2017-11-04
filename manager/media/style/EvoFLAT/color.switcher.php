@@ -126,9 +126,10 @@
         
         <div class="panel panel-default">
         <div class="panel-heading">
-        <h3 data-toggle="collapse" data-target=".Tcolors"><i class="fa togglearrow fa-chevron-right" aria-hidden="true"></i> <i class="fa fa-font" aria-hidden="true"></i> Tree </h3><a title="<?= $_lang['reset'] ?>" href="javascript:;" onclick="cleanLocalStorageReloadMain('my_evo_color')" class="pull-right resetcolor btn btn-secondary"><i class="fa fa-refresh"></i></a>
+        <h3 data-toggle="collapse" data-target=".Tcolors"><i class="fa togglearrow fa-chevron-right" aria-hidden="true"></i> <i class="fa fa-sitemap" aria-hidden="true"></i> Resource Tree </h3><a title="<?= $_lang['reset'] ?>" href="javascript:;" onclick="cleanLocalStorageReloadMain('my_evo_color')" class="pull-right resetcolor btn btn-secondary"><i class="fa fa-refresh"></i></a>
         </div>
         <div class="panel-body collapse Tcolors">
+        <div class="panel-heading subhead"><h3><i class="fa fa-paint-brush" aria-hidden="true"></i> Color</h3></div>
         <div class="evocp-Tcolors">
         <div class="evocp-Tcolor">#000</div>
         <div class="evocp-Tcolor">#222</div>
@@ -147,16 +148,19 @@
         </div>
             <div>
       <input class="color" type="color" id="TcolorPicker" name="TcolorPicker" value="#cf2626" placeholder="color code...">
-      <!--  <p>
-        <input class="rangeTreeText" type="range" value="1" min="1" max="3" step="0.01"><br/>
-            <span class="textsize"></span></p>-->
+        <div class="panel-heading subhead"><h3><i class="fa fa-font" aria-hidden="true"></i> Font Size</h3></div>
+        <input id="rangeTreeText" class="rangeTreeText" type="range" value="1" min="1" max="2" step="0.001"><br/>
+            <span class="textsize"></span>
         </div>
         </div>
  <hr/>
-        <input type="reset" onclick="cleanLocalStorageReloadAll('my_evo_alinkcolor,my_evo_menuColor,my_evo_menuHColor,my_evo_bgmcolor,my_evo_color')" class="btn btn-secondary" value="<?= $_lang['reset'] ?>">
+        <input type="reset" onclick="cleanLocalStorageReloadAll('my_evo_alinkcolor,my_evo_menuColor,my_evo_menuHColor,my_evo_bgmcolor,my_evo_color,my_evo_TfontSize')" class="btn btn-secondary" value="<?= $_lang['reset'] ?>">
     </div>
   </div>
 <script>
+jQuery(document).ready(function($) {
+ 
+});////close document ready
 $("#bgmPicker").spectrum({
   showButtons: false,
   preferredFormat: "hex3",
@@ -207,6 +211,9 @@ $("#linkcolorPicker").spectrum({
 $('input.rangeTreeText').on('change', function () {
     var v = $(this).val();
     $('#treeRoot').css('font-size', v + 'em')
-    $('.textsize').html(v);
+    $('.textsize').html(v + 'em');
+    // Save the color in local storage
+    TfontSize = $(this).val();
+    localStorage.setItem('my_evo_TfontSize', TfontSize);
 });
 </script>

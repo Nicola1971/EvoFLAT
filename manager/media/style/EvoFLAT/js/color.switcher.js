@@ -1,7 +1,6 @@
 //Evolution color switcher
 jQuery(document).ready(function($) {
  
-     
     //appear the evo colors switcher sidebar
     $('.evocp-box .evocp-icon').on('click', function() {
         $('.evocp-box').toggleClass('appear-it');
@@ -17,6 +16,19 @@ jQuery(document).ready(function($) {
     var menuHColor;
     var alinkcolor;
     var Tcolor;
+    var TfontSize;
+    // Get text size
+    var my_evo_TfontSize = localStorage.getItem('my_evo_TfontSize');
+    if (my_evo_TfontSize) {
+        TfontSize = my_evo_TfontSize;
+        setTfontSize(TfontSize);
+    }
+    //tfonty
+    function setTfontSize(TfontSize) {
+    $('#treeRoot').css('font-size', TfontSize + 'em')
+    $('.textsize').html(TfontSize + 'em');
+    $('#rangeTreeText').attr('value', TfontSize);
+    }  
     // Get text color
     var my_evo_color = localStorage.getItem('my_evo_color');
     if (my_evo_color) {
@@ -34,6 +46,8 @@ jQuery(document).ready(function($) {
     if (my_evo_bgmcolor) {
         bgmcolor = my_evo_bgmcolor;
         setBgmColor(bgmcolor);
+        
+
     }
     // Get menu link color
     var my_evo_menuColor = localStorage.getItem('my_evo_menuColor');
@@ -54,17 +68,15 @@ jQuery(document).ready(function($) {
         setTColor(Tcolor);
     }
     //Menu background part
-
+       
     //change elements colors
     function setBgmColor(bgmcolor) {
         var body = document.getElementsByTagName('html')[0];
         body.style.setProperty('--main-menu-color', bgmcolor);
         body.style.setProperty('--main-tabs-color', bgmcolor);
         body.style.setProperty('--main-color', bgmcolor);
-       // $('[data-evocp="bgmColor"]').css('backgroundColor', bgmcolor);
-     //   $('div.dynamic-tab-pane-control .tab-row .tab.selected').css('backgroundColor', bgmcolor);
-        $('[data-evocp="submenuitem"]').css('backgroundColor', '#ff6600');
-   
+//document.getElementById("bgmPicker").value = bgmcolor;
+        $("input#bgmPicker").value = bgmcolor;
     }
     //store the color value in a variable
     $('.evocp-bgmcolor').each(function(i) {
@@ -189,10 +201,7 @@ jQuery(document).ready(function($) {
     //change elements colors
     function setalinkColor(alinkcolor) {
          $('[data-evocp="alinkcolor"]').css('color', alinkcolor);
-        //need fix and move to dedicated tree panel
-      // $('body:not(.dark) #treeRoot a:not(.deleted):not(.unpublished):not(.hidemenu) .title').css('color', alinkcolor);
-      //  $('body #treeRoot a:not(.deleted):not(.unpublished):not(.hidemenu) .title').css('color', alinkcolor);
-        $('.container-body a:not(.btn)').css('color', alinkcolor);
+         $('.container-body a:not(.btn)').css('color', alinkcolor);
     }
     //store the color value in a variable
     $('.evocp-alinkcolor').each(function(i) {
@@ -243,8 +252,7 @@ jQuery(document).ready(function($) {
             // Save the color in local storage
             localStorage.setItem('my_evo_color', color);
             $(this).addClass('colorSelected').siblings().removeClass('colorSelected');
-            //alert("Text color is " + color);
-            
+            //alert("Text color is " + color);            
         });
     });
 
@@ -261,7 +269,6 @@ jQuery(document).ready(function($) {
     $('*').on('click', function() {
         setColor(color);
     });
-
     /////MODX TREE color
     //change elements colors
     function setTColor(Tcolor) {
@@ -283,7 +290,6 @@ jQuery(document).ready(function($) {
             
         });
     });
-
     //custom colors
     $('.TcolorPicker .sp-top-inner').on('click', function() {
     Tcolor = $('.cpTcolors .sp-preview-inner').css("background-color");
@@ -292,7 +298,6 @@ jQuery(document).ready(function($) {
         setTColor(Tcolor);
        window.location.reload();
     });
-
     //apply colors
     $('*').on('click', function() {
         setTColor(Tcolor);
