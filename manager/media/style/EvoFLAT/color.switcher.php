@@ -96,7 +96,7 @@
         <div class="evocp-color">#741b47</div>
         <div class="evocp-color">#9d2661</div>
         </div>
-      <input class="color" type="color" id="textcolorPicker" name="textcolorPicker" value="#cf2626" placeholder="color code...">
+      <input class="color" type="color" id="textcolorPicker" name="textcolorPicker" value="#cf2626" placeholder="color code..."><br/><br/>
         </div>
         </div>
         <div class="panel panel-default">
@@ -121,6 +121,35 @@
         <div class="evocp-alinkcolor">#9d2661</div>
         </div>
       <input class="color" type="color" id="linkcolorPicker" name="alinkcolorPicker" value="#cf2626" placeholder="color code...">
+        </div>
+        </div>
+        
+        <div class="panel panel-default">
+        <div class="panel-heading">
+        <h3 data-toggle="collapse" data-target=".Tcolors"><i class="fa togglearrow fa-chevron-right" aria-hidden="true"></i> <i class="fa fa-font" aria-hidden="true"></i> Tree </h3><a title="<?= $_lang['reset'] ?>" href="javascript:;" onclick="cleanLocalStorageReloadMain('my_evo_color')" class="pull-right resetcolor btn btn-secondary"><i class="fa fa-refresh"></i></a>
+        </div>
+        <div class="panel-body collapse Tcolors">
+        <div class="evocp-Tcolors">
+        <div class="evocp-Tcolor">#000</div>
+        <div class="evocp-Tcolor">#222</div>
+        <div class="evocp-Tcolor">#555</div>
+        <div class="evocp-Tcolor">#666</div>
+        <div class="evocp-Tcolor">#dedede</div>
+        <div class="evocp-Tcolor">#fafafa</div>
+        <div class="evocp-Tcolor">#fff</div>
+        <div class="evocp-Tcolor">#b45f06</div>
+        <div class="evocp-Tcolor">#38761d</div>
+        <div class="evocp-Tcolor">#134f5c</div>
+        <div class="evocp-Tcolor">#0b5394</div>
+        <div class="evocp-Tcolor">#351c75</div>
+        <div class="evocp-Tcolor">#741b47</div>
+        <div class="evocp-Tcolor">#9d2661</div>
+        </div>
+            <div>
+      <input class="color" type="color" id="TcolorPicker" name="TcolorPicker" value="#cf2626" placeholder="color code...">
+      <!--  <p>
+        <input class="rangeTreeText" type="range" value="1" min="1" max="3" step="0.01"><br/>
+            <span class="textsize"></span></p>-->
         </div>
         </div>
  <hr/>
@@ -159,6 +188,14 @@ $("#textcolorPicker").spectrum({
     showInput: true,
     allowEmpty:true
 });
+$("#TcolorPicker").spectrum({
+    showButtons: false,
+  preferredFormat: "hex3",
+  containerClassName: 'TcolorPicker',
+  replacerClassName: 'evo-cp-replacer',
+    showInput: true,
+    allowEmpty:true
+});
 $("#linkcolorPicker").spectrum({
     showButtons: false,
   preferredFormat: "hex3",
@@ -166,5 +203,10 @@ $("#linkcolorPicker").spectrum({
   replacerClassName: 'evo-cp-replacer',
     showInput: true,
     allowEmpty:true
+});
+$('input.rangeTreeText').on('change', function () {
+    var v = $(this).val();
+    $('#treeRoot').css('font-size', v + 'em')
+    $('.textsize').html(v);
 });
 </script>

@@ -8,10 +8,10 @@
     width: 300px;
     min-height: 100%;
     top: 45px;
-    right: -270px;
+    right: -300px;
     color: #444;
     z-index: 10;
-    transition: 0.5s cubic-bezier(1, 1.48, 0.76, 0.95) right;
+    transition: 0.5s cubic-bezier(1, 1.48, 0.76, 0.95) right, box-shadow .5s;
 }
 .evocp-icon {
     position: absolute;
@@ -19,10 +19,9 @@
     height: 29px;
     vertical-align: middle;
     line-height: 28px;
-    left: 0;
-    bottom: 440;
+    left: -34px;
     background: #fafafa;
-    box-shadow: -2px 0px 3px 1px rgba(0, 0, 0, 0.1);
+    box-shadow: -3px 0 2px 1px rgba(0, 0, 0, 0.1);
     border-radius: 50% 0 0 50%;
     text-align: center;
     font-size: 17px;
@@ -119,30 +118,31 @@ i.evocpicon:hover {
 }
 .evocp-box .evocp-frame {
     position: absolute;
-    width: calc(100% - 30px);
+    width: 100%;
     height: 100%;
     top: 0;
     right: 0;
     background: #fafafa;
-    box-shadow: -3px 0px 4px 1px rgba(0, 0, 0, 0.1);
     text-align: center;
     font-weight: 700;
     color: #444;
-    padding: 0px 0px 20px 0px;
+    padding: 0 0 20px 0;
 }
 .dark .evocp-box .evocp-frame {
     color: #dedede;
     background: #202329;
     border-top: 1px solid #2f323a;
 }
+.evocp-box .evocp-Tcolors,
 .evocp-box .evocp-menuHColors,
 .evocp-box .evocp-menuColors,
 .evocp-box .evocp-bgmcolors,
 .evocp-box .evocp-colors,
 .evocp-box .evocp-alinkcolors {
     margin: 10px;
-    padding-bottom: 20px;
+    overflow: hidden;
 }
+.evocp-box .evocp-Tcolor,
 .evocp-box .evocp-menuHColor,
 .evocp-box .evocp-menuColor,
 .evocp-box .evocp-bgmcolor,
@@ -167,9 +167,25 @@ i.evocpicon:hover {
     clear: both;
     padding-top: 20px;
 }
-
+.evocp-box input[name="evocpCustomTcolor"],
+.evocp-box input[name="evocpCustomalinkcolor"],
+.evocp-box input[name="evocpCustommenuColor"],
+.evocp-box input[name="evocpCustommenuHColor"],
+.evocp-box input[name="evocpCustombgmColor"],
+.evocp-box input[name="evocpCustomTXColor"] {
+    margin: 10px 0 0 -4px;
+    cursor: pointer;
+    height: 30px;
+    width: 30px;
+    border-radius: 50%;
+    border: none;
+    outline: none;
+    background: transparent;
+    padding: 0;
+}
 .appear-it {
     right: 0;
+    box-shadow: -3px 0 4px 1px rgba(0, 0, 0, 0.1);
 }
 
 .evocp-frame h2 {
@@ -196,12 +212,14 @@ i.evocpicon:hover {
 .dark .evocp-frame h3:hover {
     color: #fff;
 }
+.evocp-frame .panel {
+    margin-bottom: 2px;
+}
 .evocp-frame .panel-heading {
     text-align: left;
     border-top: 1px solid #dedede;
     border-bottom: 1px solid #dedede;
     background-color: #f2f2f2;
-    margin-bottom: 2px;
     padding: 0 0 0 8px;
     text-transform: uppercase;
 }
@@ -234,6 +252,7 @@ i.evocpicon:hover {
 .evocp-box .evocp-menuColor.colorSelected:before,
 .evocp-box .evocp-bgmcolor.colorSelected:before,
 .evocp-box .evocp-color.colorSelected:before,
+.evocp-box .evocp-Tcolor.colorSelected:before,
 .evocp-box .evocp-alinkcolor.colorSelected:before {
     font-family: FontAwesome;
     content: "\f1fc";
@@ -246,6 +265,7 @@ i.evocpicon:hover {
 .evocp-box .evocp-menuColor.evocp_light.colorSelected:before,
 .evocp-box .evocp-bgmcolor.evocp_light.colorSelected:before,
 .evocp-box .evocp-color.evocp_light.colorSelected:before,
+.evocp-box .evocp-Tcolor.evocp_light.colorSelected:before,
 .evocp-box .evocp-alinkcolor.evocp_light.colorSelected:before {
     color: #444!important;
 }
@@ -256,14 +276,14 @@ i.evocpicon:hover {
     color: #fafafa;	
 }
 /*fix for mainmenu*/
-
-.dark #mainMenu.show .nav > li.dropdown.hover > a {
-    /*background-color: #fff;*/
-    color: #fff!important;
+/*
+#mainMenu.show .nav > li.dropdown.hover > a {
+    background-color: #fff;
+    color: #666!important;
 }
 /* color picker*/
 .sp-picker-container {
-	width:200px
+	width:200px;
 	border-left:0!important;
 }
 .sp-container {width:270px; background: #f2f2f2; border: 1px solid #dedede;}

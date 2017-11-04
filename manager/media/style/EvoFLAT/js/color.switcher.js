@@ -1,5 +1,7 @@
 //Evolution color switcher
 jQuery(document).ready(function($) {
+ 
+     
     //appear the evo colors switcher sidebar
     $('.evocp-box .evocp-icon').on('click', function() {
         $('.evocp-box').toggleClass('appear-it');
@@ -14,7 +16,7 @@ jQuery(document).ready(function($) {
     var menuColor;
     var menuHColor;
     var alinkcolor;
-
+    var Tcolor;
     // Get text color
     var my_evo_color = localStorage.getItem('my_evo_color');
     if (my_evo_color) {
@@ -45,42 +47,24 @@ jQuery(document).ready(function($) {
         menuHColor = my_evo_menuHColor;
         setMenuHColor(menuHColor);
     }
-    
+    // Get tabs color
+    var my_evo_Tcolor = localStorage.getItem('my_evo_Tcolor');
+    if (my_evo_Tcolor) {
+        Tcolor = my_evo_Tcolor;
+        setTColor(Tcolor);
+    }
     //Menu background part
 
     //change elements colors
     function setBgmColor(bgmcolor) {
-        $('[data-evocp="bgmColor"]').css('backgroundColor', bgmcolor);
-    
-        $('#mainMenu li.item > a').mouseover(function() {
-            $(this).css('backgroundColor', bgmcolor);
-            $(this).css('color', '#fff');
-        }).mouseout(function() {
-            $(this).css('backgroundColor', '#FFF');
-            $(this).css('color', '#444');
-        });
-        
-        $('#mainMenu .nav > li > ul > li > a').mouseover(function() {
-            $(this).css('backgroundColor', bgmcolor);
-            $(this).css('color', '#fff');
-        }).mouseout(function() {
-            $(this).css('backgroundColor', '#FFF');
-            $(this).css('color', '#444');
-        });
-        $('.dark #mainMenu .nav > li > ul > li > a').mouseover(function() {
-            $(this).css('backgroundColor', bgmcolor);
-            $(this).css('color', '#fff');
-        }).mouseout(function() {
-            $(this).css('backgroundColor', '#383f48');
-            $(this).css('color', '#fff');
-        });
-        $('#mainMenu .nav > li > ul > li.item > a').mouseover(function() {
-            $(this).css('backgroundColor', bgmcolor);
-            $(this).css('color', '#fff');
-        }).mouseout(function() {
-            $(this).css('backgroundColor', '#FFF');
-            $(this).css('color', '#444');
-        });
+        var body = document.getElementsByTagName('html')[0];
+        body.style.setProperty('--main-menu-color', bgmcolor);
+        body.style.setProperty('--main-tabs-color', bgmcolor);
+        body.style.setProperty('--main-color', bgmcolor);
+       // $('[data-evocp="bgmColor"]').css('backgroundColor', bgmcolor);
+     //   $('div.dynamic-tab-pane-control .tab-row .tab.selected').css('backgroundColor', bgmcolor);
+        $('[data-evocp="submenuitem"]').css('backgroundColor', '#ff6600');
+   
     }
     //store the color value in a variable
     $('.evocp-bgmcolor').each(function(i) {
@@ -244,10 +228,11 @@ jQuery(document).ready(function($) {
     /////Body text color
     //change elements colors
     function setColor(color) {
+        var body = document.getElementsByTagName('html')[0];
+        body.style.setProperty('--main-color', color);
         $('[data-evocp="color"]').css('color', color);
-        $('[data-evocp="borderColor"]').css('border-color', color);
-        $('h1 .fa:not(.help)').css('color', color);
-        $('.widgets .card-header').css('color', color);    
+        /*$('[data-evocp="borderColor"]').css('border-color', color);
+        $('h1 .fa:not(.help)').css('color', color);*/
    }
     //store the color value in a variable
     $('.evocp-color').each(function(i) {
@@ -277,7 +262,41 @@ jQuery(document).ready(function($) {
         setColor(color);
     });
 
+    /////MODX TREE color
+    //change elements colors
+    function setTColor(Tcolor) {
+        var body = document.getElementsByTagName('html')[0];
+        body.style.setProperty('--main-tree-color', Tcolor);
+        $('[data-evocp="Treecolor"]').css('color', Tcolor);
+   }
+    //store the color value in a variable
+    $('.evocp-color').each(function(i) {
+        $('.evocp-Tcolor').eq(i).css('backgroundColor', $(this).text());
+        $('.evocp-Tcolor').eq(i).on('click', function() {
+            color = $(this).css('backgroundColor');
+            //window.location.reload();
+            window.parent.location.reload();
+            // Save the color in local storage
+            localStorage.setItem('my_evo_Tcolor', color);
+            $(this).addClass('colorSelected').siblings().removeClass('colorSelected');
+            //alert("Text color is " + color);
+            
+        });
+    });
 
+    //custom colors
+    $('.TcolorPicker .sp-top-inner').on('click', function() {
+    Tcolor = $('.cpTcolors .sp-preview-inner').css("background-color");
+        // Save the color in local storage
+        localStorage.setItem('my_evo_Tcolor', Tcolor);
+        setTColor(Tcolor);
+       window.location.reload();
+    });
+
+    //apply colors
+    $('*').on('click', function() {
+        setTColor(Tcolor);
+    });
 ////close document ready
 });
 //clear Local Storage and reload only main frame
