@@ -126,7 +126,7 @@
         
         <div class="panel panel-default">
         <div class="panel-heading">
-        <h3 data-toggle="collapse" data-target=".Tcolors"><i class="fa togglearrow fa-chevron-right" aria-hidden="true"></i> <i class="fa fa-sitemap" aria-hidden="true"></i> Resource Tree </h3><a title="<?= $_lang['reset'] ?>" href="javascript:;" onclick="cleanLocalStorageReloadMain('my_evo_color')" class="pull-right resetcolor btn btn-secondary"><i class="fa fa-refresh"></i></a>
+        <h3 data-toggle="collapse" data-target=".Tcolors"><i class="fa togglearrow fa-chevron-right" aria-hidden="true"></i> <i class="fa fa-sitemap" aria-hidden="true"></i> Resource Tree </h3><a title="<?= $_lang['reset'] ?>" href="javascript:;" onclick="cleanLocalStorageReloadAll('my_evo_Tcolor,my_evo_TfontSize')" class="pull-right resetcolor btn btn-secondary"><i class="fa fa-refresh"></i></a>
         </div>
         <div class="panel-body collapse Tcolors">
         <div class="panel-heading subhead"><h3><i class="fa fa-paint-brush" aria-hidden="true"></i> Color</h3></div>
@@ -154,7 +154,7 @@
         </div>
         </div>
  <hr/>
-        <input type="reset" onclick="cleanLocalStorageReloadAll('my_evo_alinkcolor,my_evo_menuColor,my_evo_menuHColor,my_evo_bgmcolor,my_evo_color,my_evo_TfontSize')" class="btn btn-secondary" value="<?= $_lang['reset'] ?>">
+        <input type="reset" onclick="cleanLocalStorageReloadAll('my_evo_alinkcolor,my_evo_menuColor,my_evo_menuHColor,my_evo_bgmcolor,my_evo_color,my_evo_Tcolor,my_evo_TfontSize')" class="btn btn-secondary" value="<?= $_lang['reset'] ?>">
     </div>
   </div>
 <script>
