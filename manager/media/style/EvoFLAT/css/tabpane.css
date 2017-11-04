@@ -25,7 +25,7 @@ div.dynamic-tab-pane-control .tab-row .tab:after {
 	border-top-color: transparent;
 	transition: all .2s ease-in;
 }
-div.dynamic-tab-pane-control .tab-row .tab.hover { border-radius:3px 3px 0 0; z-index: 2; background-color: #f1f1f1; border-color: #ddd;color: #0e80cb; font-weight: 300;}
+div.dynamic-tab-pane-control .tab-row .tab.hover { border-radius:3px 3px 0 0; z-index: 2; background-color: #f1f1f1; border-color: #ddd;color: var(--main-tabs-color); font-weight: 300;}
 div.dynamic-tab-pane-control .tab-row .tab.hover:after {
 	position: absolute;
    z-index: 10499; 
@@ -41,7 +41,7 @@ div.dynamic-tab-pane-control .tab-row .tab.hover:after {
 	border-top-color: #f1f1f1;
 	transition: all .2s ease-in;
 }
-div.dynamic-tab-pane-control .tab-row .tab.selected { z-index: 2; border-color: #ddd; border-top-color: #0e80cb; background-color: #0e80cb; color: #fff; font-weight: 300; border-radius:3px 3px 0 0;}
+div.dynamic-tab-pane-control .tab-row .tab.selected { z-index: 2; border-color: #ddd; border-top-color: var(--main-tabs-color); background-color: var(--main-tabs-color); color: #fff; font-weight: 300; border-radius:3px 3px 0 0;}
 
 div.dynamic-tab-pane-control .tab-row .tab.selected:after {
 	position: absolute;
@@ -55,11 +55,12 @@ div.dynamic-tab-pane-control .tab-row .tab.selected:after {
 	pointer-events: none;
 	margin-left: -10px;
 	border-width: 8px;
-	border-top-color: #0e80cb;
+	border-top-color: var(--main-tabs-color);
 }
 div#treeHolder .tab-row .tab.selected, div#treeHolder .tab-row .tab.hover {border-radius:0;}
 
-div#treeHolder .tab-row .tab.selected span{color:#0e80cb;}
+div#treeHolder .tab-row .tab.selected span{color:var(--main-tabs-color);}
+.dark div#treeHolder .tab-row .tab.selected span{color:var(--main-dark-tree-color)}
 div#treeHolder .tab-row .tab.selected:after, div#treeHolder .tab-row .tab.hover:after {display:none;}
 .tab-row .tab .fa { margin-right: 0.1em; font-size: 0.875rem }
 /* tabs-container */
@@ -169,27 +170,27 @@ div#treeHolder .tab-row .tab.selected:after, div#treeHolder .tab-row .tab.hover:
 .dark .evo-tab-row .tab-row .tab { color: #aaa; border-color: #2a2d33 }
 .dark .evo-tab-row .tab-row .tab:hover { background-color: #2d3033}
 .dark .evo-tab-row .tab-row .tab.changed { color: #7cb2dc; }
-.dark .evo-tab-row .tab-row .tab.selected { background-color: #383f48; color: #fff; border-bottom: 3px solid #1976d2; }
+.dark .evo-tab-row .tab-row .tab.selected { background-color: var(--default-grey); color: #fff; border-bottom: 3px solid #1976d2; }
 .dark .evo-tab-page, .dark .evo-tab-page iframe { background-color: #ecf0f1 }
 
 .dark .section-editor textarea { background-color: #282c34; color: #abb2bf }
-.dark .tab-page, .dark .sectionBody .tab-page, .dark .tab-row .tab.selected, .dark .tab-row .tab.selected:before { background-color: #272c33; }
+.dark .tab-page, .dark .sectionBody .tab-page, .dark .tab-row .tab.selected, .dark .tab-row .tab.selected:before { background-color: var(--dark-grey); }
 .dark div.dynamic-tab-pane-control .tab-row .tab{color:#dedede; }
-.dark div.dynamic-tab-pane-control .tab-row .tab.selected { z-index: 2; background-color: #0e80cb;}
+.dark div.dynamic-tab-pane-control .tab-row .tab.selected { z-index: 2; background-color: var(--main-tabs-color);}
 .dark div.dynamic-tab-pane-control .tab-row .tab.hover { z-index: 2; background-color: #687b8e; color: #1d2123; font-weight: 300;}
 .dark div.dynamic-tab-pane-control .tab-row .tab.hover:after {border-top-color: #687b8e;}
 .dark .tab-row::after, .dark .tab-row-container::after { background-color: #1a1d1f }
 
-.dark .sectionHeader  { background-color: #383f48; border:none;}
+.dark .sectionHeader  { background-color: var(--default-grey); border:none;}
 .dark .sectionBody.tmplvars  { background-color: #2a3038; border:none; }
 .dark table.table--editUser th { border:none; border-bottom:1px solid #323841; color:#fafafa;}
 .dark table.table--editUser td { border:0; }
 .dark table.table--editUser td { border:0; border-bottom:1px solid #323841;}
-.dark ul.mmTagList li {color:#0e80cb!important;}
+.dark ul.mmTagList li {color:var(--main-tabs-color);!important;}
 .dark #treeHolder .tab-row .tab.hover:not(.selected) span{color:#fafafa!important;}
-.dark #treeHolder .tab-row .tab.selected span{color:#0e80cb!important;}
+.dark #treeHolder .tab-row .tab.selected span{color:var(--main-tabs-color);!important;}
 
-.dark input.form-control.form-control-sm, .dark .sortableList li  { background-color: #383f48; color: #eee;border-color: #1a1d22;}
+.dark input.form-control.form-control-sm, .dark .sortableList li  { background-color: var(--default-grey); color: #eee;border-color: #1a1d22;}
 .dark .sortableList li:hover {border-color: #FFF;} 
 .dark .tab-page {
 	color: #d0d1d3;
