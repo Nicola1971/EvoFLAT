@@ -1,3 +1,5 @@
+/*@import "../icons/material/material-icons.css?v=2.2.0";*/
+
 * {
     margin: 0;
     padding: 0;
@@ -139,7 +141,7 @@ i.evocpicon:hover {
 .evocp-box .evocp-bgmcolors,
 .evocp-box .evocp-colors,
 .evocp-box .evocp-alinkcolors {
-    margin: 10px;
+    margin: 5px;
     overflow: hidden;
 }
 .evocp-box .evocp-Tcolor,
@@ -254,8 +256,10 @@ i.evocpicon:hover {
 .evocp-box .evocp-color.colorSelected:before,
 .evocp-box .evocp-Tcolor.colorSelected:before,
 .evocp-box .evocp-alinkcolor.colorSelected:before {
-    font-family: FontAwesome;
-    content: "\f1fc";
+   /* font-family: FontAwesome;
+    content: "\f1fc";*/
+    font-family: Material Icons; 
+    content: "\E3B8";
     display: inline-block;
     padding-top: 3px;
     vertical-align: middle;
@@ -276,10 +280,9 @@ i.evocpicon:hover {
     color: #fafafa;	
 }
 /*fix for mainmenu*/
-/*
-#mainMenu.show .nav > li.dropdown.hover > a {
-    background-color: #fff;
-    color: #666!important;
+
+.dark #mainMenu.show .nav > li.dropdown.hover > a {
+    color: #fff!important;
 }
 /* color picker*/
 .sp-picker-container {
