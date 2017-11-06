@@ -88,10 +88,10 @@ jQuery(document).ready(function($) {
 
     //change elements colors
     function setBgmColor(bgmcolor) {
-        var body = document.getElementsByTagName('html')[0];
-		html.style.setProperty('--main-color', bgmcolor);
-        html.style.setProperty('--main-menu-color', bgmcolor);
-        html.style.setProperty('--selected-tabs-color', bgmcolor);      
+        var body = document.getElementsByTagName('body')[0];
+		body.style.setProperty('--main-color', bgmcolor);
+        body.style.setProperty('--main-menu-color', bgmcolor);
+        body.style.setProperty('--selected-tabs-color', bgmcolor);      
 
     }
     //store the color value in a variable
