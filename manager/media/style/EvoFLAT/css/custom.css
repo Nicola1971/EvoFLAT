@@ -386,7 +386,7 @@ ul.mmTagList { float: left; margin-top: .25rem !important }
     content: "";
     position: absolute;
     bottom: 0; top: 0px; left: 0; right: 0;
-    border-top:4px solid var(--main-tabs-color);   
+    border-top:4px solid var(--selected-tabs-color);   
     height:3px;/*avoid overlay*/
 }
 
@@ -424,7 +424,7 @@ body:not(.dark) .sectionBody .mce-container button, body:not(.dark) .sectionBody
 .dark .mce-path-item {color:#FFF;}
 .mce-abs-layout button, .dark .mce-abs-layout button {color:#444!important;}
 .dark .mce-abs-layout input  {color:#fff; background-color: var(--default-grey)!important;}
-mce image/links - browser window popup+*/
+/*mce image/links - browser window popup+*/
 .dark .mce-panel { background-color: var(--default-grey) !important; }
 .dark .mce-tab{background-color: var(--dark-grey); color:#FFF!important; border-color: var(--dark-grey); text-shadow:none;}
 .dark .mce-tab:hover {background-color: var(--dark-grey); color:#137aca!important; border-color: var(--dark-grey); text-shadow:none;}
@@ -437,6 +437,9 @@ mce image/links - browser window popup+*/
 .dark button.mce-close {background-color: var(--default-grey);color:#fff!important;border:none;}
 /*.mce-ico.mce-i-checkbox {color: #33272d!important;}*/
 /* .dark .mce-open button i{color:#000!important;}*/
+/*MCE config page*/
+.dark #editorRow_TinyMCE.settings {background-color: var(--dark-grey);}
+.dark table#editorRow_TinyMCE.settings.editorRow > tbody > tr.row1 > th {background-color: var(--dark-grey)!important;}
 /* codeMirror */
 .CodeMirror { width: 100%; margin: 0 !important; }
 .CodeMirror pre { word-break: break-all !important; }
