@@ -4,9 +4,10 @@
     <h2 >COLOR SWITCHER</h2>
     <div class="panel panel-default">
      <div class="panel-heading">
-      <h3 data-toggle="collapse" data-target=".bgmcolors"><i class="fa togglearrow fa-chevron-down" aria-hidden="true"></i> <i class="fa fa-bars" aria-hidden="true"></i> Menu Background</h3><a title="<?= $_lang['reset'] ?>" href="javascript:;" onclick="cleanLocalStorageReloadAll('my_evo_bgmcolor')" class="pull-right resetcolor btn btn-secondary"><i class="fa fa-refresh"></i></a>
+      <h3 data-toggle="collapse" data-target=".bgmcolors"><i class="fa togglearrow fa-chevron-down" aria-hidden="true"></i> <i class="fa fa-bars" aria-hidden="true"></i> Menu</h3><a title="<?= $_lang['reset'] ?>" href="javascript:;" onclick="cleanLocalStorageReloadAll('my_evo_bgmcolor')" class="pull-right resetcolor btn btn-secondary"><i class="fa fa-refresh"></i></a>
          </div>
         <div class="panel-body collapse in bgmcolors">
+        <div class="panel-heading subhead"><h3><i class="fa fa-paint-brush" aria-hidden="true"></i> Menu Background</h3></div>
         <div class="evocp-bgmcolors">
         <div class="evocp-bgmcolor">#000</div>
         <div class="evocp-bgmcolor">#222</div>
@@ -24,11 +25,10 @@
         <div class="evocp-bgmcolor">#900</div>
         </div>
       <input type="color" class="color" id="bgmPicker" name="evocpCustombgmColor" value="#cf2626" placeholder="color code...">
-       </div>
-          </div>
+       
         <div class="panel panel-default">
-        <div class="panel-heading">
-            <h3 span data-toggle="collapse" data-target=".menuColors"><i class="fa togglearrow fa-chevron-right" aria-hidden="true"></i> <i class="fa fa-bars" aria-hidden="true"></i> Menu links</h3> <a title="<?= $_lang['reset'] ?>" href="javascript:;" onclick="cleanLocalStorageReloadMain('my_evo_menuColor')" class="pull-right resetcolor btn btn-secondary"><i class="fa fa-refresh"></i></a>
+        <div class="panel-heading subhead">
+            <h3 span data-toggle="collapse" data-target=".menuColors"><i class="fa togglearrow fa-chevron-right" aria-hidden="true"></i> <i class="fa fa-link" aria-hidden="true"></i> Menu links</h3> <a title="<?= $_lang['reset'] ?>" href="javascript:;" onclick="cleanLocalStorageReloadAll('my_evo_menuColor')" class="pull-right resetcolor btn btn-secondary"><i class="fa fa-refresh"></i></a>
         </div>
         <div class="panel-body collapse menuColors">
         <div class="evocp-menuColors">
@@ -52,8 +52,8 @@
         </div>
 
         <div class="panel panel-default">
-        <div class="panel-heading">
-        <h3 data-toggle="collapse" data-target=".menuHColors"><i class="fa togglearrow fa-chevron-right" aria-hidden="true"></i> <i class="fa fa-bars" aria-hidden="true"></i> Menu links:hover </h3><a title="<?= $_lang['reset'] ?>" href="javascript:;" onclick="cleanLocalStorageReloadMain('my_evo_menuHColor')" class="pull-right resetcolor btn btn-secondary"><i class="fa fa-refresh"></i></a>
+        <div class="panel-heading subhead">
+        <h3 data-toggle="collapse" data-target=".menuHColors"><i class="fa togglearrow fa-chevron-right" aria-hidden="true"></i> <i class="fa fa-link" aria-hidden="true"></i> Menu links:hover </h3><a title="<?= $_lang['reset'] ?>" href="javascript:;" onclick="cleanLocalStorageReloadAll('my_evo_menuHColor')" class="pull-right resetcolor btn btn-secondary"><i class="fa fa-refresh"></i></a>
         </div>
         <div class="panel-body collapse menuHColors">
         <div class="evocp-menuHColors">
@@ -75,8 +75,16 @@
       <input class="color" type="color" id="menuHcolorPicker" name="evocpCustommenuHColor" value="#cf2626" placeholder="color code...">
         </div>
         </div>
+            
+        </div>
+          </div>
+         <div class="panel panel-default">
+        <div class="panel-heading ">
+        <h3 data-toggle="collapse" data-target=".cpbody"><i class="fa togglearrow fa-chevron-right" aria-hidden="true"></i> <i class="fa fa-window-maximize" aria-hidden="true"></i> Main </h3><a title="<?= $_lang['reset'] ?>" href="javascript:;" onclick="cleanLocalStorageReloadMain('my_evo_color')" class="pull-right resetcolor btn btn-secondary"><i class="fa fa-refresh"></i></a>
+        </div>
+         <div class="panel-body collapse cpbody">    
         <div class="panel panel-default">
-        <div class="panel-heading">
+        <div class="panel-heading subhead">
         <h3 data-toggle="collapse" data-target=".cpcolors"><i class="fa togglearrow fa-chevron-right" aria-hidden="true"></i> <i class="fa fa-font" aria-hidden="true"></i> Text color </h3><a title="<?= $_lang['reset'] ?>" href="javascript:;" onclick="cleanLocalStorageReloadMain('my_evo_color')" class="pull-right resetcolor btn btn-secondary"><i class="fa fa-refresh"></i></a>
         </div>
         <div class="panel-body collapse cpcolors">
@@ -100,7 +108,7 @@
         </div>
         </div>
         <div class="panel panel-default">
-        <div class="panel-heading">
+        <div class="panel-heading subhead">
             <h3 data-toggle="collapse" data-target=".alinkcolors"><i class="fa togglearrow fa-chevron-right" aria-hidden="true"></i> <i class="fa fa-link" aria-hidden="true"></i> Links Color</h3> <a title="<?= $_lang['reset'] ?>" href="javascript:;" onclick="cleanLocalStorageReloadMain('my_evo_alinkcolor')" class="pull-right resetcolor btn btn-secondary"><i class="fa fa-refresh"></i></a>
         </div>
         <div class="panel-body collapse alinkcolors">
@@ -123,10 +131,12 @@
       <input class="color" type="color" id="linkcolorPicker" name="alinkcolorPicker" value="#cf2626" placeholder="color code...">
         </div>
         </div>
+        </div>
+          </div>
         
         <div class="panel panel-default">
         <div class="panel-heading">
-        <h3 data-toggle="collapse" data-target=".Tcolors"><i class="fa togglearrow fa-chevron-right" aria-hidden="true"></i> <i class="fa fa-sitemap" aria-hidden="true"></i> Resource Tree </h3><a title="<?= $_lang['reset'] ?>" href="javascript:;" onclick="cleanLocalStorageReloadAll('my_evo_Tcolor,my_evo_TfontSize')" class="pull-right resetcolor btn btn-secondary"><i class="fa fa-refresh"></i></a>
+        <h3 data-toggle="collapse" data-target=".Tcolors"><i class="fa togglearrow fa-chevron-right" aria-hidden="true"></i> <i class="fa fa-sitemap" aria-hidden="true"></i> Tree </h3><a title="<?= $_lang['reset'] ?>" href="javascript:;" onclick="cleanLocalStorageReloadAll('my_evo_Tcolor,my_evo_TfontSize')" class="pull-right resetcolor btn btn-secondary"><i class="fa fa-refresh"></i></a>
         </div>
         <div class="panel-body collapse Tcolors">
         <div class="panel-heading subhead"><h3><i class="fa fa-paint-brush" aria-hidden="true"></i> Color</h3></div>
@@ -158,13 +168,11 @@
     </div>
   </div>
 <script>
-jQuery(document).ready(function($) {
- 
-});////close document ready
 $("#bgmPicker").spectrum({
   showButtons: false,
   preferredFormat: "hex3",
   containerClassName: 'bgmPicker',
+    showInitial: true,
     showInput: true,
     allowEmpty:true
 });

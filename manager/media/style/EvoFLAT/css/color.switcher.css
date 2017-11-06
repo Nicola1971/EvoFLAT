@@ -256,10 +256,10 @@ i.evocpicon:hover {
 .evocp-box .evocp-color.colorSelected:before,
 .evocp-box .evocp-Tcolor.colorSelected:before,
 .evocp-box .evocp-alinkcolor.colorSelected:before {
-   /* font-family: FontAwesome;
-    content: "\f1fc";*/
-    font-family: Material Icons; 
-    content: "\E3B8";
+    font-family: FontAwesome;
+    content: "\f1fc";
+    /*font-family: Material Icons; 
+    content: "\E3B8";*/
     display: inline-block;
     padding-top: 3px;
     vertical-align: middle;
