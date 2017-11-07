@@ -109,6 +109,7 @@ a.text-gray-dark:focus, a.text-gray-dark:hover { color: #101112 !important }
 h1 {font-size: 1.5em; line-height: 1.5rem; padding: 0.8rem; margin: 0; color: var(--main-color)}
 h1 .fa { margin-left:0.7rem; margin-right: 0.25em; display:inline-block; text-align:center; width:36px; height:36px; padding:7px 6px 6px 6px; border-radius:50%; color: var(--main-color); border: 2px solid var(--main-color); }
 h1 .fa.fa-pencil-square-o {padding:8px 6px 6px 7px;}
+h1 .fa.fa-cubes {padding:6px 8px 6px 4px;}
 /*h1 styling */
 /*
 h1 {margin:8px 0 12px 0; background:#fff; border:1px solid #e2e2e2; border-left:none;border-right:none;}

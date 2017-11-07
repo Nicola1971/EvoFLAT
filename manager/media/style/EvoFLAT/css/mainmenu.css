@@ -18,7 +18,7 @@
 .dark #mainMenu.show .nav > li.dropdown.hover > a { background-color: var(--default-grey); color: #fff; }
 #mainMenu .nav > li > a .icon { display: inline-block; overflow: hidden; width: auto; height: 2.8rem; line-height: 2.8rem; font-size: 2.8em; text-align: center; margin: 0rem 0 0.5rem 0.5rem; vertical-align: top; border-radius: 50%; background: no-repeat 50% 50%; background-size: cover; }
 #mainMenu .nav > li > a .icon.photo { width: 36px; overflow: hidden; border-radius: 100%; margin: 5px; height: 36px;  vertical-align: middle }
-#mainMenu .nav > li > a .icon .fa { margin:-6px 4px 0 0; font-size: 1.4rem; line-height: 2.8rem vertical-align: top }
+#mainMenu .nav > li > a .icon .fa {margin:-6px 4px 0 0; font-size: 1.4rem; line-height: 2.8rem vertical-align: top }
 #mainMenu .nav > li > a > span {vertical-align: top }
 #mainMenu .nav > li .fa { line-height: 2.4rem; font-size: 1.2rem; vertical-align: middle }
 #mainMenu #nav > li > a > .fa { margin-right: 0.5rem; }
