@@ -1,29 +1,27 @@
 //Evolution color switcher
 jQuery(document).ready(function($) {
+
     //appear the evo colors switcher sidebar
     $('.evocp-box .evocp-icon').on('click', function() {
-        $('.evocp-box').toggleClass('appear-it');
+       $('.evocp-box').toggleClass('appear-it');
        if ($(".evocp-box").hasClass("appear-it")) {
             localStorage.setItem('evo_cp_state', 'cp_opened');
         } else {
-            localStorage.clear('evo_cp_state');
+            localStorage.removeItem('evo_cp_state');
         }
     });
     $('.evocp-box').attr('unselectable', 'on')
         .css('user-select', 'none')
         .on('selectstart', false);
-
-    //vars//
-    var bgmcolor;
+    // Get panelState
+	    //vars//
+    var bgmcolor = $('#mainMenu').css('backgroundColor');
     var color;
     var menuColor;
     var menuHColor;
     var alinkcolor;
     var Tcolor;
-    var TfontSize;
-
-    // Get panelState
-
+	
     var evo_cp_state = localStorage.getItem('evo_cp_state');
     if (evo_cp_state) {
         cp_state = evo_cp_state;
@@ -32,19 +30,6 @@ jQuery(document).ready(function($) {
 
     function setcp_state(cp_state) {
         $('.evocp-box').addClass('appear-it');
-    }
-
-    // Get text size
-    var my_evo_TfontSize = localStorage.getItem('my_evo_TfontSize');
-    if (my_evo_TfontSize) {
-        TfontSize = my_evo_TfontSize;
-        setTfontSize(TfontSize);
-    }
-    //tfonty
-    function setTfontSize(TfontSize) {
-        $('#treeRoot').css('font-size', TfontSize + 'em')
-        $('.textsize').html(TfontSize + 'em');
-        $('#rangeTreeText').attr('value', TfontSize);
     }
     // Get text color
     var my_evo_color = localStorage.getItem('my_evo_color');
@@ -63,8 +48,6 @@ jQuery(document).ready(function($) {
     if (my_evo_bgmcolor) {
         bgmcolor = my_evo_bgmcolor;
         setBgmColor(bgmcolor);
-
-
     }
     // Get menu link color
     var my_evo_menuColor = localStorage.getItem('my_evo_menuColor');
@@ -84,6 +67,7 @@ jQuery(document).ready(function($) {
         Tcolor = my_evo_Tcolor;
         setTColor(Tcolor);
     }
+
     //Menu background part
 
     //change elements colors
@@ -91,7 +75,8 @@ jQuery(document).ready(function($) {
         var body = document.getElementsByTagName('body')[0];
 		body.style.setProperty('--main-color', bgmcolor);
         body.style.setProperty('--main-menu-color', bgmcolor);
-        body.style.setProperty('--selected-tabs-color', bgmcolor);      
+        body.style.setProperty('--selected-tabs-color', bgmcolor);    
+		body.style.setProperty('--dark-selected-tabs-color', bgmcolor);
 
     }
     //store the color value in a variable
@@ -168,9 +153,6 @@ jQuery(document).ready(function($) {
         $('[data-evocp="menuHColor"]').css('color', menuHColor);
         $('#mainMenu .nav > li:not(.active) > a.hover').css('color', menuHColor);
         $('[data-evocp="menuColor"].hover').css('color', menuHColor);
-
-        //$('#evo-tab-home.tab.selected').css('backgroundColor', bgcolor);
-
         $('#mainMenu .nav > li:not(.active) > a').mouseover(function() {
             $(this).css('color', menuHColor);
         }).mouseout(function() {
@@ -182,8 +164,6 @@ jQuery(document).ready(function($) {
             $(this).css('color', menuColor);
         });
         $('#mainMenu .nav > li.active > a').css('color', menuHColor);
-        //#mainMenu.show .nav > li.dropdown.hover > a 
-        //$('#bgPicker').val('bgcolor');
     }
     //store the color value in a variable
     $('.evocp-menuHColor').each(function(i) {
@@ -289,19 +269,20 @@ jQuery(document).ready(function($) {
     /////MODX TREE color
     //change elements colors
     function setTColor(Tcolor) {
-        var body = document.getElementsByTagName('html')[0];
-        body.style.setProperty('--main-tree-color', Tcolor);
+        var body = document.getElementsByTagName('body')[0];
+        body.style.setProperty('--item-tree-color', Tcolor);
+		body.style.setProperty('--dark-item-tree-color', Tcolor);
         $('[data-evocp="Treecolor"]').css('color', Tcolor);
     }
     //store the color value in a variable
     $('.evocp-color').each(function(i) {
         $('.evocp-Tcolor').eq(i).css('backgroundColor', $(this).text());
         $('.evocp-Tcolor').eq(i).on('click', function() {
-            color = $(this).css('backgroundColor');
+            Tcolor = $(this).css('backgroundColor');
             //window.location.reload();
             window.parent.location.reload();
             // Save the color in local storage
-            localStorage.setItem('my_evo_Tcolor', color);
+            localStorage.setItem('my_evo_Tcolor', Tcolor);
             $(this).addClass('colorSelected').siblings().removeClass('colorSelected');
             //alert("Text color is " + color);
 
