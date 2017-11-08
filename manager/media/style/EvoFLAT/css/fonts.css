@@ -12,7 +12,7 @@ html {
   --selected-tabs-color: #0e80cb;
   --selected-tabs-txt-color: #fff;
   --dark-selected-tabs-color: #0e80cb;
-  --dark-selected-tabs-txt-color: #fff;    
+  --dark-selected-tabs-txt-color: #fff;
 }
 html { font-size: 16px }
 @media (max-width: 900px) {
@@ -113,7 +113,7 @@ h1 .fa.fa-cubes {padding:6px 8px 6px 4px;}
 /*h1 styling */
 /*
 h1 {margin:8px 0 12px 0; background:#fff; border:1px solid #e2e2e2; border-left:none;border-right:none;}
-*/ 
+*/
 .dark h1{border-color: #444c57; color: #FFF}
 .dark h1 .fa {color: var(--main-color)}
 h1 .help { background:transparent; border:none; margin: 0 0 0 0.25em; color: rgba(0, 0, 0, 0.15); font-size: 0.8em; cursor: pointer }

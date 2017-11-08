@@ -350,7 +350,7 @@ ul.sortableList li.ghost { z-index: 2; box-shadow: 0 0.25rem 1.5rem rgba(0, 0, 0
 .dark .resourceTable ul.elements, .dark .resourceTable ul.elements > li { border-color: var(--default-grey);}
 .dark .resourceTable ul.elements > li span { color: #fafafa;}
 .dark .resourceTable ul.elements > li { background: #202329; border-left: 3px solid #202329; color: #fafafa;}
-.dark .resourceTable ul.elements > li:hover { background: #2b3039; border-left: 3px solid #137aca; color: #fafafa;}
+.dark .resourceTable ul.elements > li:hover { background: #2b3039; border-left: 3px solid var(--main-color)!important; color: #fafafa;}
 .dark .resourceTable .panel-title > a { color: #fff; background-color: var(--default-grey); border-color: var(--default-grey); }
 .dark .resourceTable .panel-title > a:hover {background-color: rgba(56, 63, 72, 0.96);}
 .dark .resourceTable .panel-heading { background-color: var(--default-grey); border-top: 0px dotted var(--default-grey); border-bottom:0px dotted var(--default-grey); }
