@@ -438,7 +438,7 @@ body:not(.dark) .sectionBody .mce-container button, body:not(.dark) .sectionBody
 /*.mce-ico.mce-i-checkbox {color: #33272d!important;}*/
 /* .dark .mce-open button i{color:#000!important;}*/
 /*MCE config page*/
-.dark #editorRow_TinyMCE.settings {background-color: var(--dark-grey);}
+.dark #editorRow_TinyMCE.settings {background-color: var(--dark-grey)!important;}
 .dark table#editorRow_TinyMCE.settings.editorRow > tbody > tr.row1 > th {background-color: var(--dark-grey)!important;}
 /* codeMirror */
 .CodeMirror { width: 100%; margin: 0 !important; }
