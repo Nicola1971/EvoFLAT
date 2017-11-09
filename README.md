@@ -1,4 +1,4 @@
-# EvoFLAT RC3
+# EvoFLAT RC5
 Custom manager theme for evolution cms 1.4
 based on MODxFLAT manager theme https://github.com/Nicola1971/MODxFLAT
 
@@ -14,6 +14,8 @@ based on MODxFLAT manager theme https://github.com/Nicola1971/MODxFLAT
 - Breadcrumbs styles
 - Custom TinyMCE for light and dark theme
 - various custm styles 
+
+### For more features is high recommended [EvoFLAT Colors Plugin](https://github.com/Nicola1971/EvoFLAT-Colors-Plugin)
 
 
 ![1](https://user-images.githubusercontent.com/7342798/32146859-0ab25870-bcde-11e7-8002-f8ed90d13f07.png)
