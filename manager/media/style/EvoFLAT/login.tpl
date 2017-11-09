@@ -9,10 +9,9 @@
 	<link rel="stylesheet" type="text/css" href="media/style/[(manager_theme)]/style.css" />
 	<style>
 		html, body { min-height: 100%; height: 100%; }
-        body{background-color: #0e80cb;}
-        body.dark div.page{background-color: #0e80cb;} 
+        body{background-color: #FFF;}
 		.page { height: 100%; padding-top: 7%; }
-		.loginbox { width: 90%; max-width: 25rem; margin: 0 auto;}
+		.loginbox { width: 90%; max-width: 30rem; margin: 0 auto;}
 		.copyrights { position: absolute; left: 0; right: 0; bottom: 0; padding: .5rem 1rem; font-size: .675rem; color: #aaa; text-align: right }
 		.copyrights a { color: #777 }
 		#submitButton { float: right; }
@@ -47,7 +46,8 @@
 	   border: 1px solid #2683dd;
 	   background: #2683dd;
         }
-       
+		/* loginbox animation */
+
     </style>
 </head>
 <body class="[+manager_theme_style+]">
