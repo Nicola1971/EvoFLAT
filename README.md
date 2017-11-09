@@ -24,4 +24,4 @@ based on MODxFLAT manager theme https://github.com/Nicola1971/MODxFLAT
 ![2d](https://user-images.githubusercontent.com/7342798/32146864-0fe6bc78-bcde-11e7-91ba-94bc31d822f6.png)
 ![3](https://user-images.githubusercontent.com/7342798/32146866-11ba30b6-bcde-11e7-9c16-14fff3a192d5.png)
 ![3d](https://user-images.githubusercontent.com/7342798/32146867-1370f1c4-bcde-11e7-9810-910f90185efc.png)
-![login](https://user-images.githubusercontent.com/7342798/32623188-9348ab62-c585-11e7-945f-7854563855be.png)
+![login](https://user-images.githubusercontent.com/7342798/32628272-91e37cf6-c595-11e7-8685-3712a9c41ab1.png)
