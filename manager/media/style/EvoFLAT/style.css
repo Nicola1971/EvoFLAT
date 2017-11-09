@@ -28,4 +28,4 @@ html {
 body div.page{background-color: var(--main-color);}
 body.dark div.page{background-color: var(--main-color);}
 .loginbox{box-shadow: 0 0 20px 0 rgba(0, 0, 0, 0.2), 0 5px 5px 0 rgba(0, 0, 0, 0.24);transition: all 0.5s ease-in-out;}
-.loginbox:hover{box-shadow: 0 0 20px 0 rgba(0, 0, 0, 0.5), 0 5px 5px 0 rgba(0, 0, 0, 0.54);max-width: 38rem;}
+.loginbox:hover{box-shadow: 0 0 20px 0 rgba(0, 0, 0, 0.5), 0 5px 5px 0 rgba(0, 0, 0, 0.54)}
