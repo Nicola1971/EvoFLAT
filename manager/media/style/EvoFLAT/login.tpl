@@ -46,8 +46,7 @@
 	   border: 1px solid #2683dd;
 	   background: #2683dd;
         }
-		/* loginbox animation */
-
+		img#logo {max-width:70%;}
     </style>
 </head>
 <body class="[+manager_theme_style+]">
