@@ -189,7 +189,8 @@ div#treeHolder .tab-row .tab.selected:after, div#treeHolder .tab-row .tab.hover:
 .dark table.table--editUser td { border:0; }
 .dark table.table--editUser td { border:0; border-bottom:1px solid #323841;}
 .dark ul.mmTagList li {color:var(--selected-tabs-color);!important;}
-.dark #treeHolder .tab-row .tab.hover:not(.selected) span{color:#fafafa!important;}
+#treeHolder .tab-row .tab.hover:not(.selected) span{color:var(--item-tree-color)}
+.dark #treeHolder .tab-row .tab.hover:not(.selected) span{color:var(--dark-item-tree-color)}
 div#treeHolder .tab-row .tab.selected span{color:var(--item-tree-color);}
 .dark div#treeHolder .tab-row .tab.selected span{color:var(--dark-item-tree-color)}
 
