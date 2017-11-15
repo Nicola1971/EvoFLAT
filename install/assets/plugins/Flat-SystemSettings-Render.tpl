@@ -95,7 +95,7 @@ $importFont ='<link href="https://fonts.googleapis.com/css?family='.$modx->confi
 if($modx->config['flt_main_font_size'] !== '') { 
 $main_font_size = '--main-font-size:'.$modx->config['flt_main_font_size'].'rem;
 '; 
-} else { $main_font_size = ''; }
+} else { $main_font_size = '0.8125'; }
 
 //end vars
 $e = &$modx->Event;
