@@ -92,10 +92,11 @@ $googlefont = str_replace("+", " ", $gfont[0]);
 $main_font = '--main-font:'.$googlefont.';';  
 $importFont ='<link href="https://fonts.googleapis.com/css?family='.$modx->config['flt_main_font'].'" rel="stylesheet">';
 } else { $main_font = ''; }
-if($modx->config['flt_main_font_size'] !== '') { 
-$main_font_size = '--main-font-size:'.$modx->config['flt_main_font_size'].'rem;
-'; 
-} else { $main_font_size = '0.8125'; }
+if($modx->config['flt_main_font_size'] == '' or $modx->config['flt_main_font_size'] == null)
+{ $main_font_size = '--main-font-size: 0.8125rem'; }
+else { 
+$main_font_size = '--main-font-size:'.$modx->config['flt_main_font_size'].'rem;'; 
+} 
 
 //end vars
 $e = &$modx->Event;
