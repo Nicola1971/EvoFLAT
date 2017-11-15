@@ -480,7 +480,9 @@ form#docfinder div.tab-page { height: auto !important }
 .dark .tab-pane .multitv .list li.element .mtv_listbox-multiple {border-color: #48505c !important;	background: var(--dark-grey)!important; color: #FFF}
 .dark .multitv .actionButtons li a.disabled, .dark .multitv .actionButtons li:hover a.disabled {color:var(--medium-grey)!important}
 .dark #tinymce.mce-content-body{background: red !important;}
-
+/*font select*/
+.dark .font-select .fs-drop, .dark .font-select > a { background-color: var(--medium-grey)!important; border-color: var(--dark-grey) }
+.dark .font-select > a div b:after {color: #FFF}
 /*package manager*/
 .dark div.package { background-color: var(--default-grey); border-color:var(--dark-grey) }
 .dark div.package .name h3{ color:#fafafa }
