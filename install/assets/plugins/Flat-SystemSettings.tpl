@@ -110,7 +110,7 @@ $displayLogoClass = 'hidden';
 if ($modx->config['flt_login_bgimage'] == '') {
 $displayBGClass = 'hidden';
 }
-if ($modx->config['flt_main_font_size'] == '') {
+if ($modx->config['flt_main_font_size'] == '' or $modx->config['flt_main_font_size'] == null) {
 $font_size = '0.8125';
 }
 else
