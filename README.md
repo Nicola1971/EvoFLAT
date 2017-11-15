@@ -15,7 +15,7 @@ based on MODxFLAT manager theme https://github.com/Nicola1971/MODxFLAT
 - Custom TinyMCE for light and dark theme
 - various custm styles 
 
-### For more features is high recommended [EvoFLAT Colors Plugin](https://github.com/Nicola1971/EvoFLAT-Colors-Plugin)
+### For more features is high recommended install the control panel: [EvoFLAT-SystemSettings Plugin](https://github.com/Nicola1971/EvoFLAT-SystemSettings)
 
 
 ![1](https://user-images.githubusercontent.com/7342798/32146859-0ab25870-bcde-11e7-8002-f8ed90d13f07.png)
