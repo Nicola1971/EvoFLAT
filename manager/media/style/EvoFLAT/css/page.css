@@ -8,13 +8,14 @@
 @import "contextmenu.css";
 @import "index.css";
 
-html {
+:root {
   --main-color: #0e80cb;
   --default-grey: #383f48;
   --medium-grey: #3c434e;
   --dark-grey: #272c33;
 /* menu */
   --main-menu-color: #0e80cb;
+  --main-menu-font-size: 0.9rem;
 /* tree */
   --item-tree-color: #0275d8;
   --dark-item-tree-color: #1792fd;
