@@ -1,10 +1,10 @@
 /**
  * Flat-SystemSettings-Render
  *
- * <strong>2.1 alpha</strong> Render EvoFLAT customizations and css variable
+ * Render EvoFLAT customizations and css variable
  *
  * @category plugin
- * @version 2.1 alpha
+ * @version 1 beta
  * @author Nicola Lambathakis (www.tattoocms.it) 
  * @internal @properties 
  * @internal @events OnManagerLoginFormPrerender,OnManagerMainFrameHeaderHTMLBlock,OnManagerTopPrerender
@@ -16,7 +16,6 @@ global $modx;
 $manager_theme = $modx->config['manager_theme'];
 
 if($manager_theme == "EvoFLAT") {
-
 if($modx->config['flt_show_evo_logo'] == "0") {
 $hideLogo ='
 #mainMenu #bars:after{display:none!important;}
@@ -25,13 +24,11 @@ $hideLogo ='
 if($modx->config['flt_show_login_logo'] == "0") {
 $hideLoginLogo = 'img#logo {display:none;}'; 
 }
-
 if ($modx->config['flt_login_clogo'] !== null) {
 $logocustom = '<a class="logo" href="../" title="'.$sitename.'">
 					<img src="../'.$modx->config['flt_login_clogo'].'" alt="'.$sitename.'" id="logocustom" />
 				</a>';
 }
-
 if ($modx->config['flt_custom_head_styles'] !== null) {
 $custom_head_styles = $modx->config['flt_custom_head_styles'];
 }
@@ -42,8 +39,7 @@ $custom_login_styles = $modx->config['flt_custom_login_styles'];
 if($modx->config['flt_main-color'] !== '') { 
 $main_color = '--main-color:'.$modx->config['flt_main-color'].';
 '; 
-} else { $main_color = ''; }
-	
+} else { $main_color = ''; }	
 
 if($modx->config['flt_main-menu-color'] !== '' ) { 
 $menu_color = '--main-menu-color:'.$modx->config['flt_main-menu-color'].';'; 
@@ -85,6 +81,23 @@ if($modx->config['flt_dark-selected-tabs-color'] == '' && $modx->config['flt_mai
 $dark_tabs = '--dark-selected-tabs-color:'.$modx->config['flt_main-color'].';'; 
 }
 else { $dark_tabs = ''; }
+	
+//Links
+if($modx->config['flt_links-color'] !== '') { 
+$links_color = '--links-color:'.$modx->config['flt_links-color'].';
+'; 
+} else { $links_color = ''; }
+	
+if($modx->config['flt_links-hover-color'] !== '') { 
+$links_hover_color = '--links-hover-color:'.$modx->config['flt_links-hover-color'].';
+'; 
+} else { $links_hover_color = ''; }
+
+if($modx->config['flt_dark-links-hover-color'] !== '') { 
+$dark_links_hover_color = '--dark-links-hover-color:'.$modx->config['flt_dark-links-hover-color'].';
+'; 
+} else { $dark_links_hover_color = ''; }
+
 //fonts
 if($modx->config['flt_main_font'] !== '') { 
 $gfont = explode(":", $modx->config['flt_main_font']);
@@ -112,8 +125,11 @@ $MainFlatSettingsOutput = '
 '.$importFont.'
 <style>
 body {
- '.$main_font.'
- '.$main_font_size.'
+  '.$links_color.'
+  '.$links_hover_color.'
+  '.$dark_links_hover_color.'
+  '.$main_font.'
+  '.$main_font_size.'
   '.$menu_color.'
   '.$menu_font_size.'
   '.$main_color.'
@@ -135,6 +151,9 @@ $MainFlatSettingsOutput = '
 '.$importFont.'
 <style>
 body {
+  '.$links_color.'
+  '.$links_hover_color.'
+  '.$dark_links_hover_color.'
   '.$main_font.'
   '.$main_font_size.'
   '.$menu_color.'

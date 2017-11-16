@@ -1,12 +1,12 @@
 /**
  * Flat-SystemSettings
  *
- * <strong>2.1 alpha</strong> Add EvoFLAT theme settings in system settings
+ * Add EvoFLAT theme settings in system settings
  *
  * @category plugin
- * @version 2.1 alpha
+ * @version 1 beta
  * @author Nicola Lambathakis (www.tattoocms.it) 
- * @internal @properties &settings=Settings;textarea;Flat Theme Main Color~flt_main-color||Main Menu Color~flt_main-menu-color||Item Tree Color~flt_item-tree-color||Dark Item Tree Color~flt_dark-item-tree-color||Selected tab color~flt_selected-tabs-color||Dark selected tabs color~flt_dark-selected-tabs-color &pname=title;text;
+ * @internal @properties &settings=Settings;textarea;EvoFLAT Theme Main Color~flt_main-color||Menu Color~flt_main-menu-color||Item Tree Color~flt_item-tree-color||Dark Item Tree Color~flt_dark-item-tree-color||Selected tab color~flt_selected-tabs-color||Dark selected tabs color~flt_dark-selected-tabs-color||Links color~flt_links-color||Links hover color~flt_links-hover-color||Dark links hover color~flt_dark-links-hover-color &pname=title;text;
  * @internal @events OnInterfaceSettingsRender,OnManagerMainFrameHeaderHTMLBlock
  * @internal @modx_category Admin
  * @internal @installset base, sample
@@ -80,9 +80,8 @@ foreach($settingsArr as $key => $st_row){
     $st_label_arr = explode('~',$st_row);
     $custom_st_label = trim($st_label_arr[0]);
     $custom_st_name = isset($st_label_arr[1]) ? $st_label_arr[1] : 'custom_st';
- $custom_st_value = isset($st_label_arr[1]) && isset($modx->config[$st_label_arr[1]]) ? trim($modx->config[$st_label_arr[1]]) : '';
-	// $custom_st_value = isset($st_label_arr[2]) ? trim($modx->config[$st_label_arr[2]]) : '';
- $output .= '<tr><td class="warning" nowrap="">'.htmlspecialchars($custom_st_label).' <br/><small>[('.$custom_st_name.')]  <span class="text-muted">saved color: '.$custom_st_value.'</span></small></td>
+    $custom_st_value = isset($st_label_arr[1]) && isset($modx->config[$st_label_arr[1]]) ? trim($modx->config[$st_label_arr[1]]) : '';
+    $output .= '<tr><td class="warning" nowrap="">'.htmlspecialchars($custom_st_label).' <br/><small>[('.$custom_st_name.')]  <span class="text-muted">saved color: '.$custom_st_value.'</span></small></td>
         <td><input class="setting_color" id="'.$custom_st_name.'" type="text" class="startEmpty" value="'.$custom_st_value.'" name="'.$custom_st_name.'" onchange="documentDirty=true;"></td></tr><tr><td colspan="2"><div class="split"/></td></tr>';
 }
 $output .= '</tbody></table></div>';
@@ -115,7 +114,7 @@ $font_size = '0.8125';
 }
 else
  {
-$font_size = htmlspecialchars($modx->config['flt_main_font_size']);
+$font_size = htmlspecialchars($modx->config['flt_menu_font_size']);
 }
 if ($modx->config['flt_menu_font_size'] == '') {
 $menu_font_size = '0.9';
@@ -294,7 +293,7 @@ $(\'.setting_color\').spectrum({
  allowEmpty: true,
  palette: [
         ["#0e80cb", "#0275d8", "#1792fd", "#272c33", "#3c434e", "#383f48", "#404040", "#DFDFDF", "#FAFAFA", "#fff"],
- 	    ["#741B47","#134F5C","#2980B9","#8E44AD","#34495E","#D35400","#C0392B","#b45f06","#351c75","#4F5458"]
+ 	    ["#741B47","#134F5C","#16A085","#8E44AD","#34495E","#D35400","#C0392B","#b45f06","#351c75","#007C49"]
     ]
 });
       $(function(){
