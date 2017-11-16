@@ -338,7 +338,7 @@ ul.sortableList li.ghost { z-index: 2; box-shadow: 0 0.25rem 1.5rem rgba(0, 0, 0
 .dark .tab-page div.sectionHeader {background-color: var(--dark-grey);}
 .dark, .dark .resourceTable .panel-heading { background: #ecf0f1 !important; }
 .dark .resourceTable .panel-heading:hover { background: #ecf0f1 !important; }
-.dark .multitv .list li.element a.copy, .multitv .list li.element a.remove { background: #f9f9f9 !important; }
+.dark .multitv .list li.element a.copy, .multitv .list li.element a.remove { background: transparent !important; }
 .dark .multitv .list li.element { background: #fefefe !important; }
 .dark .split { border-color: rgba(0, 0, 0, .05) }
 .dark hr { background: transparent; }
@@ -452,10 +452,10 @@ form#docfinder div.tab-page { height: auto !important }
 #SimpleGallery .sg_image { width: auto }
 /* multiTV */
 .tab-pane .multitv input.inline {height:30px}
-.multitv .list li.element a.copy, .multitv .list li.element a.remove { width: 25px !important; text-align: center; background: #fff !important; top: -10px !important; }
+.multitv .list li.element a.copy, .multitv .list li.element a.remove { width: 25px !important; text-align: center; background: transparent !important; top: -10px !important; }
 .multitv .list li.element { border-radius: .25rem; border: 1px solid rgba(0, 0, 0, .125); background: #fefefe !important; margin-bottom: 10px !important; }
 
-.dark .multitv .list li.element a.copy, .dark .multitv .list li.element a.remove { width: 25px !important; text-align: center; background: var(--default-grey) !important; top: -10px !important; }
+.dark .multitv .list li.element a.copy, .dark .multitv .list li.element a.remove { width: 25px !important; text-align: center; background: transparent !important; top: -10px !important; }
 .dark .multitv .list li.element { border-radius: .25rem; border: 1px solid rgba(0, 0, 0, .125); background: var(--default-grey) !important; margin-bottom: 10px !important; }
 .dark table.dataTable { background-color: #1a1c21 !important; }
 .dark table.dataTable, .dark table.dataTable th, .dark table.dataTable tr, .dark table.dataTable td{ border-color: #48505c!important; }
