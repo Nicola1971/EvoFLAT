@@ -118,7 +118,7 @@ else
 $font_size = htmlspecialchars($modx->config['flt_main_font_size']);
 }
 if ($modx->config['flt_menu_font_size'] == '') {
-$font_size = '0.9';
+$menu_font_size = '0.9';
 }
 else
  {
