@@ -4,7 +4,7 @@
  * Render EvoFLAT customizations and css variable
  *
  * @category plugin
- * @version 1 beta
+ * @version 1.1 beta
  * @author Nicola Lambathakis (www.tattoocms.it) 
  * @internal @properties 
  * @internal @events OnManagerLoginFormPrerender,OnManagerMainFrameHeaderHTMLBlock,OnManagerTopPrerender
@@ -184,7 +184,7 @@ body div.page, body.dark div.page{background: url("../'.$modx->config['flt_login
 $LoginFlatSettingsOutput = '
 '.$importFont.'
 <style>
-html {
+body {
   '.$main_font.'
   '.$main_font_size.'
   '.$menu_color.'
