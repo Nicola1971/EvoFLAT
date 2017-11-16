@@ -1,10 +1,10 @@
 /**
  * Flat-SystemSettings
  *
- * <strong>2.0 alpha</strong> Add EvoFLAT theme settings in system settings
+ * <strong>2.1 alpha</strong> Add EvoFLAT theme settings in system settings
  *
  * @category plugin
- * @version 2.0 alpha
+ * @version 2.1 alpha
  * @author Nicola Lambathakis (www.tattoocms.it) 
  * @internal @properties &settings=Settings;textarea;Flat Theme Main Color~flt_main-color||Main Menu Color~flt_main-menu-color||Item Tree Color~flt_item-tree-color||Dark Item Tree Color~flt_dark-item-tree-color||Selected tab color~flt_selected-tabs-color||Dark selected tabs color~flt_dark-selected-tabs-color &pname=title;text;
  * @internal @events OnInterfaceSettingsRender,OnManagerMainFrameHeaderHTMLBlock
@@ -29,7 +29,7 @@ $output .= '
 .hidden {display:none;}
 table.themeSettings {width:98%; margin:auto;}
 table.themeSettings th{height:20px}
-.displaytextsize {display:inline-block;vertical-align:top;padding: -4px 0 3px 8px ; margin-left:8px;}
+.displaytextsize, .displaymenusize {display:inline-block;vertical-align:top;padding: -4px 0 3px 8px ; margin-left:8px;}
 </style>
 <script type="text/javascript">
 					var lastImageCtrl;
@@ -110,12 +110,19 @@ $displayLogoClass = 'hidden';
 if ($modx->config['flt_login_bgimage'] == '') {
 $displayBGClass = 'hidden';
 }
-if ($modx->config['flt_main_font_size'] == '' or $modx->config['flt_main_font_size'] == null) {
+if ($modx->config['flt_main_font_size'] == '') {
 $font_size = '0.8125';
 }
 else
  {
 $font_size = htmlspecialchars($modx->config['flt_main_font_size']);
+}
+if ($modx->config['flt_menu_font_size'] == '') {
+$font_size = '0.9';
+}
+else
+ {
+$menu_font_size = htmlspecialchars($modx->config['flt_menu_font_size']);
 }
 $output .= '<div class="tab-page"><h2 class="tab"><i class="fa fa-font" aria-hidden="true"></i> Fonts</h2>';
 $output .= '<table class="themeSettings" border="0" cellpadding="3" cellspacing="0"><thead><th width="25%"></th><th></th></thead><tbody>';
@@ -144,6 +151,20 @@ $output .= '<tr>
         <tr>
             <td width="200">&nbsp;</td>
             <td class="comment gfontsize">Change the Font Size in EvoFLAT</td>
+        </tr>
+        <tr><td colspan="2"><div class="split"/></td></tr>
+		';
+$output .= '<tr>
+            <td nowrap class="warning">Menu Font Size<br>
+                <small>[(flt_menu_font_size)] <span class="text-muted">Saved Size: '.htmlspecialchars($modx->config['flt_menu_font_size']).'</span></small>
+            </td>
+            <td>
+                <label><input class="rangeMenuFonts" type="range" min="0.9" max="2.8" step="0.1"  id="flt_menu_font_size" name="flt_menu_font_size" value="'.$menu_font_size.'" onchange="documentDirty=true;"></label><span class="displaymenusize">'.htmlspecialchars($modx->config['flt_menu_font_size']).'rem</span>
+            </td>
+        </tr>
+        <tr>
+            <td width="200">&nbsp;</td>
+            <td class="comment mfontsize">Change the Menu Font Size (optional)</td>
         </tr>
         <tr><td colspan="2"><div class="split"/></td></tr>
 		';
@@ -288,6 +309,7 @@ $(\'.setting_color\').spectrum({
           // set family on description 
           $(\'.gfonttype\').css(\'font-family\', font[0]);
 		  $(\'.gfontsize\').css(\'font-family\', font[0]);
+		  $(\'.mfontsize\').css(\'font-family\', font[0]);
         });
       });
 	$(\'input.rangeMainFonts\').on(\'change\', function () {
@@ -295,6 +317,25 @@ $(\'.setting_color\').spectrum({
 	$(\'.gfontsize\').css(\'font-size\', v + \'rem\')
 	$(\'.gfonttype\').css(\'font-size\', v + \'rem\')
     $(\'.displaytextsize\').html(v + \'rem\');
+});
+      $(function(){
+        $(\'#flt_menu_font\').fontselect().change(function(){
+         documentDirty=true;
+          // replace + signs with spaces for css
+          var font = $(this).val().replace(/\+/g, \' \');
+          
+          // split font into family and weight
+          font = font.split(\':\');
+          
+          // set family on description 
+          $(\'.gfonttype\').css(\'font-family\', font[0]);
+		  $(\'.gfontsize\').css(\'font-family\', font[0]);
+        });
+      });
+	$(\'input.rangeMenuFonts\').on(\'change\', function () {
+    var v = $(this).val();
+	$(\'.mfontsize\').css(\'font-size\', v + \'rem\')
+    $(\'.displaymenusize\').html(v + \'rem\');
 });
 });
 </script>';

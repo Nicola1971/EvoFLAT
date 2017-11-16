@@ -1,10 +1,10 @@
 /**
  * Flat-SystemSettings-Render
  *
- * <strong>2.0 alpha</strong> Render EvoFLAT customizations and css variable
+ * <strong>2.1 alpha</strong> Render EvoFLAT customizations and css variable
  *
  * @category plugin
- * @version 2.0 alpha
+ * @version 2.1 alpha
  * @author Nicola Lambathakis (www.tattoocms.it) 
  * @internal @properties 
  * @internal @events OnManagerLoginFormPrerender,OnManagerMainFrameHeaderHTMLBlock,OnManagerTopPrerender
@@ -98,6 +98,11 @@ else {
 $main_font_size = '--main-font-size:'.$modx->config['flt_main_font_size'].'rem;'; 
 } 
 
+if($modx->config['flt_menu_font_size'] == '' or $modx->config['flt_menu_font_size'] == null)
+{ $menu_font_size = '--main-menu-font-size: 0.9rem'; }
+else { 
+$menu_font_size = '--main-menu-font-size:'.$modx->config['flt_menu_font_size'].'rem;'; 
+} 
 //end vars
 $e = &$modx->Event;
 switch($e->name) {
@@ -110,6 +115,7 @@ body {
  '.$main_font.'
  '.$main_font_size.'
   '.$menu_color.'
+  '.$menu_font_size.'
   '.$main_color.'
 /* tree */
   '.$tree_color.'
