@@ -35,5 +35,6 @@
 to { transform: rotate(360deg) }
 }
 /* dark */
-.dark #main { background-color: #ecf0f1 }
+#main { background-color: #FAFAFA }
+.dark #main { background-color: var(--default-grey) }
 .dark #mainloader { background-color: rgba(0, 0, 0, 0.1); }
