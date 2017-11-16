@@ -24,6 +24,10 @@
   --selected-tabs-txt-color: #fff;
   --dark-selected-tabs-color: #0e80cb;
   --dark-selected-tabs-txt-color: #fff;
+/* links */
+  --links-color: #0275d8;
+  --links-hover-color: #014c8c;
+  --dark-links-hover-color: #1792fd;
 }
 
 /*login*/
