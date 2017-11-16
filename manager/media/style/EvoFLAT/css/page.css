@@ -8,7 +8,7 @@
 @import "contextmenu.css";
 @import "index.css";
 
-:root {
+html {
   --main-color: #0e80cb;
   --default-grey: #383f48;
   --medium-grey: #3c434e;
