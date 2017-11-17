@@ -1,15 +1,17 @@
 @import "../../common/bootstrap/css/bootstrap.min.css?v=4.0.0-alpha.5";
 @import "../../common/font-awesome/css/font-awesome.min.css?v=4.7.0";
-@import 'fonts.css?v=1.3.5';
-@import "forms.css?v=1.3.5";
-@import "mainmenu.css?v=1.3.5";
+@import 'fonts.css?v=1.4.0';
+@import "forms.css?v=1.4.0";
+@import "mainmenu.css?v=1.4.0";
 @import "tree.css";
 @import "tabpane.css";
 @import "contextmenu.css";
 @import "index.css";
 
-:root {
+html {
   --main-color: #0e80cb;
+  --main-font-size: 0.8125rem;
+  --dark-sidebar: #272c33;
   --default-grey: #383f48;
   --medium-grey: #3c434e;
   --dark-grey: #272c33;
@@ -24,4 +26,8 @@
   --selected-tabs-txt-color: #fff;
   --dark-selected-tabs-color: #0e80cb;
   --dark-selected-tabs-txt-color: #fff;
+/* links */
+  --links-color: #0275d8;
+  --links-hover-color: #014c8c;
+  --dark-links-hover-color: #1792fd;
 }
