@@ -1,4 +1,4 @@
-# EvoFLAT RC7
+# EvoFLAT RC8
 An advanced, customizable Manager Theme for Evolution cms 1.4 +
 based on MODxFLAT manager theme https://github.com/Nicola1971/MODxFLAT
 
@@ -15,16 +15,7 @@ based on MODxFLAT manager theme https://github.com/Nicola1971/MODxFLAT
 - Custom TinyMCE for light and dark theme
 - various custom styles 
 
-## EvoFLAT Control Panel
-
-- **Colors**: Change FLAT theme colors (main color, menu, tabs, tree links..)
-- **Fonts**: Change default font to google fonts and change font size
-- **Advanced Settings**: Show/hide Header and login logo; Add custom logo to login; add a background image to login page.
-- **Custom Styles**: 	Add your custom styles to change EvoFlat Manager appearance 
-
-
 ### For more features is high recommended install the control panel: [EvoFLAT-SystemSettings Plugin](https://github.com/Nicola1971/EvoFLAT-SystemSettings)
-
 
 ![1](https://user-images.githubusercontent.com/7342798/32146859-0ab25870-bcde-11e7-8002-f8ed90d13f07.png)
 ![1d](https://user-images.githubusercontent.com/7342798/32146862-0c68c3e8-bcde-11e7-9bc6-37828c815bfe.png)
@@ -33,6 +24,20 @@ based on MODxFLAT manager theme https://github.com/Nicola1971/MODxFLAT
 ![3](https://user-images.githubusercontent.com/7342798/32146866-11ba30b6-bcde-11e7-9c16-14fff3a192d5.png)
 ![3d](https://user-images.githubusercontent.com/7342798/32146867-1370f1c4-bcde-11e7-9810-910f90185efc.png)
 ![login](https://user-images.githubusercontent.com/7342798/32628272-91e37cf6-c595-11e7-8685-3712a9c41ab1.png)
+
+## EvoFLAT Control Panel
+[EvoFLAT-SystemSettings Plugin](https://github.com/Nicola1971/EvoFLAT-SystemSettings)
+
+- **Colors**: Change FLAT theme colors (main color, menu, tabs, tree links..)
+- **Fonts**: Change default font to google fonts and change font size
+- **Advanced Settings**: Show/hide Header and login logo; Add custom logo to login; add a background image to login page.
+- **Custom Styles**: 	Add your custom styles to change EvoFlat Manager appearance 
+
+
+
+
+
+
 
 # EvoFLAT SystemSettings control panel
 
