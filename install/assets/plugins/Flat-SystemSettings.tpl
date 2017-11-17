@@ -10,6 +10,7 @@
  * @internal @events OnInterfaceSettingsRender,OnManagerMainFrameHeaderHTMLBlock
  * @internal @modx_category Admin
  * @internal @installset base, sample
+ * @lastupdate  17-11-2017
  */
 // get language
 
