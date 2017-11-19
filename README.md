@@ -1,8 +1,9 @@
 # EvoFLAT RC9
 An advanced, customizable Manager Theme for Evolution cms 1.4 +
 based on MODxFLAT manager theme https://github.com/Nicola1971/MODxFLAT
-![2](https://user-images.githubusercontent.com/7342798/32993541-2057d808-cd5a-11e7-89f1-6bb80914b23a.png)
-![1](https://user-images.githubusercontent.com/7342798/32993544-226ad60e-cd5a-11e7-9af2-50475c85a3b2.png)
+![flatdark](https://user-images.githubusercontent.com/7342798/32993584-a70110cc-cd5a-11e7-9881-8471508d8cc9.png)
+![flatlight](https://user-images.githubusercontent.com/7342798/32993585-a71bd9ac-cd5a-11e7-859e-0a9108998d52.png)
+
 
 
 ### Features 
