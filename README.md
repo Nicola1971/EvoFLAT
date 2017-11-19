@@ -1,8 +1,4 @@
-<<<<<<< HEAD
-# **EvoFLAT RC8**
-=======
 # EvoFLAT RC9
->>>>>>> refs/remotes/origin/dev
 An advanced, customizable Manager Theme for Evolution cms 1.4 +
 based on MODxFLAT manager theme https://github.com/Nicola1971/MODxFLAT
 
