@@ -270,7 +270,7 @@ ul.breadcrumbs {margin-left: 1.5rem;}
 .dark .widgets #modxrecent_widget .table.data tbody tr:nth-child(2n) { background-color: var(--dark-grey) }
 
 @media (max-width: 1399px) {
-.widgets #welcome .wm_button { max-width: 20%; flex: 0 0 20%; }
+.widgets #welcome .wm_button { max-width: 16%; flex: 0 0 16%; }
 }
 @media (max-width: 1199px) {
 .widgets #welcome .wm_button { max-width: 25%; flex: 0 0 25%; }
