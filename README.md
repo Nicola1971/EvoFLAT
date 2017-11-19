@@ -2,8 +2,6 @@
 An advanced, customizable Manager Theme for Evolution cms 1.4 +
 based on MODxFLAT manager theme https://github.com/Nicola1971/MODxFLAT
 
-![light](https://user-images.githubusercontent.com/7342798/32992337-b845e6d4-cd49-11e7-8d57-38ee2e340576.png)
-![dark](https://user-images.githubusercontent.com/7342798/32992338-b9dee77a-cd49-11e7-95ce-5d6ed842e388.png)
 
 ### Features 
 
