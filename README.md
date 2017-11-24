@@ -4,7 +4,8 @@ based on MODxFLAT manager theme https://github.com/Nicola1971/MODxFLAT
 ![flatdark](https://user-images.githubusercontent.com/7342798/32993584-a70110cc-cd5a-11e7-9881-8471508d8cc9.png)
 ![flatlight](https://user-images.githubusercontent.com/7342798/32993585-a71bd9ac-cd5a-11e7-859e-0a9108998d52.png)
 
-
+### video:
+https://www.youtube.com/watch?v=qHZPifHsJsU
 
 ### Features 
 
