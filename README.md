@@ -1,4 +1,4 @@
-# EvoFLAT RC10
+# EvoFLAT RC11
 An advanced, customizable Manager Theme for Evolution cms 1.4 +
 based on MODxFLAT manager theme https://github.com/Nicola1971/MODxFLAT
 ## Dark Theme
@@ -8,7 +8,7 @@ based on MODxFLAT manager theme https://github.com/Nicola1971/MODxFLAT
 ![flatlight](https://user-images.githubusercontent.com/7342798/32993585-a71bd9ac-cd5a-11e7-859e-0a9108998d52.png)
 
 ## Dark Sidebar
-(requires plugin: [EvoFLAT-SystemSettings Plugin])
+(requires plugin: [EvoFLAT-SystemSettings Plugin](https://github.com/Nicola1971/EvoFLAT-SystemSettings))
 ![flat-dark-side](https://user-images.githubusercontent.com/7342798/33321657-bd4d920e-d446-11e7-9221-6d6bd7ae531c.png)
 
 ### video:
