@@ -61,8 +61,6 @@ html body.dark div.dynamic-tab-pane-control .tab-row .tab.selected {border-top-c
 	border-top-color: var(--dark-selected-tabs-color);
 }
 div#treeHolder .tab-row .tab.selected, div#treeHolder .tab-row .tab.hover {border-radius:0;}
-
-
 div#treeHolder .tab-row .tab.selected:after, div#treeHolder .tab-row .tab.hover:after {display:none;}
 .tab-row .tab .fa { margin-right: 0.1em; font-size: 0.875rem }
 /* tabs-container */
@@ -190,10 +188,7 @@ div#treeHolder .tab-row .tab.selected:after, div#treeHolder .tab-row .tab.hover:
 .dark table.table--editUser td { border:0; }
 .dark table.table--editUser td { border:0; border-bottom:1px solid #323841;}
 .dark ul.mmTagList li {color:var(--selected-tabs-color);!important;}
-#treeHolder .tab-row .tab.hover:not(.selected) span{color:var(--selected-tabs-color)}
-.dark #treeHolder .tab-row .tab.hover:not(.selected) span{color:var(--dark-selected-tabs-color)}
-div#treeHolder .tab-row .tab.selected span{color:var(--selected-tabs-color);}
-.dark div#treeHolder .tab-row .tab.selected span{color:var(--dark-selected-tabs-color)}
+
 
 .dark input.form-control.form-control-sm, .dark .sortableList li  { background-color: var(--default-grey); color: #eee;border-color: #1a1d22;}
 .dark .sortableList li:hover {border-color: #FFF;} 
