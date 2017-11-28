@@ -450,6 +450,8 @@ body:not(.dark) .sectionBody .mce-container button, body:not(.dark) .sectionBody
 .dark .mce-container-body button i:hover{color:#fff!important;}
 .dark .mce-open button{background-color: var(--dark-grey);border:none;}
 .dark button.mce-close {background-color: var(--default-grey);color:#fff!important;border:none;}
+
+.mce-notification button.mce-close {display:inline-block;;margin:-2px -4px 0 4px; padding:2px 3px 4px 3px; width:25px;height:25px;vertical-align:middle;}
 /*.mce-ico.mce-i-checkbox {color: #33272d!important;}*/
 /* .dark .mce-open button i{color:#000!important;}*/
 /*MCE config page*/
