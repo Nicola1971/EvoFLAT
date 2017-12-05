@@ -131,7 +131,7 @@
 #mainMenu .nav > li > ul.sub-menu { transform: translate3d(-100%, 0, 0) }
 #mainMenu.show .nav > li.active > ul.selected, #mainMenu.show .nav > li.hover > ul.selected + ul.sub-menu { opacity: 1; visibility: visible; }
 #mainMenu.show .nav > li.active > ul.selected { transform: translate3d(-100%, 0, 0); }
-#mainMenu.show .nav > li.hover > ul.selected + ul.sub-menu { transform: translate3d(0, 0, 0); } }
+#mainMenu.show .nav > li.hover > ul.selected + ul.sub-menu { transform: translate3d(0, 0, 0); } 
 #mainMenu #bars{ margin-right: 45px; }
 #mainMenu #bars:after { content: ' '; position: absolute; left:43px; top:0; background-image: url(../images/menu-mobile-logo.png)!important; background-size: 46px 46px; width: 46px; height: 46px; }
 }
