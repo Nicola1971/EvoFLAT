@@ -11,10 +11,10 @@
 #treeMenu .treeButton.disabled { color: #777; opacity: 0.5 }
 #treeHolder { position: relative; z-index: 1; cursor: default; overflow: auto; height: 100%; max-height: calc(100% - 30px); white-space: nowrap }
 #treeHolder .rootNode { position: relative; }
-#treeHolder .rootNode a { display: block; padding: 0.25em 0.5em; color: #333; cursor: pointer; -webkit-transition-duration: 0.15s; transition-duration: 0.15s }
+#treeHolder .rootNode a { display: block; overflow: hidden; padding: 0.25em 0.5em; text-overflow: ellipsis; color: #333; cursor: pointer; -webkit-transition-duration: 0.15s; transition-duration: 0.15s }
 #treeHolder .rootNode a .fa { margin-right: 0.5em }
 #treeRoot { float: left; width: 100%; color: #333; }
-#treeRoot a { display: block; clear: both; border-left:3px solid transparent; text-decoration: none; padding: 0.15em 0 0.15em 2.0em; font-size: 1.02em; color: #333; cursor: default; -webkit-transition-duration: 0.15s; transition-duration: 0.15s }
+#treeRoot a { display: block; overflow: hidden;  text-overflow: ellipsis; clear: both; border-left:3px solid transparent; text-decoration: none; padding: 0.15em 0 0.15em 2.0em; font-size: 1.02em; color: #333; cursor: default; -webkit-transition-duration: 0.15s; transition-duration: 0.15s }
 #treeRoot a:hover:not(.empty), #treeRoot a.current { background-color: rgba(33, 150, 243, 0.1);border-left:3px solid var(--main-color);}
 #treeRoot a small { margin: 0 0.8em 0 0.2em }
 #treeRoot a.selected, #treeRoot .dragenter > a { background-color: rgba(0, 0, 0, 0.1); }
@@ -44,6 +44,9 @@
 #treeRoot .fa-folder, #treeRoot .fa-folder-open, #treeRoot .fa-folder-o, #treeRoot .fa-folder-open-o, #treeRoot .fa-exclamation-triangle { margin-top: 0.1em; text-align: left }
 #treeRoot .fa-link { margin-right: 0; font-size: 0.8em }
 #treeRoot #binFull { display: none }
+
+div#treeHolder .tab-row .tab.selected, div#treeHolder .tab-row .tab.hover {border-radius:0;}
+div#treeHolder .tab-row .tab.selected:after, div#treeHolder .tab-row .tab.hover:after {display:none;}
 /*EIT*/
 .ElementsInTree #tree .eltree {padding-left: 1.5rem;}
 .ElementsInTree #tree .eltree, .ElementsInTree #tree .eltree { border-left:3px solid transparent; }
@@ -61,7 +64,7 @@ div#treeHolder .tab-row .tab.selected span{color:var(--selected-tabs-color);}
 .dark #treeMenu .treeButton:hover:not(.disabled), .darkSide #treeMenu .treeButton:hover:not(.disabled)  { background-color: #2d3033; color: #fff!important; }
 .dark #tree .treeframebody, .dark .ElementsInTree #tree .treeframebody #treeHolder, 
 .darkSide #tree .treeframebody, .darkSide .ElementsInTree #tree .treeframebody #treeHolder
-{ background-color: var(--dark-grey); border-color: #2a2d33 }
+{ background-color: var(--dark-sidebar); border-color: #2a2d33 }
 .dark #treePane .panel-heading, .darkSide #treePane .panel-heading  {background-color: var(--default-grey)!important;}
 .dark #treeHolder .rootNode a, .darkSide #treeHolder .rootNode a { color: #c5c5c5; }
 .dark #treeHolder .rootNode a:hover, .darkSide #treeHolder .rootNode a:hover { color: #eee }
@@ -96,12 +99,12 @@ div#treeHolder .tab-row .tab.selected span{color:var(--selected-tabs-color);}
 /*darkSide eit*/
 .darkSide.ElementsInTree #tree .actionButtons--eit li a:hover{color:#bfbfbf}
 .darkSide.ElementsInTree #tree .eltree:hover,.darkSide.ElementsInTree #tree .eltree.current{background-color:rgba(255,255,255,0.15)}
-.darkSide.ElementsInTree #tree .treeframebody{background-color:#202329!important;color:#828282;border-color:#2a2d33}
+.darkSide.ElementsInTree #tree .treeframebody{background-color:var(--dark-sidebar)!important;color:#828282;border-color:#2a2d33}
 .darkSide.ElementsInTree #tree .tab-row .tab{color:#fafafa;border-color:#2a2d33;background-color:#1a1c21}
 .darkSide.ElementsInTree #tree .tab-row .tab:hover{background-color:#2d3033}
-.darkSide.ElementsInTree #tree .tab-row .tab.selected{background-color:#202329;}
+.darkSide.ElementsInTree #tree .tab-row .tab.selected{background-color:var(--dark-sidebar);}
 .darkSide.ElementsInTree #tree .tab-row .tab span{background-color:transparent}
-.darkSide.ElementsInTree #tree .tab-page{background-color:#202329}
+.darkSide.ElementsInTree #tree .tab-page{background-color:var(--dark-sidebar)}
 .darkSide.ElementsInTree #tree .tab-page .panel-group{border-color:#3e4144}
 .darkSide.ElementsInTree #tree .form-control{background-color:transparent;color:#c7c7c7}
 .dark.ElementsInTree #tree a{color:#c5c5c5}
@@ -117,3 +120,7 @@ div#treeHolder .tab-row .tab.selected span{color:var(--selected-tabs-color);}
 .dark #treeHolder .tab-row .tab.hover:not(.selected) span, .darkSide #treeHolder .tab-row .tab.hover:not(.selected) span
 {color:var(--dark-selected-tabs-color)}
 .dark div#treeHolder .tab-row .tab.selected span, .darkSide div#treeHolder .tab-row .tab.selected span{color:var(--dark-selected-tabs-color)}
+
+body.dark.ElementsInTree #tree .treeframebody{background-color:var(--dark-sidebar)!important;}
+.dark.ElementsInTree #tree #treeHolder .tab-row .tab.selected{background-color:var(--dark-sidebar);}
+.dark.ElementsInTree #tree #treeHolder .tab-page{background-color:var(--dark-sidebar)}
