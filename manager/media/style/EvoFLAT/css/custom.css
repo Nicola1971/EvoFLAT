@@ -357,10 +357,17 @@ ul.sortableList li.ghost { z-index: 2; box-shadow: 0 0.25rem 1.5rem rgba(0, 0, 0
 .dark .multitv .list li.element { background: #fefefe !important; }
 .dark .split { border-color: rgba(0, 0, 0, .05) }
 .dark hr { background: transparent; }
-.dark .content-blocks .block { background: #fefefe; border: 1px solid #e3e3e3; }
-.dark .content-blocks .block .fields-group { border: 1px dashed #e2e2e2; }
-.dark .content-blocks input[type="text"], .dark .content-blocks input[type="password"], .dark .content-blocks input[type="number"], .dark .content-blocks textarea { background-color: #fbfbfb !important; border-color: #dbdbdb !important; }
-.dark .content-blocks .controls { background: transparent !important; }
+.dark .content-blocks .block .block-inner { background: var(--default-grey); border: 1px solid var(--dark-grey); }
+.dark .content-blocks .block { background: var(--default-grey); border: 1px solid var(--dark-grey); }
+.dark .content-blocks .block .fields-group { border: 1px dashed var(--dark-grey); }
+.dark .content-blocks input[type="text"], .dark .content-blocks input[type="password"], .dark .content-blocks input[type="number"] { background-color: var(--dark-grey) !important; border-color: var(--medium-grey) !important; }
+.dark .content-blocks .controls, .dark .content-blocks input, .dark .content-blocks input[type="button"], .dark .content-blocks label.visible { background: var(--default-grey) !important; color: #fafafa; border: 1px solid var(--dark-grey);}
+.dark .content-blocks .controls i{ color: #fafafa;}
+.dark .content-blocks input[type=checkbox], .dark .content-blocks input[type=radio] { background-color: #545a64; border-color: #1a1c21; color: #e6e6e6;}
+.dark .content-blocks input[type=checkbox]:hover, .dark .content-blocks input[type=radio]:hover { border-color: #5cb85c }
+.dark .content-blocks input[type=checkbox]:active, .dark .content-blocks input[type=radio]:active { background-color: #5cb85c!important; }
+.dark .content-blocks input[type=checkbox]:focus, .dark .content-blocks input[type=radio]:focus { border-color: #5cb85c !important; box-shadow: 0 0 0 1px rgba(77, 142, 249, 0.5) }
+.dark .content-blocks input[type=checkbox]:checked, .dark .content-blocks input[type=radio]:checked { background-color: #5cb85c!important; }
 .dark .resourceTable ul.elements { background: #202329}
 .dark .resourceTable ul.elements, .dark .resourceTable ul.elements > li { border-color: var(--default-grey);}
 .dark .resourceTable ul.elements > li span { color: #fafafa;}
