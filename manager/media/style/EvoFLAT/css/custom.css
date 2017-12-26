@@ -411,10 +411,10 @@ ul.mmTagList { float: left; margin-top: .25rem !important }
     border-top:4px solid var(--selected-tabs-color);   
     height:3px;/*avoid overlay*/
 }
-
 .tab-page .mce-panel:first-of-type {
 padding-top:2px;
 border:1px solid #9da5b4 !important;
+box-sizing: border-box; 
 }
 .tab-page .mce-panel .mce-panel {
 border:0px solid #9da5b4 !important;
@@ -423,10 +423,12 @@ border-top:1px solid #9da5b4!important;
 .dark .tab-page .mce-panel:first-of-type {
 border-color: #202329 !important;
 }
-
+body:not(.dark) .mce-container-body .mce-flow-layout,
 body:not(.dark) .sectionBody .mce-container, body:not(.dark) .sectionBody .mce-container-body {background-color: #fff;box-sizing: border-box !important }
+body:not(.dark) .mce-container-body .mce-flow-layout button {border-color:#fafafa;}
 .dark .mce-container, .dark .mce-content-body { color:#fff; background-color: var(--default-grey) !important; }
 body:not(.dark) .sectionBody .mce-container button, body:not(.dark) .sectionBody .mce-container-body button { border-color: #fff; border-radius: 0; background-color: white !important; }
+.dark .mce-container-body .mce-flow-layout button, .dark .mce-btn button,
 .dark .sectionBody .mce-container button, .dark .sectionBody .mce-container-body button { color:#fff !important; border-color: var(--default-grey); border-radius: 0; background-color: var(--default-grey) !important; }
 .mce-window-head .mce-close { padding: 0; }
 #editorRow_TinyMCE { background-color: #fff; }
