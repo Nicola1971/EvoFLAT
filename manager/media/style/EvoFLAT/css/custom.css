@@ -457,12 +457,11 @@ body:not(.dark) .sectionBody .mce-container button, body:not(.dark) .sectionBody
 .dark .mce-container-body button i:hover{color:#fff!important;}
 .dark .mce-open button{background-color: var(--dark-grey);border:none;}
 .dark button.mce-close {background-color: var(--default-grey);color:#fff!important;border:none;}
-
+.dark .mce-txt {color: #fff!important;}
 .mce-notification button.mce-close {display:inline-block;;margin:-2px -4px 0 4px; padding:2px 3px 4px 3px; width:25px;height:25px;vertical-align:middle;}
 /*.mce-ico.mce-i-checkbox {color: #33272d!important;}*/
 /* .dark .mce-open button i{color:#000!important;}*/
 .mce-btn.mce-active, .mce-btn.mce-active:hover { border-color: var(--main-color) !important; }
-
 /*MCE config page*/
 .dark #editorRow_TinyMCE.settings {background-color: var(--dark-grey)!important;}
 .dark table#editorRow_TinyMCE.settings.editorRow > tbody > tr.row1 > th {background-color: var(--dark-grey)!important;}
