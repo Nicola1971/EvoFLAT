@@ -90,7 +90,9 @@ html body.dark div.dynamic-tab-pane-control .tab-row .tab.selected {border-top-c
 .tab-page .tab-body > .form-group:last-child, .tab-page .tab-body > .form-row:last-child, .tab-page .tab-body > p:last-child, .tab-page .tab-body > .form-group:last-child > p:last-child, .tab-page .sectionBody:last-child { margin-bottom: 0 }
 .tab-page .tab-section, .tab-page .sectionHeader + .sectionBody { margin-top: 1.25rem; background-color: #fafafa; border: 1px solid #e0e0e0; border-radius: .1rem; }
 .tab-page .tab-section:first-child, .tab-page .sectionHeader + .sectionBody, .tab-page .sectionBody ~ .sectionHeader { margin-top: 0 }
-.tab-page .tab-section .tab-header, .tab-page .sectionHeader { margin-left: -1px; margin-right: -1px; padding-left: .5rem; padding-right: .5rem; background-color: #efeff6; border: 1px solid #e0e0e0; border-bottom: 2px solid #e0e0ec; }
+.tab-page .tab-section .tab-header, .tab-page .sectionHeader { margin-left: -1px; margin-right: -1px; padding-left: .5rem; padding-right: .5rem; background-color: #efeff6; border: 1px solid #e0e0e0; border-bottom: 2px solid #e0e0ec; border-top: 3px solid var(--main-color);}
+#tv_header.sectionHeader { background-color: #fff; border: 1px solid #e0e0e0; border-bottom: 2px solid #e0e0ec; border-top: 3px solid var(--main-color);}
+.dark #tv_header.sectionHeader { background-color: var(--default-grey); border: 1px solid var(--default-grey); border-bottom: 2px solid #9DA5B4; border-top: 3px solid var(--main-color);} 
 .tab-page .tab-section .tab-header:first-child, .tab-page .sectionHeader { margin-top: 0; border-top: none }
 .tab-page .tab-section .tab-header + .tab-header, .tab-page .tab-section .tab-body + .tab-header, .tab-page .sectionHeader { border-top: 1px solid #e0e0e0; }
 .tab-page .tab-section .tab-body, .tab-page .sectionBody { padding: 1rem; }
