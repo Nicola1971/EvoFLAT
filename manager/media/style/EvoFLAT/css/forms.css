@@ -55,6 +55,8 @@ select:not([size]):not([multiple]) { text-indent: -2px }
 input[type=checkbox]:checked { border: 1px solid #5cb85c; background-color: #5cb85c;  }
 input[type=radio]:checked { border: 1px solid #5cb85c; background-color: #fff;  }
 select option {font-size:1.2em;}
+input[type=checkbox]:disabled{ border: 1px solid #eee; background-color: #eee!important;  }
+.dark input[type=checkbox]:disabled{ border: 1px solid #48505c!important; background-color: var(--dark-grey)!important;  }
 .dark input[type=text], .dark textarea { background-color: var(--dark-grey); border-color: #48505c; color: #e6e6e6;}
 .dark select { background-color: #323840; border-color: #1a1c21; color: #e6e6e6;}
 .dark select:focus { background-color: #323840; border-color: #1a1c21; color: #fafafa;}
