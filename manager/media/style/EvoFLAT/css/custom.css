@@ -189,19 +189,7 @@ span.breadcrumbs__sep {	display:none;}
 .breadcrumbs{ list-style-type: none; display: inline-block;}
 ul.breadcrumbs {margin-left: 1.5rem;}
 .breadcrumbs li{ float: left;}
-.breadcrumbs li a, .breadcrumbs__li_current{
- color: #5a6470;
- display: block;
- background: #dfdfdf;
- text-decoration: none;
- position: relative;
- height: 30px;
- line-height: 30px;
- padding: 0 10px 0 5px;
- text-align: center;
- margin-right: 23px;
-
-}
+.breadcrumbs li a, .breadcrumbs__li_current{ color: #5a6470; display: block; background: #dfdfdf; text-decoration: none; position: relative; height: 30px; line-height: 30px; padding: 0 10px 0 5px; text-align: center; margin-right: 23px;}
 .dark .breadcrumbs li a {background: #5a6470; color:#fff;}
 .breadcrumbs__li_current {	background: rgba(97, 106, 115, 0.2);	color:#fff;}
 .dark .breadcrumbs__li_current {color:#bdbdbd;}
@@ -219,7 +207,6 @@ ul.breadcrumbs {margin-left: 1.5rem;}
 .breadcrumbs li a:after, .breadcrumbs__li_current:after{ left: 100%; border-color: transparent; border-left-color: #dfdfdf;}
 .dark .breadcrumbs li a:after{border-left-color: #5a6470;}
 .breadcrumbs__li_current:after  {display:none;}
-
 /*root*/
 .breadcrumbs li:first-child.breadcrumbs__li_current{background: rgba(97, 106, 115, 0.3);}
 .breadcrumbs li:first-child.breadcrumbs__li_current:after{display:inline;border-left-color: rgba(97, 106, 115, 0.3);}
@@ -227,7 +214,6 @@ ul.breadcrumbs {margin-left: 1.5rem;}
 /*hover*/
 .breadcrumbs li a:hover:before{ border-color: var(--main-menu-color); border-left-color: transparent;}
 .breadcrumbs li a:hover:after{ border-left-color: var(--main-menu-color);}
-
 /* [ PAGINATION ] */
 #pagination { padding: 0 1.25rem; margin: .5rem 0 0; }
 #pagination ul { margin: 0 0 0 .5rem; display: inline-block; }
@@ -237,7 +223,7 @@ ul.breadcrumbs {margin-left: 1.5rem;}
 /* [ SEARCHBAR ] */
 .searchbar input[type=text] { max-width: 10rem }
 /* [ WIDGETS ] */
-.widgets .card { margin-bottom: .75rem; border: none; border-radius: 0.15rem; background-color: #fff; box-shadow: 0 0 0.1rem 0 rgba(0, 0, 0, 0.1), 0 0.1rem 0.3rem rgba(0, 0, 0, 0.05) }
+.widgets .card { margin-bottom: .75rem; border: 1px solid #dfdfdf; border-radius: 0.15rem; background-color: #fff; box-shadow: none;}
 .widgets .card-header { padding: .75rem 1rem; font-size: .675rem; color: #616a73; text-transform: uppercase; font-weight: 900; border: none; background-color: #fff; }
 .dark .widgets .card-header { color: #fafafa; background-color: var(--dark-grey);}
 .dark .widgets .card { background-color: var(--dark-grey); border-color:var(--dark-grey) }
@@ -255,11 +241,9 @@ ul.breadcrumbs {margin-left: 1.5rem;}
 .widgets #welcome .wm_buttons { display: -ms-flexbox; display: flex; -ms-flex-wrap: wrap; flex-wrap: wrap; margin-bottom: 1rem; padding: 0; text-align: center; border-bottom: 1px solid rgba(0, 0, 0, .05); }
 .widgets #welcome .wm_button { max-width: 16.666667%; flex: 0 0 16.666667%; }
 .widgets #welcome .wm_button a { display: block; height: 100%; padding: 1rem 1rem .5rem; text-decoration: none; color: #646b7b; box-shadow: none; transition-duration: .5s }
- +.widgets #welcome .wm_button a:hover { color: #373b46; background-color: rgba(93, 109, 202, 0.16) }
-
+.widgets #welcome .wm_button a:hover { color: #373b46; background-color: rgba(0, 0, 0, 0.03)}
 .dark .widgets #welcome .wm_button a { color: #687b8e;}
-.widgets #welcome .wm_button a:hover { color: #373b46;}
-.dark .widgets #welcome .wm_button a:hover { color: #a9b5c0;}
+.dark .widgets #welcome .wm_button a:hover { color: #a9b5c0; background-color: rgba(0, 0, 0, 0.06)}
 .widgets #welcome .wm_button a .fa { display: inline-block; }
 .widgets #welcome .wm_button a .fa + span { display: block; padding: .5em 0; line-height: 1em; font-size: .7rem; }
 .widgets #modxrecent_widget .table.data tbody tr:not(:hover) { background-color: #fff }
@@ -530,9 +514,6 @@ to { opacity: 1; transform: translateY(0); }
 }
 .loginbox { -webkit-animation-name: anim-loginbox; -webkit-animation-duration: .5s; -webkit-animation-iteration-count: 1; -webkit-animation-timing-function: ease; -webkit-animation-fill-mode: forwards; -moz-animation-name: anim-loginbox; -moz-animation-duration: .5s; -moz-animation-iteration-count: 1; -moz-animation-timing-function: ease-in; -moz-animation-fill-mode: forwards; animation-name: anim-loginbox; animation-duration: .5s; animation-iteration-count: 1; animation-timing-function: ease; animation-fill-mode: forwards; }
 /* end loginbox animation */
-
-.widgets .card { padding-bottom: 1.5rem; margin-bottom: 2rem; border: 1px solid #dfdfdf; box-shadow: none; }
-.widgets .card-header { background-color: #fff; }
 .container-body { padding: 2em 1.5rem; }
 /*colored button*/
 /* duplicate button */ 
