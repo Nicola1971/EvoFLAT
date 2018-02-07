@@ -395,7 +395,7 @@ ul.mmTagList { float: left; margin-top: .25rem !important }
     position: absolute;
     bottom: 0; top: 0px; left: 0; right: 0;
     border-top:4px solid var(--selected-tabs-color);   
-    height:3px;/*avoid overlay*/
+    height:3px;
 }
 .tab-page .mce-panel:first-of-type {
 padding-top:2px;
@@ -421,9 +421,15 @@ body:not(.dark) .sectionBody .mce-container button, body:not(.dark) .sectionBody
 .dark .mce-widget button i, .dark .mce-wordcount, .dark .mce-path {color:#FFF!important;}
 .dark .mce-wordcount{text-shadow:none; right:7px;}
 .dark .mce-btn {border-color: var(--dark-grey);}
-.dark .mce-btn:hover {border-color: #81858a;}
+.dark .mce-btn:hover {border-color: var(--dark-grey);}
 .dark .mce-menu-item .mce-text, .dark .mce-menu-item i{color:#fff;}
+.mce-btn .mce-caret {color:#000!important;border-top-color:#595959}
+.mce-container-body .mce-btn.mce-active .mce-caret, .mce-container-body .mce-btn.mce-active:hover .mce-caret {color:var(--main-color)!important;border-top-color:var(--main-color)}
+.dark .mce-container-body .mce-btn.mce-active .mce-caret, .dark .mce-container-body .mce-btn.mce-active:hover .mce-caret {color:#FFF!important;border-top-color:#FFF}
 .dark .mce-btn .mce-caret, .dark .mce-caret {color:#FFF!important;border-top-color:#FFF }
+.mce-container-body .mce-btn.mce-active, .mce-container-body .mce-btn.mce-active:hover { border-color: var(--main-color)!important;}
+.mce-container-body .mce-btn.mce-active i, .mce-container-body .mce-btn.mce-active span, .mce-container-body .mce-btn.mce-active:hover span { color:  var(--main-color)!important;}
+.dark .mce-container-body .mce-btn.mce-active i, .dark .mce-container-body .mce-btn.mce-active span, .dark .mce-container-body .mce-btn.mce-active:hover span { color: #FFF!important;}
 .dark .mce-btn.mce-disabled button{opacity:0.6;}
 .dark .mce-btn-group:not(:first-child){border-left:1px solid var(--dark-grey)}
 .dark .mce-listbox {color:#FFF;}
@@ -447,10 +453,6 @@ body:not(.dark) .sectionBody .mce-container button, body:not(.dark) .sectionBody
 .dark button.mce-close {background-color: var(--default-grey);color:#fff!important;border:none;}
 .dark .mce-txt {color: #fff!important;}
 .mce-notification button.mce-close {display:inline-block;;margin:-2px -4px 0 4px; padding:2px 3px 4px 3px; width:25px;height:25px;vertical-align:middle;}
-/*.mce-ico.mce-i-checkbox {color: #33272d!important;}*/
-/* .dark .mce-open button i{color:#000!important;}*/
-.mce-btn.mce-active, .mce-btn.mce-active:hover { border-color: var(--main-color)!important;}
-/*MCE config page*/
 .dark #editorRow_TinyMCE.settings {background-color: var(--dark-grey)!important;}
 .dark table#editorRow_TinyMCE.settings.editorRow > tbody > tr.row1 > th {background-color: var(--dark-grey)!important;}
 /* codeMirror */
@@ -467,7 +469,6 @@ form#docfinder div.tab-page { height: auto !important }
 .tab-pane .multitv input.inline {height:30px}
 .multitv .list li.element a.copy, .multitv .list li.element a.remove { width: 25px !important; text-align: center; background: transparent !important; top: -10px !important; }
 .multitv .list li.element { border-radius: .25rem; border: 1px solid rgba(0, 0, 0, .125); background: #fefefe !important; margin-bottom: 10px !important; }
-
 .dark .multitv .list li.element a.copy, .dark .multitv .list li.element a.remove { width: 25px !important; text-align: center; background: transparent !important; top: -10px !important; }
 .dark .multitv .list li.element { border-radius: .25rem; border: 1px solid rgba(0, 0, 0, .125); background: var(--default-grey) !important; margin-bottom: 10px !important; }
 .dark table.dataTable { background-color: #1a1c21 !important; }
@@ -479,7 +480,6 @@ form#docfinder div.tab-page { height: auto !important }
 .dark table.dataTable tr.even td{ background-color:var(--medium-grey)!important; }
 .dark .dataTables_paginate a {color: #fafafa;}
 .dark #cboxOverlay { background-color:var(--medium-grey)!important; }
-
 /*mtv forms*/
 .dark .tab-pane .multitv .list li.element .mtv_checkbox { background-color: var(--default-grey) !important; }
 .dark .multitv .actionButtons li a,
