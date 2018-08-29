@@ -1,55 +1,473 @@
 <!DOCTYPE html>
 <html>
-<head>
-	<title>[(site_name)] (Evolution CMS Manager Login)</title>
-	<meta http-equiv="content-type" content="text/html; charset=[+modx_charset+]" />
-	<meta name="robots" content="noindex, nofollow" />
-	<meta name="viewport" content="width=device-width">
-	<link rel="icon" type="image/ico" href="[+favicon+]" />
-	<link rel="stylesheet" type="text/css" href="media/style/[(manager_theme)]/style.css" />
-	<style>
-		html, body { min-height: 100%; height: 100%; }
-        body{background-color: #FFF;}
-		.page { height: 100%; padding-top: 7%; }
-		.loginbox { width: 90%; max-width: 30rem; margin: 0 auto;}
-		.copyrights { position: absolute; left: 0; right: 0; bottom: 0; padding: .5rem 1rem; font-size: .675rem; color: #aaa; text-align: right }
-		.copyrights a { color: #777 }
-		#submitButton { float: right; }
-		#FMP-email_label { color: #818a91 }
-		#FMP-email { margin-bottom: 1rem }
-		#FMP-email_button { float: right; }
-		/* mainloader */
-		#mainloader { position: absolute; z-index: 50000; top: 0; left: 0; width: 100%; height: 100%; text-align: center; vertical-align: middle; padding: 15% 0 0 0; background-color: rgba(255, 255, 255, 0.64); opacity: 0; visibility: hidden; -webkit-transition-duration: 0.3s; transition-duration: 0.3s }
-		#mainloader.show { opacity: 0.75; visibility: visible; -webkit-transition-duration: 0.1s; transition-duration: 0.1s }
-		#mainloader::before { content: ""; display: block; position: absolute; z-index: 1; left: 50%; top: 30%; width: 120px; height: 120px; margin: -60px 0 0 -60px; border-radius: 50%; animation: rotate 2s linear infinite; box-shadow: 5px 5px 0 0 rgb(234, 132, 82), 14px -7px 0 0 rgba(111, 163, 219, 0.7), -7px 11px 0 0 rgba(112, 193, 92, 0.74), -11px -7px 0 0 rgba(147, 205, 99, 0.78); }
-		@keyframes rotate {
-			to { transform: rotate(360deg) }
-			}
-        #FMP-email_button, #submitButton {
-	   cursor: pointer;
-	   color: #FFF;
-	   padding: 8px 16px;
-	   margin:0 0 10px 10px;
-        border-radius: 3px;
-        width:100%;
+  <head>
+    <title>[(site_name)] (Evolution CMS Manager Login)</title>
+    <meta http-equiv="content-type" content="text/html; charset=[+modx_charset+]">
+    <meta name="robots" content="noindex, nofollow">
+    <meta name="viewport" content="width=device-width">
+    <link rel="icon" type="image/ico" href="[+favicon+]">
+    <link rel="stylesheet" type="text/css" href="media/style/[(manager_theme)]/style.css">
+    <style>
+      html {
+        font-size: 16px;
+      }
+      
+      html,
+      body {
+        min-height: 100%;
+        height: 100%;
+      }
+      
+      body.loginbox-center {
+        min-height: 1px;
+        height: auto;
+      }
+
+      body,
+      body.lightness,
+      body.light,
+      body.dark,
+      body.darkness {
+        background-color: #2a313b !important;
+        background-image: url('[+login_bg+]') !important;
+        background-size: cover !important;
+        background-position: center !important;
+        background-repeat: no-repeat !important;
+        background-attachment: fixed !important;
+      }
+      @media (max-width: 479px) {
+        body,
+        body.lightness,
+        body.light,
+        body.dark,
+        body.darkness {
+          background-image: none !important;
         }
-        #submitButton {
-	   padding: 8px 16px;
-        border-radius: 3px;
-        width:100%;
+      }
+      
+      /* page div */
+
+      .page {
+        height: 100%;
+      }
+
+      @media (min-width: 480px) {
+        .loginbox-center .page {
+          max-width: 25rem;
+          margin-top:    10vh;
+          margin-bottom: 10vh;
+          margin-left: auto;
+          margin-right: auto;
+          height: auto;
         }
-        #FMP-email_button {
-	   border: 1px solid #499bea;
-	   background: #499bea;
+      }
+
+      @media (min-width: 1200px) {
+        .loginbox-center .page {
+          margin-top:    20vh;
+          margin-bottom: 20vh;
         }
-        #FMP-email_button:hover {
-	   border: 1px solid #2683dd;
-	   background: #2683dd;
+      }
+      
+      .darkness .page {
+        background-color: transparent;
+      }
+      
+      /* loginbox */
+
+      .loginbox {
+        width: 100%;
+        min-height: 100vh;
+        box-shadow: none;
+        will-change: transform;
+        transform: translate3d(0,0,0);
+        -webkit-animation-name: anim-loginbox;
+        -webkit-animation-duration: .5s;
+        -webkit-animation-iteration-count: 1;
+        -webkit-animation-timing-function: ease;
+        -webkit-animation-fill-mode: forwards;
+        animation-name: anim-loginbox;
+        animation-duration: .5s;
+        animation-iteration-count: 1;
+        animation-timing-function: ease;
+        animation-fill-mode: forwards;
+      }
+
+      .loginbox-right .loginbox {
+        -webkit-animation-name: anim-loginbox-right;
+        animation-name: anim-loginbox-right;
+      }
+
+      .loginbox-center .loginbox {
+        -webkit-animation-name: anim-loginbox-center;
+        animation-name: anim-loginbox-center;
+      }
+
+      @media (min-width: 480px) {
+        .loginbox {
+          max-width: 25rem;
+          box-shadow: 0 0 0.5rem 0 rgba(0, 0, 0, .5);
         }
-		img#logo {max-width:70%;}
+
+        .loginbox-right .loginbox {
+          margin-left: auto;
+        }
+
+        .loginbox-center .loginbox {
+          min-height: 1px;
+        }
+      }
+      
+      .loginbox,
+      .dark .loginbox,
+      .darkness .loginbox {
+        background-color: rgba(0,0,0,0.85);
+        transition: background ease-in-out .3s;
+      }
+      @media (max-width: 479px) {
+        .loginbox,
+        .dark .loginbox,
+        .darkness .loginbox {
+          background-color: transparent;
+        }
+      }
+      
+      /* form */
+
+      .loginbox form a {
+        color: #818a91;
+      }
+      
+      .darkness .loginbox form {
+        background-color: transparent;
+      }
+      
+      /* container */
+
+      .container-body {
+        padding: 1.75rem;
+      }
+
+      @media (min-width: 480px) {
+        .container-body {
+          padding: 2.5rem;
+        }
+      }
+
+      .darkness > .container-body {
+        background-color: transparent;
+      }
+
+      /* copyrights */
+
+      .copyrights {
+        width: 100%;
+        padding: .5rem 1.5rem 1.5rem 1.75rem;
+        font-size: .675rem;
+        color: #aaa;
+        text-align: left;
+        background-color: rgba(0,0,0,0.15);
+      }
+
+      @media (min-width: 480px) {
+        .copyrights {
+          max-width: 25rem;
+          padding-left: 2.5rem;
+          background-color: rgba(0,0,0,0.85);
+        }
+
+        .loginbox-right .copyrights {
+          margin-left: auto;
+        }
+      }
+
+      @media (min-width: 480px) and (max-width: 767px) {
+        .loginbox-center .copyrights {
+          will-change: transform;
+          transform: translate3d(0,0,0);
+          -webkit-animation-name: anim-loginbox-center;
+          -webkit-animation-duration: .5s;
+          -webkit-animation-iteration-count: 1;
+          -webkit-animation-timing-function: ease;
+          -webkit-animation-fill-mode: forwards;
+          animation-name: anim-loginbox-center;
+          animation-duration: .5s;
+          animation-iteration-count: 1;
+          animation-timing-function: ease;
+          animation-fill-mode: forwards;
+        }
+      }
+
+      @media (min-width: 768px) {
+        .copyrights {
+          position: fixed;
+          right: 0;
+          bottom: 0;
+          width: auto;
+          max-width: none;
+          text-align: right;
+          background-color: transparent;
+        }
+
+        .loginbox-right .copyrights {
+          left: 0;
+          right: auto;
+          padding-left: 1.5rem;
+        }
+
+        .loginbox-center .copyrights {
+          right: auto;
+          left: 50%;
+          transform: translate3d(-50%,0,0);
+        }
+      }
+
+      .copyrights a {
+        color: #fff
+      }
+      
+      /* buttons */
+
+      .btn,
+      #FMP-email_button {
+        border-radius: 0;
+      }
+
+      .btn-success,
+      #FMP-email_button {
+        color: #fff !important;
+        background-color: #449d44 !important;
+        border-color: #419641 !important;
+      }
+
+      .btn-success:hover,
+      .btn-success:focus,
+      #FMP-email_button:hover,
+      #FMP-email_button:focus {
+        background-color: #5cb85c !important;
+        border-color: #5cb85c !important;
+      }
+
+      #submitButton,
+      #FMP-email_button {
+        padding-top:    0.5rem;
+        padding-bottom: 0.5rem;
+        font-size: 1rem;
+        font-weight: 400;
+      }
+
+      #submitButton{
+        float: right;
+      }
+      
+      /* onManagerLoginFormRender */
+
+      #onManagerLoginFormRender {
+        margin-top: 3rem;
+        color: #fff;
+      }
+      
+      /* FMP - forgot password */
+
+      @media (min-width: 768px) {
+        #ForgotManagerPassword-show_form {
+          display: inline-block;
+          position: absolute;
+          z-index: 500;
+          bottom: 1.5rem;
+        }
+      }
+
+      #FMP-email_label {
+        color: #818a91
+      }
+
+      #FMP-email {
+        margin-bottom: 2rem
+      }
+
+      #FMP-email_button {
+        float: right;
+      }
+      
+      /* form controls */
+
+      .form-control,
+      .captcha input,
+      #FMP-email {
+        padding: 0.7em 1em !important;
+        border-radius: 0 !important;
+        transition: all ease-in-out .3s !important;
+      }
+      .form-control,
+      .form-control:active,
+      .form-control:focus,
+      .captcha input,
+      .captcha input:active,
+      .captcha input:focus,
+      #FMP-email,
+      #FMP-email:active,
+      #FMP-email:focus {
+        font-size: 1rem !important;
+        color: #fff !important;
+        background-color: rgba(255,255,255,.2) !important;
+        border-width: 0 !important;
+      }
+
+      .form-control:active,
+      .captcha input:focus,
+      .captcha input:active,
+      .form-control:focus,
+      #FMP-email:active,
+      #FMP-email:focus {
+        outline: 0 none !important;
+        background-color: rgba(255,255,255,.3) !important;
+      }
+      
+      /* form groups */
+
+      .form-group--logo {
+        margin-bottom: 1.875rem;
+        text-align: left !important;
+      }
+
+      .form-group--actions > label {
+        padding-top: 0.6875rem;
+      }
+
+      /* captcha */
+
+      .captcha {
+        margin-bottom: 1rem;
+      }
+
+      /* label and caption */
+
+      label,
+      .caption {
+        color: #818a91;
+        line-height: 1.2em;
+      }
+
+      .caption {
+        margin-bottom: 0.9375rem;
+      }
+
+      /* mainloader */
+
+      #mainloader {
+        position: absolute;
+        z-index: 50000;
+        top: 0;
+        left: 0;
+        width: 100%;
+        height: 100%;
+        text-align: center;
+        vertical-align: middle;
+        padding: 15% 0 0 0;
+        background-color: rgba(255, 255, 255, 0.64);
+        opacity: 0;
+        visibility: hidden;
+        -webkit-transition-duration: 0.3s;
+        transition-duration: 0.3s
+      }
+
+      #mainloader::before {
+        content: "";
+        display: block;
+        position: absolute;
+        z-index: 1;
+        left: 50%;
+        top: 30%;
+        width: 7.5rem;
+        height: 7.5rem;
+        margin: -3.75rem 0 0 -3.75rem;
+        border-radius: 50%;
+        animation: rotate 2s linear infinite;
+        box-shadow: 0.3125rem 0.3125rem 0 0 rgb(234, 132, 82), 0.875rem -0.4375rem 0 0 rgba(111, 163, 219, 0.7), -0.4375rem 0.6875rem 0 0 rgba(112, 193, 92, 0.74), -0.6875rem -0.4375rem 0 0 rgba(147, 205, 99, 0.78);
+      }
+
+      #mainloader.show {
+        opacity: 0.75;
+        visibility: visible;
+        -webkit-transition-duration: 0.1s;
+        transition-duration: 0.1s
+      }
+
+      /* loader keyframes  */
+
+      @keyframes rotate {
+        to {
+          transform: rotate(360deg)
+        }
+      }
+
+      /* loginbox keyframes */
+      
+      @-webkit-keyframes anim-loginbox {
+        from {
+          opacity: 0;
+          transform: translate3d(-10%,0,0);
+        }
+        to {
+          opacity: 1;
+          transform: translate3d(0,0,0);
+        }
+      }
+
+      @keyframes anim-loginbox {
+        from {
+          opacity: 0;
+          transform: translate3d(-10%,0,0);
+        }
+        to {
+          opacity: 1;
+          transform: translate3d(0,0,0);
+        }
+      }
+      
+      @-webkit-keyframes anim-loginbox-right {
+        from {
+          opacity: 0;
+        }
+        to {
+          opacity: 1;
+        }
+      }
+
+      @keyframes anim-loginbox-right {
+        from {
+          opacity: 0;
+        }
+        to {
+          opacity: 1;
+        }
+      }
+      
+      @-webkit-keyframes anim-loginbox-center {
+        from {
+          opacity: 0;
+          transform: translate3d(0,1.5rem,0);
+        }
+        to {
+          opacity: 1;
+          transform: translate3d(0,0,0);
+        }
+      }
+
+      @keyframes anim-loginbox-center {
+        from {
+          opacity: 0;
+          transform: translate3d(0,1.5rem,0);
+        }
+        to {
+          opacity: 1;
+          transform: translate3d(0,0,0);
+        }
+      }
     </style>
 </head>
-<body class="[+manager_theme_style+]">
+<body class="login-page [+manager_theme_style+] [+login_form_position_class+]">
 <div class="page">
 	<div class="tab-page loginbox">
 		<form method="post" name="loginfrm" id="loginfrm" class="container container-body" action="processors/login.processor.php">

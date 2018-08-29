@@ -331,7 +331,7 @@ ul.sortableList li.ghost { z-index: 2; box-shadow: 0 0.25rem 1.5rem rgba(0, 0, 0
 #helpPane li:not(:first-child) > strong { margin-top: 1.4em; }
 #helpPane li > strong { display: block; font-size: 14px; }
 #helpPane pre { border: 1px solid rgba(0, 0, 0, 0.1); padding: 1em; }
-.loginbox .container-body{background-color: #fafafa;}
+/*.loginbox .container-body{background-color: #fafafa;}*/
 /* [ DARK THEME ] */
 .dark .tab-page div.sectionBody {background-color: var(--default-grey); border-color: var(--dark-grey);}
 .dark .tab-page div.sectionHeader {background-color: var(--dark-grey);}
@@ -499,21 +499,21 @@ form#docfinder div.tab-page { height: auto !important }
 /*package manager*/
 .dark div.package { background-color: var(--default-grey); border-color:var(--dark-grey) }
 .dark div.package .name h3{ color:#fafafa }
-
-/*calendar*/
-.dark .dp_cal, .dark .dp_empty { background-color: var(--default-grey);}
-.dark td.dp_roll:hover { background-color:#ecf0f1 }
 /* loginbox animation */
 @keyframes anim-loginbox {
-from { opacity: 0; transform: translateY(50px); }
+from { opacity: 0; transform: translateY(30px); }
 to { opacity: 1; transform: translateY(0); }
 }
 @-webkit-keyframes anim-loginbox {
-from { opacity: 0; transform: translateY(50px); }
+from { opacity: 0; transform: translateY(30px); }
 to { opacity: 1; transform: translateY(0); }
 }
-.loginbox { -webkit-animation-name: anim-loginbox; -webkit-animation-duration: .5s; -webkit-animation-iteration-count: 1; -webkit-animation-timing-function: ease; -webkit-animation-fill-mode: forwards; -moz-animation-name: anim-loginbox; -moz-animation-duration: .5s; -moz-animation-iteration-count: 1; -moz-animation-timing-function: ease-in; -moz-animation-fill-mode: forwards; animation-name: anim-loginbox; animation-duration: .5s; animation-iteration-count: 1; animation-timing-function: ease; animation-fill-mode: forwards; }
+.loginbox { -webkit-animation-name: anim-loginbox; -webkit-animation-duration: .5s; -webkit-animation-iteration-count: 1; -webkit-animation-timing-function: ease; -webkit-animation-fill-mode: forwards; -moz-animation-name: anim-loginbox; -moz-animation-duration: .5s; -moz-animation-iteration-count: 1; -moz-animation-timing-function: ease; -moz-animation-fill-mode: forwards; animation-name: anim-loginbox; animation-duration: .5s; animation-iteration-count: 1; animation-timing-function: ease; animation-fill-mode: forwards; }
 /* end loginbox animation */
+/*calendar*/
+.dark .dp_cal, .dark .dp_empty { background-color: var(--default-grey);}
+.dark td.dp_roll:hover { background-color:#ecf0f1 }
+
 .container-body { padding: 2em 1.5rem; }
 /*colored button*/
 /* duplicate button */ 
