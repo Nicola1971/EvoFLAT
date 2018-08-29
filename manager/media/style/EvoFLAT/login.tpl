@@ -124,6 +124,12 @@
         background-color: rgba(0,0,0,0.85);
         transition: background ease-in-out .3s;
       }
+	  .loginbox.light_loginbox {
+		background-color: rgba(255,255,255,0.65);
+      }
+	  .loginbox.dark_loginbox {
+		background-color: rgba(0,0,0,0.85);
+      }
       @media (max-width: 479px) {
         .loginbox,
         .dark .loginbox,
@@ -133,11 +139,22 @@
       }
       
       /* form */
-
+	  
       .loginbox form a {
         color: #818a91;
       }
-      
+      .loginbox.light_loginbox form a {
+        color: #000;
+      }
+	  .loginbox.light_loginbox label.text-muted {
+        color: #444!important;
+      }
+	  .loginbox.light_loginbox label#FMP-email_label{
+        color: #000!important;
+      }
+	    .loginbox.light_loginbox input#FMP-email{
+        background-color: #fafafa!important;
+      }
       .darkness .loginbox form {
         background-color: transparent;
       }
@@ -466,77 +483,98 @@
         }
       }
     </style>
-</head>
-<body class="login-page [+manager_theme_style+] [+login_form_position_class+]">
-<div class="page">
-	<div class="tab-page loginbox">
-		<form method="post" name="loginfrm" id="loginfrm" class="container container-body" action="processors/login.processor.php">
-			[+OnManagerLoginFormPrerender+]
-			<div class="form-group text-center">
-				<a class="logo" href="../" title="[(site_name)]">
-					<img src="media/style/[(manager_theme)]/images/misc/login-logo.png" alt="[(site_name)]" id="logo" />
-				</a>
-			</div>
-			<div class="form-group">
-				<label for="username" class="text-muted">[+username+]</label>
-				<input type="text" class="form-control" name="username" id="username" tabindex="1" value="[+uid+]" />
-			</div>
-			<div class="form-group">
-				<label for="password" class="text-muted">[+password+]</label>
-				<input type="password" class="form-control" name="password" id="password" tabindex="2" value="" />
-			</div>
-			<div class="clearfix">
-				<div class="caption">[+login_captcha_message+]</div>
-				<p>[+captcha_image+]</p>
-				[+captcha_input+]
-			</div>
-			<div class="form-group">
-				<label for="rememberme" class="text-muted">
-					<input type="checkbox" id="rememberme" name="rememberme" value="1" class="checkbox" [+remember_me+] /> [+remember_username+]</label>
-				<button type="submit" name="submitButton" class="btn btn-success float-xs-right" id="submitButton">[+login_button+]</button>
-			</div>
-			[+OnManagerLoginFormRender+]
-		</form>
-	</div>
-	<div class="copyrights">
-		<p class="loginLicense"></p>
-		<div class="gpl">&copy; 2005-2018 by the <a href="http://evo.im/" target="_blank">EVO</a>. <strong>EVO</strong>&trade; is licensed under the GPL.</div>
-	</div>
-</div>
-<div id="mainloader"></div>
-<script type="text/javascript">
-	/* <![CDATA[ */
-	if(window.frames.length) {
-		window.location = self.document.location;
-	}
-	var form = document.loginfrm;
-	if(form.username.value !== '') {
-		form.password.focus()
-	} else {
-		form.username.focus()
-	}
-	form.onsubmit = function(e) {
-		document.getElementById('mainloader').classList.add('show');
-		var xhr = new XMLHttpRequest();
-		xhr.open('POST', 'processors/login.processor.php', true);
-		xhr.setRequestHeader('Content-Type', 'application/x-www-form-urlencoded;');
-		xhr.onload = function() {
-			if(this.readyState === 4) {
-				var header = this.response.substr(0, 9);
-				if(header.toLowerCase() === 'location:') {
-					window.location = this.response.substr(10);
-				} else {
-					var cimg = document.getElementById('captcha_image');
-					if(cimg) cimg.src = 'includes/veriword.php?rand=' + Math.random();
-					document.getElementById('mainloader').classList.remove('show');
-					alert(this.response);
-				}
-			}
-		};
-		xhr.send('ajax=1&username=' + encodeURIComponent(form.username.value) + '&password=' + encodeURIComponent(form.password.value) + (form.captcha_code ? '&captcha_code=' + encodeURIComponent(form.captcha_code.value) : '') + '&rememberme=' + form.rememberme.value);
-		e.preventDefault();
-	}
-	/* ]]> */
-</script>
-</body>
+  </head>
+  <body class="[+manager_theme_style+] [+login_form_position_class+]">
+    <div class="page">
+      <div class="tab-page loginbox [(flt_loginbox_style)]">
+        <form method="post" name="loginfrm" id="loginfrm" class="container container-body" action="processors/login.processor.php">
+
+          <!-- OnManagerLoginFormPrerender -->
+          [+OnManagerLoginFormPrerender+]
+
+          <!-- logo -->
+          <div class="form-group form-group--logo text-center">
+            <a class="logo" href="../" title="[(site_name)]">
+              <img src="[+login_logo+]" alt="[(site_name)]" id="logo">
+            </a>
+          </div>
+          
+          <!-- username -->
+          <div class="form-group">
+            <label for="username" class="text-muted">[+username+]</label>
+            <input type="text" class="form-control" name="username" id="username" tabindex="1" value="[+uid+]">
+          </div>
+
+          <!-- password -->
+          <div class="form-group">
+            <label for="password" class="text-muted">[+password+]</label>
+            <input type="password" class="form-control" name="password" id="password" tabindex="2" value="">
+          </div>
+
+          <!-- captcha -->
+          <div class="captcha clearfix">
+            <div class="caption">[+login_captcha_message+]</div>
+            <p>[+captcha_image+]</p>
+            [+captcha_input+]
+          </div>
+
+          <!-- actions -->
+          <div class="form-group form-group--actions">
+            <label for="rememberme" class="text-muted">
+              <input type="checkbox" id="rememberme" name="rememberme" value="1" class="checkbox" [+remember_me+] > [+remember_username+]</label>
+            <button type="submit" name="submitButton" class="btn btn-success" id="submitButton">[+login_button+]</button>
+          </div>
+
+          <!-- OnManagerLoginFormRender -->
+          [+OnManagerLoginFormRender+]
+          
+        </form>
+      </div>
+
+      <!-- copyrights -->
+      <div class="copyrights">
+        <p class="loginLicense"></p>
+        <div class="gpl">&copy; 2005-2018 by the <a href="http://evo.im/" target="_blank">EVO</a>. <strong>EVO</strong>&trade; is licensed under the GPL.</div>
+      </div>
+    </div>
+
+    <!-- loader -->
+    <div id="mainloader"></div>
+
+    <!-- script -->
+    <script type="text/javascript">
+      /* <![CDATA[ */
+      if(window.frames.length) {
+        window.location = self.document.location;
+      }
+      var form = document.loginfrm;
+      if(form.username.value !== '') {
+        form.password.focus()
+      } else {
+        form.username.focus()
+      }
+      form.onsubmit = function(e) {
+        document.getElementById('mainloader').classList.add('show');
+        var xhr = new XMLHttpRequest();
+        xhr.open('POST', 'processors/login.processor.php', true);
+        xhr.setRequestHeader('Content-Type', 'application/x-www-form-urlencoded;');
+        xhr.onload = function() {
+          if(this.readyState === 4) {
+            var header = this.response.substr(0, 9);
+            if(header.toLowerCase() === 'location:') {
+              window.location = this.response.substr(10);
+            } else {
+              var cimg = document.getElementById('captcha_image');
+              if(cimg) cimg.src = 'includes/veriword.php?rand=' + Math.random();
+              document.getElementById('mainloader').classList.remove('show');
+              alert(this.response);
+            }
+          }
+        };
+        xhr.send('ajax=1&username=' + encodeURIComponent(form.username.value) + '&password=' + encodeURIComponent(form.password.value) + (form.captcha_code ? '&captcha_code=' + encodeURIComponent(form.captcha_code.value) : '') + '&rememberme=' + form.rememberme.value);
+        e.preventDefault();
+      }
+      /* ]]> */
+    </script>
+  </body>
 </html>
