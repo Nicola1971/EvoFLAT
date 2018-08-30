@@ -28,7 +28,7 @@
       body.light,
       body.dark,
       body.darkness {
-        background-color: #2a313b !important;
+        background-color: var(--main-color) !important;
         background-image: url('[+login_bg+]') !important;
         background-size: cover !important;
         background-position: center !important;
@@ -125,10 +125,10 @@
         transition: background ease-in-out .3s;
       }
 	  .loginbox.light_loginbox {
-		background-color: rgba(255,255,255,0.65);
+		background-color: rgba(255,255,255,0.85);
       }
 	  .loginbox.dark_loginbox {
-		background-color: rgba(0,0,0,0.85);
+		background-color: rgba(0,0,0,0.80);
       }
       @media (max-width: 479px) {
         .loginbox,
