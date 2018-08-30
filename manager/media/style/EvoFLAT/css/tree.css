@@ -58,68 +58,72 @@ div#treeHolder .tab-row .tab.selected:after, div#treeHolder .tab-row .tab.hover:
 #treeMenu .treeButton .fa{ line-height: 1.2em; }
 #treeHolder .tab-row .tab.hover:not(.selected) span{color:var(--selected-tabs-color)}
 div#treeHolder .tab-row .tab.selected span{color:var(--selected-tabs-color);}
-/* treeRoot dark & darkSide*/
-.dark #treeMenu, .darkSide #treeMenu { background-color: rgba(0, 0, 0, 0.2); border-bottom-color: rgba(0, 0, 0, 0.2); border-right-color: #2a2d33 }
-.dark #treeMenu .treeButton, .darkSide #treeMenu .treeButton { color: #687b8e!important; }
-.dark #treeMenu .treeButton:hover:not(.disabled), .darkSide #treeMenu .treeButton:hover:not(.disabled)  { background-color: #2d3033; color: #fff!important; }
+/* treeRoot dark & darkness*/
+.dark #treeMenu, .darkness #treeMenu { background-color: rgba(0, 0, 0, 0.2); border-bottom-color: rgba(0, 0, 0, 0.2); border-right-color: #2a2d33 }
+.dark #treeMenu .treeButton, .darkness #treeMenu .treeButton { color: #687b8e!important; }
+.dark #treeMenu .treeButton:hover:not(.disabled), .darkness #treeMenu .treeButton:hover:not(.disabled)  { background-color: #2d3033; color: #fff!important; }
 .dark #tree .treeframebody, .dark .ElementsInTree #tree .treeframebody #treeHolder, 
-.darkSide #tree .treeframebody, .darkSide .ElementsInTree #tree .treeframebody #treeHolder
+.darkness #tree .treeframebody, .darkness .ElementsInTree #tree .treeframebody #treeHolder
 { background-color: var(--dark-sidebar); border-color: #2a2d33 }
-.dark #treePane .panel-heading, .darkSide #treePane .panel-heading  {background-color: var(--default-grey)!important;}
-.dark #treeHolder .rootNode a, .darkSide #treeHolder .rootNode a { color: #c5c5c5; }
-.dark #treeHolder .rootNode a:hover, .darkSide #treeHolder .rootNode a:hover { color: #eee }
-.dark #treeRoot, .darkSide #treeRoot { color: #b3b3b3; }
-.dark #treeRoot a, .darkSide #treeRoot a { color: #b3b3b3; }
+.dark #treePane .panel-heading, .darkness #treePane .panel-heading  {background-color: var(--default-grey)!important;}
+.dark #treeHolder .rootNode a, .darkness #treeHolder .rootNode a { color: #c5c5c5; }
+.dark #treeHolder .rootNode a:hover, .darkness #treeHolder .rootNode a:hover { color: #eee }
+.dark #treeRoot, .darkness #treeRoot { color: #b3b3b3; }
+.dark #treeRoot a, .darkness #treeRoot a { color: #b3b3b3; }
 .dark #treeRoot a:hover:not(.empty), .dark #treeRoot a.current,
-.darkSide #treeRoot a:hover:not(.empty), .darkSide #treeRoot a.current { background-color: var(--default-grey); }
-.dark #treeRoot a.selected, #treeRoot .dragenter > a, .darkSide #treeRoot a.selected, #treeRoot .dragenter > a
+.darkness #treeRoot a:hover:not(.empty), .darkness #treeRoot a.current { background-color: var(--default-grey); }
+.dark #treeRoot a.selected, #treeRoot .dragenter > a, .darkness #treeRoot a.selected, #treeRoot .dragenter > a
 { background-color: rgba(0, 142, 255, 0.19); }
-.dark #treeRoot .dragafter > a::after, .dark #treeRoot .dragbefore > a::before, .darkSide #treeRoot .dragafter > a::after, .darkSide #treeRoot .dragbefore > a::before { background-color: rgba(255, 255, 255, 0.25); }
-.dark #treeRoot a .title, .darkSide #treeRoot a .title { color: var(--dark-item-tree-color);}
-.dark #treeRoot a.hidemenu .title, .darkSide #treeRoot a.hidemenu .title { color: #c5c5c5; }
-.dark #treeRoot a.deleted .title, .darkSide #treeRoot a.deleted .title { color: #a52a2a; }
-.dark #treeRoot a.unpublished .title, .darkSide #treeRoot a.unpublished .title { color: #d0726b }
-.dark #treeRoot .icon:hover > .fa, .darkSide #treeRoot .icon:hover > .fa { color: #fff }
-.dark #treeRoot a .title:hover, .darkSide #treeRoot a .title:hover { color: var(--item-tree-color)!important;}
-.dark #treeRoot a.hidemenu .title:hover, .darkSide #treeRoot a.hidemenu .title:hover { color: #eee }
-.dark #treeRoot a.unpublished .title:hover, .darkSide #treeRoot a.unpublished .title:hover { color: #f38e86 }
-.dark #treeRoot a.deleted .title:hover, .darkSide #treeRoot a.deleted .title:hover { color: #e23d3d }
-.dark #treeRoot .toggle:hover, .darkSide #treeRoot .toggle:hover { background-color: rgba(255, 255, 255, 0.19); }
-.dark #treeRoot .fa, .dark #treeHolder .rootNode .fa, .darkSide #treeRoot .fa, .darkSide #treeHolder .rootNode .fa { color: #bcbec0; }
+.dark #treeRoot .dragafter > a::after, .dark #treeRoot .dragbefore > a::before, .darkness #treeRoot .dragafter > a::after, .darkness #treeRoot .dragbefore > a::before { background-color: rgba(255, 255, 255, 0.25); }
+.dark #treeRoot a .title, .darkness #treeRoot a .title { color: var(--dark-item-tree-color);}
+.dark #treeRoot a.hidemenu .title, .darkness #treeRoot a.hidemenu .title { color: #c5c5c5; }
+.dark #treeRoot a.deleted .title, .darkness #treeRoot a.deleted .title { color: #a52a2a; }
+.dark #treeRoot a.unpublished .title, .darkness #treeRoot a.unpublished .title { color: #d0726b }
+.dark #treeRoot .icon:hover > .fa, .darkness #treeRoot .icon:hover > .fa { color: #fff }
+.dark #treeRoot a .title:hover, .darkness #treeRoot a .title:hover { color: var(--item-tree-color)!important;}
+.dark #treeRoot a.hidemenu .title:hover, .darkness #treeRoot a.hidemenu .title:hover { color: #eee }
+.dark #treeRoot a.unpublished .title:hover, .darkness #treeRoot a.unpublished .title:hover { color: #f38e86 }
+.dark #treeRoot a.deleted .title:hover, .darkness #treeRoot a.deleted .title:hover { color: #e23d3d }
+.dark #treeRoot .toggle:hover, .darkness #treeRoot .toggle:hover { background-color: rgba(255, 255, 255, 0.19); }
+.dark #treeRoot .fa, .dark #treeHolder .rootNode .fa, .darkness #treeRoot .fa, .darkness #treeHolder .rootNode .fa { color: #bcbec0; }
 .dark.ElementsInTree #tree .eltree:hover, .dark.ElementsInTree #tree .eltree.current, 
-.darkSide.ElementsInTree #tree .eltree:hover, .darkSide.ElementsInTree #tree .eltree.current
+.darkness.ElementsInTree #tree .eltree:hover, .darkness.ElementsInTree #tree .eltree.current
 {background-color: var(--default-grey)!important}
 .dark.ElementsInTree #tree .eltree:hover:before, .dark.ElementsInTree #tree .eltree.current:before,
-.darkSide.ElementsInTree #tree .eltree:hover:before, .darkSide.ElementsInTree #tree .eltree.current:before
+.darkness.ElementsInTree #tree .eltree:hover:before, .darkness.ElementsInTree #tree .eltree.current:before
 { color: var(--item-tree-color);!important}
-.dark #treeRoot .current > span.icon > i.fa, .darkSide #treeRoot .current > span.icon > i.fa
+.dark #treeRoot .current > span.icon > i.fa, .darkness #treeRoot .current > span.icon > i.fa
 { color: var(--dark-item-tree-color)!important}
 
-.darkSide #treeRoot, .darkSide #treeRoot a small { color: #b3b3b3; } 
-/*darkSide eit*/
-.darkSide.ElementsInTree #tree .actionButtons--eit li a:hover{color:#bfbfbf}
-.darkSide.ElementsInTree #tree .eltree:hover,.darkSide.ElementsInTree #tree .eltree.current{background-color:rgba(255,255,255,0.15)}
-.darkSide.ElementsInTree #tree .treeframebody{background-color:var(--dark-sidebar)!important;color:#828282;border-color:#2a2d33}
-.darkSide.ElementsInTree #tree .tab-row .tab{color:#fafafa;border-color:#2a2d33;background-color:#1a1c21}
-.darkSide.ElementsInTree #tree .tab-row .tab:hover{background-color:#2d3033}
-.darkSide.ElementsInTree #tree .tab-row .tab.selected{background-color:var(--dark-sidebar);}
-.darkSide.ElementsInTree #tree .tab-row .tab span{background-color:transparent}
-.darkSide.ElementsInTree #tree .tab-page{background-color:var(--dark-sidebar)}
-.darkSide.ElementsInTree #tree .tab-page .panel-group{border-color:#3e4144}
-.darkSide.ElementsInTree #tree .form-control{background-color:transparent;color:#c7c7c7}
+.darkness #treeRoot, .darkness #treeRoot a small { color: #b3b3b3; } 
+/*darkness eit*/
+.dark.ElementsInTree #tree h2.tab .fa, .darkness.ElementsInTree #tree h2.tab .fa {color:#bfbfbf}
+.dark.ElementsInTree #tree h2.tab:hover .fa, .darkness.ElementsInTree #tree h2.tab:hover .fa{color:#fff}
+.dark.ElementsInTree #tree h2.tab.selected .fa, .darkness.ElementsInTree #tree h2.tab.selected .fa{color:var(--selected-tabs-color);}
+
+.darkness.ElementsInTree #tree .actionButtons--eit li a:hover{color:#bfbfbf}
+.darkness.ElementsInTree #tree .eltree:hover,.darkness.ElementsInTree #tree .eltree.current{background-color:rgba(255,255,255,0.15)}
+.darkness.ElementsInTree #tree .treeframebody{background-color:var(--dark-sidebar)!important;color:#828282;border-color:#2a2d33}
+.darkness.ElementsInTree #tree .tab-row .tab{color:#fafafa;border-color:#2a2d33;background-color:#1a1c21}
+.darkness.ElementsInTree #tree .tab-row .tab:hover{background-color:#2d3033}
+.darkness.ElementsInTree #tree .tab-row .tab.selected{background-color:var(--dark-sidebar);}
+.darkness.ElementsInTree #tree .tab-row .tab span{background-color:transparent}
+.darkness.ElementsInTree #tree .tab-page{background-color:var(--dark-sidebar)}
+.darkness.ElementsInTree #tree .tab-page .panel-group{border-color:#3e4144}
+.darkness.ElementsInTree #tree .form-control{background-color:transparent;color:#c7c7c7}
 .dark.ElementsInTree #tree a{color:#c5c5c5}
-.darkSide.ElementsInTree #tree .disabledPlugin,.darkSide.ElementsInTree #tree .disabledPlugin a{color:#B68282}
-.darkSide.ElementsInTree #tree a{color:#c5c5c5}
-.darkSide.ElementsInTree #tree a:hover{color:#dbdbdb}
-.darkSide.ElementsInTree #tree .disabledPlugin a{color:#b68282}
-.darkSide.ElementsInTree #treeMenu{background-color:rgba(0,0,0,0.2)!important}
-.darkSide.ElementsInTree #treeMenu.is-intab{background-color:transparent!important}
-.darkSide #treePane .panel-heading {border-top: 1px solid #3e4144;border-bottom: 1px solid #3e4144;background-color: #2f323a;color:#fafafa;}
-.darkSide #treePane .panel-heading a{color:#c5c5c5;}
-.darkSide #treePane .panel-heading:hover {background-color: var(--default-grey)!important;}
-.dark #treeHolder .tab-row .tab.hover:not(.selected) span, .darkSide #treeHolder .tab-row .tab.hover:not(.selected) span
+.darkness.ElementsInTree #tree .disabledPlugin,.darkness.ElementsInTree #tree .disabledPlugin a{color:#B68282}
+.darkness.ElementsInTree #tree a{color:#c5c5c5}
+.darkness.ElementsInTree #tree a:hover{color:#dbdbdb}
+.darkness.ElementsInTree #tree .disabledPlugin a{color:#b68282}
+.darkness.ElementsInTree #treeMenu{background-color:rgba(0,0,0,0.2)!important}
+.darkness.ElementsInTree #treeMenu.is-intab{background-color:transparent!important}
+.darkness #treePane .panel-heading {border-top: 1px solid #3e4144;border-bottom: 1px solid #3e4144;background-color: #2f323a;color:#fafafa;}
+.darkness #treePane .panel-heading a{color:#c5c5c5;}
+.darkness #treePane .panel-heading:hover {background-color: var(--default-grey)!important;}
+.dark #treeHolder .tab-row .tab.hover:not(.selected) span, .darkness #treeHolder .tab-row .tab.hover:not(.selected) span
 {color:var(--dark-selected-tabs-color)}
-.dark div#treeHolder .tab-row .tab.selected span, .darkSide div#treeHolder .tab-row .tab.selected span{color:var(--dark-selected-tabs-color)}
+.dark div#treeHolder .tab-row .tab.selected span, .darkness div#treeHolder .tab-row .tab.selected span{color:var(--dark-selected-tabs-color)}
 
 body.dark.ElementsInTree #tree .treeframebody{background-color:var(--dark-sidebar)!important;}
 .dark.ElementsInTree #tree #treeHolder .tab-row .tab.selected{background-color:var(--dark-sidebar);}

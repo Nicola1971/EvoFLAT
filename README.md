@@ -1,4 +1,4 @@
-# EvoFLAT 1.0.1
+# EvoFLAT 1.0.2
 An advanced, customizable Manager Theme for Evolution cms 1.4 +
 based on MODxFLAT manager theme https://github.com/Nicola1971/MODxFLAT
 ## Dark Theme

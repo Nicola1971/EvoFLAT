@@ -33,6 +33,8 @@ $docGroups = isset($_SESSION['mgrDocgroups']) && is_array($_SESSION['mgrDocgroup
 // set limit sql query
 $limit = !empty($modx->config['number_of_results']) ? (int) $modx->config['number_of_results'] : 100;
 
+header('Content-Type: text/html; charset='.$modx->config['modx_charset'], true);
+
 if (isset($action)) {
     switch ($action) {
 
@@ -65,7 +67,7 @@ if (isset($action)) {
                     case 'element_templates':
                         $a = 16;
                         $sqlLike = $filter ? 'WHERE t1.templatename LIKE "' . $modx->db->escape($filter) . '%"' : '';
-                        $sql = $modx->db->query('SELECT t1.*, t1.templatename AS name
+                        $sql = $modx->db->query('SELECT t1.id, t1.templatename AS name, t1.locked, 0 AS disabled
                         FROM ' . $modx->getFullTableName('site_templates') . ' AS t1
                         ' . $sqlLike . '
                         ORDER BY t1.templatename ASC
@@ -79,7 +81,7 @@ if (isset($action)) {
 
                     case 'element_tplvars':
                         $a = 301;
-                        $sql = $modx->db->query('SELECT t1.*, IF(t2.templateid,0,1) AS disabled
+                        $sql = $modx->db->query('SELECT t1.id, t1.name, t1.locked, IF(MIN(t2.tmplvarid),0,1) AS disabled
                         FROM ' . $modx->getFullTableName('site_tmplvars') . ' AS t1
                         LEFT JOIN ' . $modx->getFullTableName('site_tmplvar_templates') . ' AS t2 ON t1.id=t2.tmplvarid
                         ' . $sqlLike . '
@@ -95,7 +97,7 @@ if (isset($action)) {
 
                     case 'element_htmlsnippets':
                         $a = 78;
-                        $sql = $modx->db->query('SELECT t1.*
+                        $sql = $modx->db->query('SELECT t1.id, t1.name, t1.locked, t1.disabled
                         FROM ' . $modx->getFullTableName('site_htmlsnippets') . ' AS t1
                         ' . $sqlLike . '
                         ORDER BY t1.name ASC
@@ -109,7 +111,7 @@ if (isset($action)) {
 
                     case 'element_snippets':
                         $a = 22;
-                        $sql = $modx->db->query('SELECT t1.*
+                        $sql = $modx->db->query('SELECT t1.id, t1.name, t1.locked, t1.disabled
                         FROM ' . $modx->getFullTableName('site_snippets') . ' AS t1
                         ' . $sqlLike . '
                         ORDER BY t1.name ASC
@@ -123,7 +125,7 @@ if (isset($action)) {
 
                     case 'element_plugins':
                         $a = 102;
-                        $sql = $modx->db->query('SELECT t1.*
+                        $sql = $modx->db->query('SELECT t1.id, t1.name, t1.locked, t1.disabled
                         FROM ' . $modx->getFullTableName('site_plugins') . ' AS t1
                         ' . $sqlLike . '
                         ORDER BY t1.name ASC
@@ -168,6 +170,11 @@ if (isset($action)) {
             $filter = !empty($_REQUEST['filter']) && is_scalar($_REQUEST['filter']) ? addcslashes(trim($_REQUEST['filter']), '\%*_') : '';
             $sqlLike = $filter ? 'WHERE t1.username LIKE "' . $modx->db->escape($filter) . '%"' : '';
             $sqlLimit = $sqlLike ? '' : 'LIMIT ' . $limit;
+
+            if(!$modx->hasPermission('save_role')) {
+                $sqlLike .= $sqlLike ? ' AND ' : 'WHERE ';
+                $sqlLike .= 't2.role != 1';
+            }
 
             $sql = $modx->db->query('SELECT t1.*, t1.username AS name, t2.blocked
 				FROM ' . $modx->getFullTableName('manager_users') . ' AS t1
@@ -494,11 +501,11 @@ if (isset($action)) {
                     // find older parent
                     $parentOld = $modx->db->getValue($modx->db->select('parent', $modx->getFullTableName('site_content'), 'id=' . $id));
 
-                    $eventOut = $modx->invokeEvent('onBeforeMoveDocument', array(
+                    $eventOut = $modx->invokeEvent('onBeforeMoveDocument', [
                         'id_document' => $id,
                         'old_parent'  => $parentOld,
                         'new_parent'  => $parent,
-                    ));
+                    ]);
 
                     if (is_array($eventOut) && count($eventOut) > 0) {
                         $eventParent = array_pop($eventOut);
@@ -570,11 +577,11 @@ if (isset($action)) {
                             if (!$json['errors']) {
                                 $json['success'] = $_lang["actioncomplete"];
 
-                                $modx->invokeEvent('onAfterMoveDocument', array(
+                                $modx->invokeEvent('onAfterMoveDocument', [
                                     'id_document' => $id,
                                     'old_parent'  => $parentOld,
                                     'new_parent'  => $parent,
-                                ));
+                                ]);
                             }
                         }
                     }
