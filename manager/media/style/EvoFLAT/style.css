@@ -34,6 +34,4 @@ html {
 /*login*/
 body.login-page{background-color: var(--main-color);}
 body.dark.login-page{background-color: var(--main-color);}
-.loginbox{box-shadow: 0 0 20px 0 rgba(0, 0, 0, 0.2), 0 5px 5px 0 rgba(0, 0, 0, 0.24);transition: all 0.5s ease-in-out;}
-.loginbox:hover{box-shadow: 0 0 30px 0 rgba(0, 0, 0, 0.5), 0 5px 5px 0 rgba(0, 0, 0, 0.54)}
-.loginbox #logocustom{display:block;margin:0 auto;max-height:180px;}
+
