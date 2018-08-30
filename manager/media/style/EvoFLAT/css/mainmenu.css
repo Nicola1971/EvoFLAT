@@ -110,6 +110,7 @@
 .lightness #mainMenu { background-color: #f1f1f1; color: #464646; }
 .lightness #mainMenu .nav > li > a, .lightness #mainMenu .nav .label_searchid { color: #464646 }
 .lightness #mainMenu.show .nav > li.dropdown.hover > a { color: #222; }
+/*fix lightness logo*/
 body:not(.navbar-left) .lightness #mainMenu #nav #site a::before { background-image: url("../images/misc/login-logo.png")!important }
 
 @media (min-width: 1200px) {
