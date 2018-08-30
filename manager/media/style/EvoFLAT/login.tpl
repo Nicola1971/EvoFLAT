@@ -125,10 +125,10 @@
         transition: background ease-in-out .3s;
       }
 	  .loginbox.light_loginbox {
-		background-color: rgba(255,255,255,0.85);
+		background-color: rgba(255,255,255,[(flt_loginbox_opacity)]);
       }
 	  .loginbox.dark_loginbox {
-		background-color: rgba(0,0,0,0.80);
+		background-color: rgba(0,0,0,[(flt_loginbox_opacity)]);
       }
       @media (max-width: 479px) {
         .loginbox,
