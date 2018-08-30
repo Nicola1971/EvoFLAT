@@ -110,7 +110,7 @@
 .lightness #mainMenu { background-color: #f1f1f1; color: #464646; }
 .lightness #mainMenu .nav > li > a, .lightness #mainMenu .nav .label_searchid { color: #464646 }
 .lightness #mainMenu.show .nav > li.dropdown.hover > a { color: #222; }
-.lightness #mainMenu #nav #site a::before { background-image: url("../images/misc/login-logo.png")!important }
+body:not(.navbar-left) .lightness #mainMenu #nav #site a::before { background-image: url("../images/misc/login-logo.png")!important }
 
 @media (min-width: 1200px) {
 #mainMenu #nav #site a { margin-left: 9.25rem; }
@@ -191,10 +191,11 @@
 .navbar-left.lightness #mainMenu { -webkit-box-shadow: 0 2px 0 1px rgba(0, 0, 0, 0.15); box-shadow: 0 2px 0 1px rgba(0, 0, 0, 0.15); }
 .navbar-left.lightness #mainMenu .nav > li { /*border-bottom-color: rgba(0,0,0,0.05);*/ }
 .navbar-left.light .treeframebody { background-color: #f3f3f3; }
-/*.navbar-left.dark #mainMenu { -webkit-box-shadow: 0 2px 0 1px rgba(255, 255, 255, 0.07); box-shadow: 0 2px 0 1px rgba(255, 255, 255, 0.07); background-color: #17191e; }
+.navbar-left.dark #mainMenu { -webkit-box-shadow: 0 2px 0 1px rgba(255, 255, 255, 0.07); box-shadow: 0 2px 0 1px rgba(255, 255, 255, 0.07); background-color: #17191e; }
 .navbar-left.dark #mainMenu .nav > li > a, .navbar-left.dark #mainMenu .nav .label_searchid { color: #dcd9e3; }
-.navbar-left.darkness #mainMenu { -webkit-box-shadow: 0 2px 0 1px rgba(255, 255, 255, 0.07); box-shadow: 0 2px 0 1px rgba(255, 255, 255, 0.07); background-color: #17191e; }*/
+.navbar-left.darkness #mainMenu { -webkit-box-shadow: 0 2px 0 1px rgba(255, 255, 255, 0.07); box-shadow: 0 2px 0 1px rgba(255, 255, 255, 0.07); background-color: #17191e; }
 .navbar-left.light #mainMenu #nav #site a::before, .navbar-left.dark #mainMenu #nav #site a::before, .navbar-left.darkness #mainMenu #nav #site a::before { background-image: url("../images/misc/logo-navbar-left-white.png"); }
+
 .navbar-left.lightness #mainMenu #settings { border-top: 1px solid rgba(0, 0, 0, 0.1); }
 }
 @media (min-width: 1200px) {
