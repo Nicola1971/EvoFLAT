@@ -1,4 +1,4 @@
-# EvoFLAT 1.0.3
+# EvoFLAT 1.0.4
 
 ## Require Evolution CMS => 1.4.4 
 
