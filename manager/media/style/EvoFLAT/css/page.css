@@ -1,33 +1,33 @@
 @import "../../common/bootstrap/css/bootstrap.min.css?v=4.0.0-alpha.5";
 @import "../../common/font-awesome/css/font-awesome.min.css?v=4.7.0";
-@import 'fonts.css?v=1.4.0';
-@import "forms.css?v=1.4.0";
-@import "mainmenu.css?v=1.4.0";
-@import "tree.css";
-@import "tabpane.css";
-@import "contextmenu.css";
+@import 'fonts.css?v=1.4.5';
+@import "forms.css?v=1.4.5";
+@import "mainmenu.css?v=1.4.5";
+@import "tree.css?v=1.4.5";
+@import "tabpane.css?v=1.4.5";
+@import "contextmenu.css?v=1.4.5";
 @import "index.css";
 
 html {
   --main-color: #0e80cb;
   --main-font-size: 0.8125rem;
-  --dark-sidebar: #202329;
+  --darkness-sidebar: #202329;
   --default-grey: #383f48;
   --medium-grey: #3c434e;
-  --dark-grey: #272c33;
+  --darkness-grey: #272c33;
 /* menu */
   --main-menu-color: #0e80cb;
   --main-menu-font-size: 0.9rem;
 /* tree */
   --item-tree-color: #0275d8;
-  --dark-item-tree-color: #1792fd;
+  --darkness-item-tree-color: #1792fd;
 /* tabs */
   --selected-tabs-color: #0e80cb;
   --selected-tabs-txt-color: #fff;
-  --dark-selected-tabs-color: #0e80cb;
-  --dark-selected-tabs-txt-color: #fff;
+  --darkness-selected-tabs-color: #0e80cb;
+  --darkness-selected-tabs-txt-color: #fff;
 /* links */
   --links-color: #0275d8;
   --links-hover-color: #014c8c;
-  --dark-links-hover-color: #1792fd;
+  --darkness-links-hover-color: #1792fd;
 }

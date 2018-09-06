@@ -25,15 +25,15 @@ a.hometblink:hover { text-decoration: underline; color: Gray; }*/
 .sortabletable { width: 100%; border-collapse: collapse; }
 .sortabletable thead tr { color: #333; font-weight: 500; white-space: nowrap; background-color: #d2d2d2; text-align: left; }
 .sortabletable tr { background: #fff; }
-.dark .sortabletable tr { background: #383f48; }
+.darkness .sortabletable tr { background: #383f48; }
 .sortabletable tr.even { background: #f7f7f7; }
 .sortabletable tbody tr:hover { background: #e9f0f3; }
-.dark .sortabletable tbody tr:hover { background: #383f48; }
+.darkness .sortabletable tbody tr:hover { background: #383f48; }
 .sortabletable td, .sortabletable th { padding: 5px !important; border: 1px solid #ccc; }
 .sortabletable th { text-align: left; cursor: pointer; color: #333; }
-.dark .sortabletable th { text-align: left; cursor: pointer; background-color: #202329; color: #fafafa; }
+.darkness .sortabletable th { text-align: left; cursor: pointer; background-color: #202329; color: #fafafa; }
 .sortabletable th a { text-decoration: none; color: #333; }
-.dark .sortabletable th a { text-decoration: none; color: #FFF; }
+.darkness .sortabletable th a { text-decoration: none; color: #FFF; }
 .sortabletable th:active { background: #ccc; padding: 3px 4px 1px 6px; }
 /* -------------------------[ Pagination table ]--- */
 #max-display-records { margin: 10px 0; }
@@ -87,7 +87,7 @@ fieldset.legacy h2 { width: 100%; background: #f5f5f5; margin: -10px -10px 1rem 
 /* Custom */
 /* normalize some td paddings */
 #displayparams table { background: #fff; }
-.dark #displayparams table { background: #383f48; }
+.darkness #displayparams table { background: #383f48; }
 #displayparams table tbody td { border-bottom: 1px dotted #d3d3d3; }
 .permissiongroups { margin: 0; }
 .permissiongroups ul { clear: both; margin: 0; padding: 0.5rem 0; }
@@ -190,7 +190,7 @@ ul.elements_buttonbar .fa { font-size: 0.875rem; padding: 1px 1px 0; }
 #tabChildren .grid tr > td:nth-child(6) a { padding: 0 .2em; font-size: 0.9rem; color: #444; }
 /* element-edit-message */
 .msg-container { padding-bottom: 10px; border-bottom: 1px solid #ededed; margin-bottom: 1rem; color: #777; }
-.dark .msg-container { padding-bottom: 10px; border-bottom: 1px solid #383f48; margin-bottom: 1rem; color: #fafafa; }
+.darkness .msg-container { padding-bottom: 10px; border-bottom: 1px solid #383f48; margin-bottom: 1rem; color: #fafafa; }
 .btn-small { padding: 2px 4px !important; font-size: 11px !important; }
 .relative { position: relative; }
 .modx-alert { display: block; margin: 60px 10px 10px 10px; padding: 1em; }

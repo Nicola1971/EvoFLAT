@@ -42,7 +42,7 @@ img { max-width: 100%; height: auto }
 .h6, h6 { font-size: 0.7rem }
 a { color: var(--links-color); text-decoration: none }
 a:focus, a:hover { color: var(--links-hover-color); text-decoration: underline }
-.dark a:focus, .dark a:hover { color: var(--dark-links-hover-color); text-decoration: underline }
+.darkness a:focus, .darkness a:hover { color: var(--darkness-links-hover-color); text-decoration: underline }
 a[href=""], a:not([href]) { cursor: default }
 a:not([href]):not([tabindex]) { color: inherit; text-decoration: none }
 a:not([href]):not([tabindex]):focus, a:not([href]):not([tabindex]):hover { color: inherit; text-decoration: none }
@@ -77,8 +77,8 @@ a.text-info:focus, a.text-info:hover { color: #31b0d5 !important }
 a.text-warning:focus, a.text-warning:hover { color: #ec971f !important }
 .text-danger { color: #d9534f !important }
 a.text-danger:focus, a.text-danger:hover { color: #c9302c !important }
-.text-gray-dark { color: #292b2c !important }
-a.text-gray-dark:focus, a.text-gray-dark:hover { color: #101112 !important }
+.text-gray-darkness { color: #292b2c !important }
+a.text-gray-darkness:focus, a.text-gray-darkness:hover { color: #101112 !important }
 .text-hide { font: 0/0 a; color: transparent; text-shadow: none; background-color: transparent; border: 0 }
 .hide { display: none !important }
 .show { display: block !important }
@@ -96,10 +96,10 @@ h1 .fa { margin-left:0.7rem; margin-right: 0.20em; padding-top: 0.30em; text-ali
 /*
 h1 {margin:8px 0 12px 0; background:#fff; border:1px solid #e2e2e2; border-left:none;border-right:none;}
 */
-.dark h1{border-color: #444c57; color: #FFF}
-.dark h1 .fa {color: #FFF;border-color: #FFF;}
+.darkness h1{border-color: #444c57; color: #FFF}
+.darkness h1 .fa {color: #FFF;border-color: #FFF;}
 h1 .help { background:transparent; border:none; margin: 0 0 0 0.25em; color: rgba(0, 0, 0, 0.15); font-size: 0.8em; cursor: pointer }
-.dark h1 .help { background:transparent;color: #dedede }
+.darkness h1 .help { background:transparent;color: #dedede }
 h1 .help:hover { color: #31b0d5; }
 h1 small { margin-left: 0.5em; line-height: 1em }
 .split { height: 0; font-size: 0; clear: both; padding: 0; border-top: 1px dotted rgba(0, 0, 0, .1) }

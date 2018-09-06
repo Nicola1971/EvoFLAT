@@ -8,8 +8,8 @@
 div.dynamic-tab-pane-control .tab-row .tab, .tab-pane > .tab-page > .tab { position: relative; display: inline-block; margin: 0.266rem 0 0 0; padding: 0 0.875rem; line-height: 2.3rem; height: 2.3rem; text-transform: uppercase; border: 0px solid rgba(0, 0, 0, 0); cursor: pointer; -webkit-user-select: none; user-select: none; }
 div.dynamic-tab-pane-control .tab-row .tab{line-height: 2.2rem; height: 2.2rem; background-color: transparent; border-color: #ddd; transition: all .2s ease-in;margin-right:1px;}
 div.dynamic-tab-pane-control .tab-row .tab.selected span {color: var(--selected-tabs-txt-color);}
-.dark div.dynamic-tab-pane-control .tab-row .tab.selected span {color: var(--dark-selected-tabs-txt-color);}
-.dark div .dynamic-tab-pane-control .tab-row .tab span {color:#f4f4f4;}
+.darkness div.dynamic-tab-pane-control .tab-row .tab.selected span {color: var(--darkness-selected-tabs-txt-color);}
+.darkness div .dynamic-tab-pane-control .tab-row .tab span {color:#f4f4f4;}
 div.dynamic-tab-pane-control .tab-row .tab:after {
 	position: absolute;
     z-index: 10499; 
@@ -56,9 +56,9 @@ div.dynamic-tab-pane-control .tab-row .tab.selected:after {
 	border-width: 8px;
 	border-top-color: var(--selected-tabs-color);
 }
-html body.dark div.dynamic-tab-pane-control .tab-row .tab.selected {border-top-color: var(--dark-selected-tabs-color); background-color: var(--dark-selected-tabs-color); color: var(--dark-selected-tabs-txt-color);}
-.dark div.dynamic-tab-pane-control .tab-row .tab.selected:after, .dark div.dynamic-tab-pane-control .tab-row .tab.selected.hover:after {
-	border-top-color: var(--dark-selected-tabs-color);
+html body.darkness div.dynamic-tab-pane-control .tab-row .tab.selected {border-top-color: var(--darkness-selected-tabs-color); background-color: var(--darkness-selected-tabs-color); color: var(--darkness-selected-tabs-txt-color);}
+.darkness div.dynamic-tab-pane-control .tab-row .tab.selected:after, .darkness div.dynamic-tab-pane-control .tab-row .tab.selected.hover:after {
+	border-top-color: var(--darkness-selected-tabs-color);
 }
 
 .tab-row .tab .fa { margin-right: 0.1em; font-size: 0.875rem }
@@ -92,7 +92,7 @@ html body.dark div.dynamic-tab-pane-control .tab-row .tab.selected {border-top-c
 .tab-page .tab-section:first-child, .tab-page .sectionHeader + .sectionBody, .tab-page .sectionBody ~ .sectionHeader { margin-top: 0 }
 .tab-page .tab-section .tab-header, .tab-page .sectionHeader { margin-left: -1px; margin-right: -1px; padding-left: .5rem; padding-right: .5rem; background-color: #efeff6; border: 1px solid #e0e0e0; border-bottom: 2px solid #e0e0ec; border-top: 3px solid var(--main-color);}
 #tv_header.sectionHeader { background-color: #fff; border: 1px solid #e0e0e0; border-bottom: 2px solid #e0e0ec; border-top: 3px solid var(--main-color);}
-.dark #tv_header.sectionHeader { background-color: var(--default-grey); border: 1px solid var(--default-grey); border-bottom: 2px solid #9DA5B4; border-top: 3px solid var(--main-color);} 
+.darkness #tv_header.sectionHeader { background-color: var(--default-grey); border: 1px solid var(--default-grey); border-bottom: 2px solid #9DA5B4; border-top: 3px solid var(--main-color);} 
 .tab-page .tab-section .tab-header:first-child, .tab-page .sectionHeader { margin-top: 0; border-top: none }
 .tab-page .tab-section .tab-header + .tab-header, .tab-page .tab-section .tab-body + .tab-header, .tab-page .sectionHeader { border-top: 1px solid #e0e0e0; }
 .tab-page .tab-section .tab-body, .tab-page .sectionBody { padding: 1rem; }
@@ -128,9 +128,9 @@ html body.dark div.dynamic-tab-pane-control .tab-row .tab.selected {border-top-c
 .evo-popup.animation { -webkit-transition: .25s; transition: .25s }
 .evo-popup:hover { box-shadow: 0 0.5rem 2rem rgba(0, 0, 0, 0.3); }
 .evo-popup.alert { margin: 0; height: 100%; border-color: rgba(0, 0, 0, 0.1); background-color: #fff; color: #444; border-radius: .15rem; }
-.evo-popup.alert-dark { background-color: #202329; color: #ccc; }
-.evo-popup.alert-dark hr { border-color: rgba(255, 255, 255, 0.5); }
-.evo-popup.alert-dark .close { color: #fff; text-shadow: 0 0 #000; }
+.evo-popup.alert-darkness { background-color: #202329; color: #ccc; }
+.evo-popup.alert-darkness hr { border-color: rgba(255, 255, 255, 0.5); }
+.evo-popup.alert-darkness .close { color: #fff; text-shadow: 0 0 #000; }
 .evo-popup.alert-success { border-color: rgba(0, 0, 0, 0.1); background-color: #5cb85c; color: #fff; }
 .evo-popup.alert-success hr { border-color: rgba(255, 255, 255, 0.5); }
 .evo-popup.alert-info { border-color: rgba(0, 0, 0, 0.1); background-color: #1976d2; color: #fff; }
@@ -161,7 +161,7 @@ html body.dark div.dynamic-tab-pane-control .tab-row .tab.selected {border-top-c
 .evo-popup.resize .border-outline .bo-top, .evo-popup.resize .border-outline .bo-bottom { height: .25rem; width: 100%; }
 .evo-popup.resize .border-outline .bo-top { top: 0; }
 .evo-popup.resize .border-outline .bo-bottom { bottom: 0; }
-.dark .evo-popup.alert.evo-popup-iframe { background-color: #ecf0f1 }
+.darkness .evo-popup.alert.evo-popup-iframe { background-color: #ecf0f1 }
 /* [ EVO-TABS ] */
 .evo-tab-row { height: 1.875rem; padding: 0; background-color: #dfdfdf; }
 .evo-tab-row:after { background-color: #cfd2d6 }
@@ -180,44 +180,44 @@ html body.dark div.dynamic-tab-pane-control .tab-row .tab.selected {border-top-c
 .evo-tab-page { position: absolute; overflow: hidden; z-index: -1; display: block; left: 0; top: 2.3em; right: 0; bottom: 0; height: auto; box-shadow: none; background-color: #fafafa; }
 .evo-tab-page.show { z-index: 1; }
 .evo-tab-page iframe { position: absolute; left: 0; top: 0; width: 100%; height: 100%; background-color: #fafafa; overflow: hidden; }
-/* dark */
-.dark .evo-popup-overlay { background-color: rgba(0, 0, 0, 0.3); }
-.dark .evo-tab-row { background-color: #1a1c21; border-bottom: none; }
-.dark .evo-tab-row:after { background-color: #1a1c21; }
-.dark .evo-tab-row .tab-row .tab { color: #aaa; border-color: #2a2d33 }
-.dark .evo-tab-row .tab-row .tab:hover { background-color: #2d3033}
-.dark .evo-tab-row .tab-row .tab.changed { color: #7cb2dc; }
-.dark .evo-tab-row .tab-row .tab.selected { background-color: var(--default-grey); color: #fff; border-bottom: 3px solid var(--dark-selected-tabs-color); }
-.dark .evo-tab-page, .dark .evo-tab-page iframe { background-color: #ecf0f1 }
+/* darkness */
+.darkness .evo-popup-overlay { background-color: rgba(0, 0, 0, 0.3); }
+.darkness .evo-tab-row { background-color: #1a1c21; border-bottom: none; }
+.darkness .evo-tab-row:after { background-color: #1a1c21; }
+.darkness .evo-tab-row .tab-row .tab { color: #aaa; border-color: #2a2d33 }
+.darkness .evo-tab-row .tab-row .tab:hover { background-color: #2d3033}
+.darkness .evo-tab-row .tab-row .tab.changed { color: #7cb2dc; }
+.darkness .evo-tab-row .tab-row .tab.selected { background-color: var(--default-grey); color: #fff; border-bottom: 3px solid var(--darkness-selected-tabs-color); }
+.darkness .evo-tab-page, .darkness .evo-tab-page iframe { background-color: #ecf0f1 }
 
-.dark .section-editor textarea { background-color: #282c34; color: #abb2bf }
-.dark .tab-page, .dark .sectionBody .tab-page, .dark .tab-row .tab.selected, .dark .tab-row .tab.selected:before { background-color: var(--dark-grey); }
-.dark div.dynamic-tab-pane-control .tab-row .tab{color:#dedede; }
-.dark div.dynamic-tab-pane-control .tab-row .tab.selected { z-index: 2; background-color: var(--selected-tabs-color);}
-.dark div.dynamic-tab-pane-control .tab-row .tab.hover { z-index: 2; background-color: #687b8e; color: #1d2123; font-weight: 300;}
-.dark div.dynamic-tab-pane-control .tab-row .tab.hover:after {border-top-color: #687b8e;}
-.dark .tab-row::after, .dark .tab-row-container::after { background-color: #1a1d1f }
+.darkness .section-editor textarea { background-color: #282c34; color: #abb2bf }
+.darkness .tab-page, .darkness .sectionBody .tab-page, .darkness .tab-row .tab.selected, .darkness .tab-row .tab.selected:before { background-color: var(--darkness-grey); }
+.darkness div.dynamic-tab-pane-control .tab-row .tab{color:#dedede; }
+.darkness div.dynamic-tab-pane-control .tab-row .tab.selected { z-index: 2; background-color: var(--selected-tabs-color);}
+.darkness div.dynamic-tab-pane-control .tab-row .tab.hover { z-index: 2; background-color: #687b8e; color: #1d2123; font-weight: 300;}
+.darkness div.dynamic-tab-pane-control .tab-row .tab.hover:after {border-top-color: #687b8e;}
+.darkness .tab-row::after, .darkness .tab-row-container::after { background-color: #1a1d1f }
 
-.dark .sectionHeader  { background-color: var(--default-grey); border:none;}
-.dark .sectionBody.tmplvars  { background-color: #2a3038; border:none; }
-.dark table.table--editUser th { border:none; border-bottom:1px solid #323841; color:#fafafa;}
-.dark table.table--editUser td { border:0; }
-.dark table.table--editUser td { border:0; border-bottom:1px solid #323841;}
-.dark ul.mmTagList li {color:var(--selected-tabs-color);!important;}
+.darkness .sectionHeader  { background-color: var(--default-grey); border:none;}
+.darkness .sectionBody.tmplvars  { background-color: #2a3038; border:none; }
+.darkness table.table--editUser th { border:none; border-bottom:1px solid #323841; color:#fafafa;}
+.darkness table.table--editUser td { border:0; }
+.darkness table.table--editUser td { border:0; border-bottom:1px solid #323841;}
+.darkness ul.mmTagList li {color:var(--selected-tabs-color);!important;}
 
 
-.dark input.form-control.form-control-sm, .dark .sortableList li  { background-color: var(--default-grey); color: #eee;border-color: #1a1d22;}
-.dark .sortableList li:hover {border-color: #FFF;} 
-.dark .tab-page {
+.darkness input.form-control.form-control-sm, .darkness .sortableList li  { background-color: var(--default-grey); color: #eee;border-color: #1a1d22;}
+.darkness .sortableList li:hover {border-color: #FFF;} 
+.darkness .tab-page {
 	color: #d0d1d3;
 }
-.dark .tab-page .fa-question-circle{
+.darkness .tab-page .fa-question-circle{
 	color: #7cb2dc!important;
 }
 .tab-page .fa-question-circle{
 	color: #7cb2dc!important;
 	opacity:0.6;
 }
-.dark .tab-page i#plock.fa.fa-folder-o, .dark .tab-page i#plock.fa.fa-folder-open-o {
+.darkness .tab-page i#plock.fa.fa-folder-o, .darkness .tab-page i#plock.fa.fa-folder-open-o {
 	color: #ffd700 !important;
 }
