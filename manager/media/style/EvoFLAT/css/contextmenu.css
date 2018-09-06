@@ -1,7 +1,9 @@
 /* contextmenu */
 #mx_contextmenu, #contextmenu, .nu-context-menu, .contextMenu { display: block !important; position: absolute; overflow: hidden; top: 0; max-width: 25rem; width: auto !important; height: auto; padding: 0.25rem 0; visibility: hidden; opacity: 0; z-index: 10000; background: #fff; font-size: 0.9em; border: none; border-radius: 0.25rem; -webkit-box-shadow: 0 0.5rem 2rem rgba(0, 0, 0, 0.3); box-shadow: 0 0.5rem 2rem rgba(0, 0, 0, 0.3); transition-duration: 0.15s; transform: translateZ(0) }
-.dark #mx_contextmenu, .dark #contextmenu, .dark .nu-context-menu, .dark .contextMenu,
+.darkness #mx_contextmenu, .darkness #contextmenu, .darkness .nu-context-menu, .darkness .contextMenu,
 .darkness #mx_contextmenu { background: var(--default-grey); color: #fff; }
+.dark #mx_contextmenu, .dark #contextmenu, .dark .nu-context-menu, .dark .contextMenu,
+.dark #mx_contextmenu { background: var(--default-grey); color: #fff; }
 #mx_contextmenu .fa, #contextmenu .fa, .nu-context-menu .fa, .contextMenu .fa { width: 1.3em; font-size: 0.9rem; text-align: center; }
 #mx_contextmenu.show, #contextmenu.show, .nu-context-menu.active, .contextMenu { visibility: visible; opacity: 1; }
 #mx_contextmenu > div, #contextmenu > div, .nu-context-menu ul li, .contextMenu > div { padding: 0.5em 2em 0.5em 1em; }
