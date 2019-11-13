@@ -769,15 +769,15 @@
             this.parentNode.classList.add('dragafter');
             this.parentNode.classList.remove('dragbefore');
             this.parentNode.classList.remove('dragenter');
-            e.dataTransfer.effectAllowed = 'link';
-            e.dataTransfer.dropEffect = 'link';
+            e.dataTransfer.effectAllowed = 'move';
+            e.dataTransfer.dropEffect = 'move';
           } else if (c < this.offsetHeight / 3) {
             //this.parentNode.className = 'dragbefore';
             this.parentNode.classList.add('dragbefore');
             this.parentNode.classList.remove('dragafter');
             this.parentNode.classList.remove('dragenter');
-            e.dataTransfer.effectAllowed = 'link';
-            e.dataTransfer.dropEffect = 'link';
+            e.dataTransfer.effectAllowed = 'move';
+            e.dataTransfer.dropEffect = 'move';
           } else {
             //this.parentNode.className = 'dragenter';
             this.parentNode.classList.add('dragenter');
@@ -1491,7 +1491,7 @@
         this.timer = null;
         this.olduid = '';
         this.closeactions = [6, 61, 62, 63, 94];
-        this.saveAndCloseActions = [3, 75, 86, 99, 106];
+        this.saveAndCloseActions = [75, 86, 99, 106];
         this.reload = typeof a.reload !== 'undefined' ? a.reload : 1;
         this.action = modx.getActionFromUrl(a.url);
         this.uid = modx.getActionFromUrl(a.url, 2) ? 'home' : modx.urlToUid(a.url);
@@ -1551,10 +1551,10 @@
               this.page.innerHTML='<iframe class="tabframes" src="'+this.url+'" name="'+this.name+'" width="100%" height="100%" scrolling="auto" frameborder="0"></iframe>'
           };
           d.getElementById('main').appendChild(this.page);
-          console.time('load-tab');
+          //console.time('load-tab');
           this.page.firstElementChild.onload = function(e) {
             s.onload.call(s, e);
-            console.timeEnd('load-tab');
+            //console.timeEnd('load-tab');
           };
           this.tab = d.createElement('h2');
           this.tab.id = 'evo-tab-' + this.uid;
@@ -1587,7 +1587,7 @@
           if (!!w.main.__alertQuit) {
             w.main.alert = function(a) { };
             var message = w.main.document.body.innerHTML;
-            w.main.document.body.innerHTML = '';
+            w.main.document.body.style.display = 'none';
             history.pushState(null, d.title, modx.getActionFromUrl(w.location.search, 2) ? modx.MODX_MANAGER_URL : '#' + w.location.search);
             w.onpopstate = function() {
               history.go(1);
@@ -1752,7 +1752,7 @@
           title: '',
           url: '',
           width: '20rem',
-          wrap: w.main.document.body, // parentNode
+          wrap: a.wrap || w.main.document.body, // parentNode
           zIndex: 10500,
           w: null,
           show: function() {
