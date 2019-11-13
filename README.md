@@ -1,6 +1,6 @@
 # EvoFLAT 1.0.4
 
-## Require Evolution CMS => 1.4.4 
+## Require Evolution CMS => 1.4.10 
 
 An advanced, customizable Manager Theme for Evolution cms 1.4 +
 based on MODxFLAT manager theme https://github.com/Nicola1971/MODxFLAT
