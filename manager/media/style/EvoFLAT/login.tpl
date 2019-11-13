@@ -11,13 +11,13 @@
       html {
         font-size: 16px;
       }
-      
+
       html,
       body {
         min-height: 100%;
         height: 100%;
       }
-      
+
       body.loginbox-center {
         min-height: 1px;
         height: auto;
@@ -44,7 +44,7 @@
           background-image: none !important;
         }
       }
-      
+
       /* page div */
 
       .page {
@@ -68,11 +68,11 @@
           margin-bottom: 20vh;
         }
       }
-      
+
       .darkness .page {
         background-color: transparent;
       }
-      
+
       /* loginbox */
 
       .loginbox {
@@ -117,7 +117,7 @@
           min-height: 1px;
         }
       }
-      
+
       .loginbox,
       .dark .loginbox,
       .darkness .loginbox {
@@ -137,28 +137,50 @@
           background-color: transparent;
         }
       }
-      
+
       /* form */
-	  
+
       .loginbox form a {
         color: #818a91;
       }
       .loginbox.light_loginbox form a {
-        color: #000;
-      }
-	  .loginbox.light_loginbox label.text-muted {
-        color: #444!important;
-      }
-	  .loginbox.light_loginbox label#FMP-email_label{
-        color: #000!important;
-      }
-	    .loginbox.light_loginbox input#FMP-email{
-        background-color: #fafafa!important;
-      }
+              color: #666;
+            }
+      .loginbox.light_loginbox label.text-muted {
+              color: #444!important;
+            }
+      .loginbox.light_loginbox label#FMP-email_label,
+      .loginbox.light_loginbox .form-control:active,
+      .loginbox.light_loginbox .captcha input:focus,
+      .loginbox.light_loginbox .captcha input:active,
+      .loginbox.light_loginbox .form-control:focus,
+      .loginbox.light_loginbox input#username,
+      .loginbox.light_loginbox input#password,
+      .loginbox.light_loginbox input#FMP-email,
+      .loginbox.light_loginbox #FMP-email:active,
+      .loginbox.light_loginbox #FMP-email:focus{
+              color: #555!important;
+            }
+      .loginbox.light_loginbox input#username,
+      .loginbox.light_loginbox input#password,
+      .loginbox.light_loginbox input#FMP-email{
+          background-color: rgba(250,255,255,0.4)!important;
+		  border: 1px solid rgb(113,116,117,0.1)!important;
+            }
       .darkness .loginbox form {
         background-color: transparent;
-      }
-      
+        }
+		input[type=checkbox] { width: 0.9125rem !important; height: 0.9125rem !important; margin-right: 0.25em; vertical-align: -0.15em; border-radius: .1rem; border: 1px solid #9ba9bf; background: rgba(250,255,255,0.8) no-repeat 50% -1em; outline: none; transition: border-color .2s, background-position .1s; }
+		input[type=checkbox] { background-image: url("data:image/svg+xml;utf8,%3Csvg%20viewBox%3D%270%200%201792%201792%27%20xmlns%3D%27http%3A//www.w3.org/2000/svg%27%3E%3Cpath%20d%3D%27M1671%20566q0%2040-28%2068l-724%20724-136%20136q-28%2028-68%2028t-68-28l-136-136-362-362q-28-28-28-68t28-68l136-136q28-28%2068-28t68%2028l294%20295%20656-657q28-28%2068-28t68%2028l136%20136q28%2028%2028%2068z%27%20fill%3D%27%23444%27/%3E%3C/svg%3E"); background-size: .875em;  }
+		input[type=checkbox]:hover { border-color: #bcbcbc }
+		input[type=checkbox]:active { background-color: #fafafa; }
+		input[type=checkbox]:focus { border-color: #4d8ef9 !important; box-shadow: 0 0 0 1px rgba(77, 142, 249, 0.5) }
+		input[type=checkbox]:checked {  background-color: #fff; background-position: 50% 50% }
+		.loginbox.dark_loginbox input[type=checkbox] {  background-color: #FFC107;}
+		.loginbox.dark_loginbox input[type=checkbox]:hover { border-color: #FFC107 }
+		.loginbox.dark_loginbox input[type=checkbox]:checked {  background-color: #FFC107;}
+
+
       /* container */
 
       .container-body {
@@ -242,7 +264,7 @@
       .copyrights a {
         color: #fff
       }
-      
+
       /* buttons */
 
       .btn,
@@ -276,14 +298,14 @@
       #submitButton{
         float: right;
       }
-      
+
       /* onManagerLoginFormRender */
 
       #onManagerLoginFormRender {
         margin-top: 3rem;
         color: #fff;
       }
-      
+
       /* FMP - forgot password */
 
       @media (min-width: 768px) {
@@ -306,7 +328,7 @@
       #FMP-email_button {
         float: right;
       }
-      
+
       /* form controls */
 
       .form-control,
@@ -340,7 +362,7 @@
         outline: 0 none !important;
         background-color: rgba(255,255,255,.3) !important;
       }
-      
+
       /* form groups */
 
       .form-group--logo {
@@ -420,7 +442,7 @@
       }
 
       /* loginbox keyframes */
-      
+
       @-webkit-keyframes anim-loginbox {
         from {
           opacity: 0;
@@ -442,7 +464,7 @@
           transform: translate3d(0,0,0);
         }
       }
-      
+
       @-webkit-keyframes anim-loginbox-right {
         from {
           opacity: 0;
@@ -460,7 +482,7 @@
           opacity: 1;
         }
       }
-      
+
       @-webkit-keyframes anim-loginbox-center {
         from {
           opacity: 0;
@@ -498,7 +520,7 @@
               <img src="[+login_logo+]" alt="[(site_name)]" id="logo">
             </a>
           </div>
-          
+
           <!-- username -->
           <div class="form-group">
             <label for="username" class="text-muted">[+username+]</label>
@@ -527,7 +549,7 @@
 
           <!-- OnManagerLoginFormRender -->
           [+OnManagerLoginFormRender+]
-          
+
         </form>
       </div>
 
